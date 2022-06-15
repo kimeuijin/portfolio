@@ -7,49 +7,44 @@ body {
 }
 
 .wrapper {
-    width: 1320px;
+    // width: 1320px;
     margin: 0 auto;
     padding: 0 15px;
-    background-color: rgb(214, 215, 160);
+    // background-color: rgb(214, 215, 160);
 }
 
-//header
+//===============header====================
 header {
     width: $width-wide;
-    height: 970px;
+    height: 100%;
     background-color: $background-brown;
+
+    // @include responsive(tablet-size) {
+    //     height: 60.625em;
+    // }
     
     .title {  
-        padding: 130px 0 0 40px;
-        font-size: 20px;
+        padding: 54px 0 358px 40px;
+        font-size: 35px;
         color: $secondtxt-color;
 
-        // @include responsive(tablet-size) {
-        //     position: absolute; 
-        //     top: 0;
-        //     z-index: 2;
-        //     transform: rotate(90deg);
-        //     transform-origin: 9% 110%;
-        //     h2 {
-        //         font-size: 4.688em;
-        //     }
-        //     br{
-        //         display: none;
-        //     }
-        // }
-        // @include responsive(pc-size) {
-        //     h2{
-        //         font-size: 5.7em;
-        //     }
-            
-        // }
+        @include responsive(tablet-size) {
+            padding: 0;
+            position: absolute; 
+            top: 0;
+            z-index: 2;
+            transform: rotate(90deg);
+            transform-origin: 9% 110%;
+            h2 {
+                font-size: 4.688em;
+            }
+            br{
+                display: none;
+            }
+        }
+       
     }
     
-    .scroll{
-        width: 40px;
-        
-    }
-
     #menu {
         display: none;
         position: fixed;
@@ -73,74 +68,98 @@ header {
     }
 }
 
-//main
+//===============main====================
 main {
+    //section-about
     .about-page {
         position: relative;
         width: 100%;
-        height: 970px;
+        height: 568px;
         background-color: $background-ivory;
         .page-head {
             display: flex;
             .khaki-leaf {
-                width: 240px;
+                width: 94px;
+                height: 85px;
             }
             h2 {
-                margin: 86px 0 0 340px;
+                margin: 50px 0 45px 14px;
                 color: $maintxt-color;
             }
         }
         .page-midd {
-            display: flex;
             .browncircle {
-                width: 490px;
-                margin: 130px 74px 0 0; 
+                width: 149px;
+                height: 150px;
+                margin-left: 74px;
             }
             .aboutMe-text {
-                margin-top: 142px;
-                color: $maintxt-color;
-                h3 {
-                    font-size: 2.250em;
-                    margin-bottom: 10%;
+                margin-top: 25px;
+                h3{
+                    font-size: 13px;
+                    text-align: center;
+                    margin-bottom: 15px;
                 }
-                
+                .self-info{
+                    font-size: 10px;
+                    text-align: center;
+                }
             }
         }
         .leaf-all {
-            
             img{
                 position: absolute;
-                top: 400px;
-                right: 274px;
-                width: 350px;
+                top: 385px;
+                left: 175px;
+                width: 112px;
             }
         }
     }
+
+
+    //section-skill
     .skill-page {
         width: 100%;
-        height: 970px;
         background-color: $background-brown;
         h2 {
-            padding: 86px 0 103px 0;
+            padding: 50px 0 45px 0;
             text-align: center;
             color: $secondtxt-color;
         }
         .skill-flex{
-            display: flex;
             .skill-title-list {
-                // width: 50%;
+                height: 155px;
+                padding: 14px;
+                margin-bottom: 40px;
+                box-sizing: border-box;
+                border-radius: 30px;
+                background-color: $background-ivory;
                 li{
-                    font-size: 2.063em;
-                    line-height: 90px;
+                    width: 50%;
+                    float: left;
+                    margin: 10px 0px;
                     a{
-                        color: $secondtxt-color;
+                        color: $maintxt-color;
                     }
                 }
             }
             .skill-icon {
-                // width: 50%;
-                img {
-                    width: 7%;
+                .skill-icon-flex{
+                    display: flex;
+                    img {
+                        width: 35px;
+                    }
+                    .skill-text{
+                        div{
+                            width: 70%;
+                            margin-left: 10px;
+                            border-radius: 8px;
+                            background-color: $secondtxt-color;
+                        }
+                        span{
+                            color: $secondtxt-color;
+                        }
+                    }
                 }
             }
         }
@@ -153,7 +172,7 @@ main {
     }
 }
 
-//footer
+//==================footer====================
 footer {
     .contact {
         background-color: $background-brown;
