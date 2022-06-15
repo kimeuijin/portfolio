@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 0;
+}
+
+h2 {
+  font-size: 2.250em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+p {
+  font-size: 1em;
+  line-height: 2;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+/*# sourceMappingURL=common.css.map */

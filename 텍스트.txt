@@ -1,0 +1,27 @@
+배경
+갈색 6f5252
+아이보리 f7f0e0
+카키 9f9887
+
+글꼴 
+hahmlet 함렡
+
+페이지당 930px
+footer 395px
+
+
+
+Web developer
+Welcome
+About Me
+Skills
+Projects
+Contact 
+
+portfolio
+
+HTML
+CSS/SCSS
+JavaScript
+Design Tool
+Backend

@@ -1,0 +1,161 @@
+@import "style.scss";
+@import "common.scss";
+@import "mixin.scss";
+//body
+body {
+    font-family: $font-ham;
+}
+
+.wrapper {
+    width: 1320px;
+    margin: 0 auto;
+    padding: 0 15px;
+    background-color: rgb(214, 215, 160);
+}
+
+//header
+header {
+    width: $width-wide;
+    height: 970px;
+    background-color: $background-brown;
+    
+    .title {  
+        padding: 130px 0 0 40px;
+        font-size: 20px;
+        color: $secondtxt-color;
+
+        // @include responsive(tablet-size) {
+        //     position: absolute; 
+        //     top: 0;
+        //     z-index: 2;
+        //     transform: rotate(90deg);
+        //     transform-origin: 9% 110%;
+        //     h2 {
+        //         font-size: 4.688em;
+        //     }
+        //     br{
+        //         display: none;
+        //     }
+        // }
+        // @include responsive(pc-size) {
+        //     h2{
+        //         font-size: 5.7em;
+        //     }
+            
+        // }
+    }
+    
+    .scroll{
+        width: 40px;
+        
+    }
+
+    #menu {
+        display: none;
+        position: fixed;
+        top: 0%;
+        right: 0;
+        width: 300px;
+        height: 100%;
+        z-index: 100;
+        background-color: $point-color;
+        .gnb {
+            li {
+                margin-top: 20%;
+                width: 100%;
+                text-align: center;
+                font-size: 40px;
+                a {
+                    color: $secondtxt-color;
+                }
+            }
+        }
+    }
+}
+
+//main
+main {
+    .about-page {
+        position: relative;
+        width: 100%;
+        height: 970px;
+        background-color: $background-ivory;
+        .page-head {
+            display: flex;
+            .khaki-leaf {
+                width: 240px;
+            }
+            h2 {
+                margin: 86px 0 0 340px;
+                color: $maintxt-color;
+            }
+        }
+        .page-midd {
+            display: flex;
+            .browncircle {
+                width: 490px;
+                margin: 130px 74px 0 0; 
+            }
+            .aboutMe-text {
+                margin-top: 142px;
+                color: $maintxt-color;
+                h3 {
+                    font-size: 2.250em;
+                    margin-bottom: 10%;
+                }
+                
+            }
+        }
+        .leaf-all {
+            
+            img{
+                position: absolute;
+                top: 400px;
+                right: 274px;
+                width: 350px;
+            }
+        }
+    }
+    .skill-page {
+        width: 100%;
+        height: 970px;
+        background-color: $background-brown;
+        h2 {
+            padding: 86px 0 103px 0;
+            text-align: center;
+            color: $secondtxt-color;
+        }
+        .skill-flex{
+            display: flex;
+            .skill-title-list {
+                // width: 50%;
+                li{
+                    font-size: 2.063em;
+                    line-height: 90px;
+                    a{
+                        color: $secondtxt-color;
+                    }
+                }
+            }
+            .skill-icon {
+                // width: 50%;
+                img {
+                    width: 7%;
+                }
+            }
+        }
+    }
+    .projects-page {
+        background-color: $background-ivory;
+        img {
+            width: 30%;
+        }
+    }
+}
+
+//footer
+footer {
+    .contact {
+        background-color: $background-brown;
+    }
+}
