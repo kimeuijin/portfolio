@@ -25,3 +25,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@mixin confix {
+    margin: 0 5%;
+}
