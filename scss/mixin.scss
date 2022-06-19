@@ -27,5 +27,8 @@
 }
 
 @mixin confix {
-    margin: 0 5%;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 10px;
+    background-color: rgb(4, 100, 4);
 }
