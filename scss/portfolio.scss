@@ -193,3 +193,54 @@ body {
 }
 
 //==================section-project====================
+.projects{
+    background-color: $second-color;
+    .pro-flex{
+        @include confix;
+        @include responsive(tablet-size) {
+            display: flex;
+        }
+        .pro-img{
+            .pro-back{
+                img{
+                    width: 18em;
+                    padding: 3% 0;
+                }
+            }
+        }
+
+        .pro-btn{
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            a{
+                color: $second-color;
+                border: 1px solid $main-color;
+                border-radius: 4px;
+            }
+        }
+    }
+}
+
+
+
+
+
+//==================section-contact====================
+.contact{
+    background-color: $main-color;
+    .contact-txt{
+        // @include confix;
+        width: 90%;
+        margin: 0 auto;
+        padding: 0 10px;
+        background-color: rgb(154, 139, 239);
+        color: $second-color;
+        ul{
+            margin-top: 1.5em;
+            a{
+                color: $second-color;
+            }
+        }
+    }
+}

@@ -273,4 +273,63 @@ body {
   font-size: 0.7em;
   color: #f7f0e0;
 }
+
+.projects {
+  background-color: #f7f0e0;
+}
+
+.projects .pro-flex {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 10px;
+  background-color: #1a8d1a;
+}
+
+@media screen and (min-width: 768px) {
+  .projects .pro-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.projects .pro-flex .pro-img .pro-back img {
+  width: 18em;
+  padding: 3% 0;
+}
+
+.projects .pro-flex .pro-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+}
+
+.projects .pro-flex .pro-btn a {
+  color: #f7f0e0;
+  border: 1px solid #6f5252;
+  border-radius: 4px;
+}
+
+.contact {
+  background-color: #6f5252;
+}
+
+.contact .contact-txt {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 10px;
+  background-color: #9a8bef;
+  color: #f7f0e0;
+}
+
+.contact .contact-txt ul {
+  margin-top: 1.5em;
+}
+
+.contact .contact-txt ul a {
+  color: #f7f0e0;
+}
 /*# sourceMappingURL=portfolio.css.map */
