@@ -11,8 +11,8 @@ hahmlet 함렡
 페이지당 930px
 footer 395px
 
-Web developer
-Welcome
+Web developer portfolio
+Home
 About Me
 Skills
 Projects
