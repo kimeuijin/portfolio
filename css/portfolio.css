@@ -70,7 +70,7 @@ body {
 .logo-menu .menu-button {
   position: absolute;
   top: 0;
-  left: 85%;
+  right: 5%;
   padding-top: 25px;
 }
 
@@ -89,6 +89,14 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .logo-menu .pc-button {
+    width: auto;
+    margin-left: auto;
+    margin-top: 30px;
+  }
+}
+
 .logo-menu .pc-button .gnb {
   width: 100%;
   display: none;
@@ -99,13 +107,12 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-right: 20px;
     color: #f7f0e0;
   }
-}
-
-.logo-menu .pc-button .gnb li {
-  font-size: 0.5rem;
+  .logo-menu .pc-button .gnb li {
+    margin-right: 20px;
+    font-size: 1.125rem;
+  }
 }
 
 .logo-menu .github {
@@ -126,50 +133,117 @@ body {
   position: relative;
   margin: 105px 0 37px 0;
   width: 100%;
-  height: 73px;
+  height: 4.563em;
 }
 
-.confix #homePage .wrapper .mainTxt {
+.confix #homePage .wrapper .ellipse .border-circle {
+  position: relative;
+  top: -120px;
+  border: 1px solid #9c9484;
+  border-radius: 60%;
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+  padding: 14%;
+}
+
+.confix #homePage .wrapper .ellipse .dot {
+  position: relative;
+  left: 46px;
+  top: -208px;
+  width: 8px;
+  height: 8px;
+  border-radius: 100px;
+  border: 4px solid #f7f0e0;
+  background-color: #f7f0e0;
+}
+
+.confix #homePage .wrapper .ellipse .mainTxt {
   position: absolute;
   top: 15%;
   margin-left: 20%;
-  color: #6f5252;
 }
 
-.confix #homePage .wrapper .mainTxt h2 {
+.confix #homePage .wrapper .ellipse .mainTxt h2 {
+  color: #6f5252;
   font-size: 1.125em;
 }
 
-.confix #homePage .wrapper .mainTxt h2:last-child {
+.confix #homePage .wrapper .ellipse .mainTxt h2:last-child {
   text-align: center;
 }
 
-.confix #homePage .wrapper .keyword ul {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 10%;
-  margin-bottom: 70px;
-}
-
-.confix #homePage .wrapper .keyword ul li {
-  float: left;
+.confix #homePage .wrapper .keywordTxt {
+  text-align: center;
   color: #f7f0e0;
 }
 
-.confix #homePage .wrapper .keyword ul li .modalTxt {
+@media screen and (min-width: 768px) {
+  .confix #homePage .wrapper .keywordTxt .topLine {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.confix #homePage .wrapper .keywordTxt .topLine .topTxt {
+  margin-bottom: 19px;
+}
+
+@media screen and (min-width: 768px) {
+  .confix #homePage .wrapper .keywordTxt .topLine .topTxt {
+    margin-bottom: 119px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .confix #homePage .wrapper .keywordTxt .underLine {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 50%;
+  }
+}
+
+.confix #homePage .wrapper .keywordTxt .underLine .underTxt p {
+  margin-bottom: 50px;
+}
+
+.confix #homePage .wrapper .keywordTxt .modalTxt {
   display: none;
 }
 
 .confix #homePage .wrapper .scroll {
-  padding-bottom: 17px;
+  position: relative;
+  padding: 17px 0;
 }
 
-.confix #homePage .wrapper .scroll img {
+.confix #homePage .wrapper .scroll .mouse {
   width: 20px;
   height: 40px;
+  margin-left: 130px;
+  border: 2px solid #f7f0e0;
+  border-radius: 50%;
 }
 
-.confix #homePage .wrapper .scroll span {
+.confix #homePage .wrapper .scroll .mouse .mouse-ball {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: 25px;
+  left: 138px;
+  border-radius: 4px;
+  background-color: #f7f0e0;
+}
+
+.confix #homePage .wrapper .scroll p {
+  text-align: center;
+  font-size: 10px;
   color: #f7f0e0;
 }
 

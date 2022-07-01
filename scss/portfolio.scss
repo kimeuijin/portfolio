@@ -26,7 +26,7 @@ body {
     .menu-button{
         position: absolute;
         top: 0;
-        left: 85%;
+        right: 5%;
         padding-top: 25px;
         span{
             display: block;
@@ -42,16 +42,21 @@ body {
 
     }
     .pc-button{
+        @include responsive(tablet-size){
+            width: auto;
+            margin-left: auto;
+            margin-top: 30px;
+        }
         .gnb{
             width: 100%;
             display: none;
             @include responsive(tablet-size) {
                 display: flex;
-                margin-right: 20px;
                 color: $second-color;
-            }
-            li{
-                font-size: 0.5rem;
+                li{
+                    margin-right: 20px;
+                    font-size: 1.125rem;
+                }
             }
         }
     }
@@ -61,7 +66,6 @@ body {
 }
 //==================main-home====================
 .confix{
-
     #homePage{
         background-color: $main-color;
         .wrapper{
@@ -71,46 +75,97 @@ body {
                     position: relative;
                     margin: 105px 0 37px 0 ;
                     width: 100%;
-                    height: 73px;
+                    height: 4.563em;
                 }
-            }
-            .mainTxt{
-                position: absolute;
-                top: 15%;
-                
-                margin-left: 20%;
-                color: $main-color;
-                h2{
-                    font-size: 1.125em;
-                    &:last-child{
-                        text-align: center;
-                    }
+                .border-circle{
+                    position: relative;
+                    top: -120px;
+                    border: 1px solid #9c9484;
+                    border-radius: 60%;
+                    transform:rotate(5deg);
+                    padding: 14%;
                 }
-            }
-            .keyword{
-                ul{
-                    box-sizing: border-box;
-                    padding: 10%;
-                    margin-bottom: 70px;
-                    // display: flex;
-                    // justify-content: space-between;
-                    li{
-                        float: left;
-                        color: $second-color;
-                        .modalTxt{
-                            display: none;
+                .dot{
+                    position: relative;
+                    left: 46px;
+                    top: -208px;
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 100px;
+                    border: 4px solid $second-color;
+                    background-color: $second-color;
+                }
+                .mainTxt{
+                    position: absolute;
+                    top: 15%;
+                    margin-left: 20%;
+                    
+                    h2{
+                        color: $main-color;
+                        font-size: 1.125em;
+                        &:last-child{
+                            text-align: center;
                         }
                     }
                 }
             }
+            .keywordTxt{
+                text-align: center;
+                color: $second-color;
+                .topLine{
+                    @include responsive(tablet-size) {
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                    .topTxt{
+                        margin-bottom: 19px;
+                        @include responsive(tablet-size){
+                            margin-bottom: 119px;
+                        }
+                    }
+                }
+                .underLine{
+                    @include responsive(tablet-size) {
+                        display: flex;
+                        justify-content: space-between;
+                        width: 50%;
+                    }
+                    .underTxt{
+                        p{
+                            margin-bottom: 50px;
+                        }
+                    }
+                }
+                .modalTxt{
+                    display: none;
+                }
+            }
+               
+            
             .scroll{
-                padding-bottom: 17px;
-                img{
+                position: relative;
+                // display: flex;
+                // flex-direction: column;
+                padding: 17px 0;
+                .mouse{
                     width: 20px;
                     height: 40px;
-                    // margin-top: 70px;
-                } 
-                span{
+                    margin-left: 130px;
+                    border: 2px solid $second-color;
+                    border-radius: 50%;
+                    .mouse-ball{
+                        position: absolute;
+                        width: 8px;
+                        height: 8px;
+                        top: 25px;
+                        left: 138px;
+                        border-radius: 4px;
+                        background-color: $second-color;
+                    }
+                }
+                p{
+                    text-align: center;
+                    font-size: 10px;
                     color: $second-color;
                 }
             }
