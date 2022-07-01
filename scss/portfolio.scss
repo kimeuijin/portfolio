@@ -17,7 +17,7 @@ body {
     }
     .logo{
         width: 50px;
-        margin-left: 1%;
+        margin-left: 3%;
         padding-top: 12px;
         img{
             width: 100%;
@@ -26,7 +26,7 @@ body {
     .menu-button{
         position: absolute;
         top: 0;
-        left: 22%;
+        left: 85%;
         padding-top: 25px;
         span{
             display: block;
@@ -66,16 +66,17 @@ body {
         background-color: $main-color;
         .wrapper{
             @include confix;
-
-            img{
-                position: relative;
-                margin-top: 105px;
-                width: 100%;
-                height: 73px;
+            .ellipse{
+                img{
+                    position: relative;
+                    margin: 105px 0 37px 0 ;
+                    width: 100%;
+                    height: 73px;
+                }
             }
             .mainTxt{
                 position: absolute;
-                // top: 15%;
+                top: 15%;
                 
                 margin-left: 20%;
                 color: $main-color;
@@ -87,26 +88,194 @@ body {
                 }
             }
             .keyword{
-                li{
+                ul{
+                    box-sizing: border-box;
+                    padding: 10%;
+                    margin-bottom: 70px;
+                    // display: flex;
+                    // justify-content: space-between;
+                    li{
+                        float: left;
+                        color: $second-color;
+                        .modalTxt{
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .scroll{
+                padding-bottom: 17px;
+                img{
+                    width: 20px;
+                    height: 40px;
+                    // margin-top: 70px;
+                } 
+                span{
                     color: $second-color;
-                    .modalTxt{
-                        display: none;
+                }
+            }
+            
+        }
+
+    }
+    //==================main-aboutme====================
+    #aboutmePage{
+        background-color: $second-color;
+        .wrapper{
+            @include confix;
+            h2{
+                padding: 55px 0 60px 0;
+                text-align: center;
+                color: $main-color;
+            }
+            .pictureImg{
+                img{
+                    width: 275px;
+                    margin-bottom: 37px;
+                }
+            }
+            .aboutTxt{
+                font-size: 0.875em;
+                h3{
+                    text-align: center;
+                    font-size: 1.2em;
+                    line-height: 30px;
+                    margin-bottom: 50px;
+                    color: $main-color;
+                }
+                .txtBox{
+                    margin: 0 10%;
+                    p{
+                        color: $ham-button-color;
+                    }
+                    .about-education{
+                        margin-top: 44px;
+                        color: $main-color;
+                    }
+                }
+            }
+            .empty-leaf{
+                display: none;
+            }
+            .greenYellow-leaf{
+                img{
+                    width: 50%;
+                    position: relative;
+                    right: -140px;
+                }
+            }
+        }
+    }
+    
+    //==================main-skills====================
+    #skillsPage{
+        background-color: $main-color;
+        .wrapper{
+            @include confix;
+            h2{
+                padding: 55px 0 60px 0;
+                text-align: center;
+                color: $second-color;
+            }
+            .skill-flex{
+                @include responsive(tablet-size) {
+                    display: flex;
+                }
+                .skill-list{
+                    height: 240px;
+                    box-sizing: border-box;
+                    background-color: $second-color;
+                    border-radius: 30px;
+                    padding: 5%;
+                    margin-bottom: 70px;
+                    // overflow-y: hidden;
+                    li{
+                        width: 50%;
+                        height: 35px;
+                        float: left;
+                        margin: 10px 0;
+                        a{
+                            color: $main-color;
+                        }
+                    }
+                }
+                .chart{
+                    position: relative;
+                    display:inline-block;
+                    width: 300px;
+                    height: 300px;
+                    border-radius: 50%;
+                    transition: 0.3s;
+                    .center{
+                        background-color: opacify($second-color , .3);
+                        display : block;
+                        position: absolute;
+                        top:50%; left:50%;
+                        width:200px; height:200px;
+                        border-radius: 50%;
+                        text-align:center; line-height: 200px;
+                        font-size:30px;
+                         transform: translate(-50%, -50%);
                     }
                 }
             }
         }
-
     }
     
     
-    //==================main-aboutme====================
-    
-    
-    //==================main-skills====================
-    
-    
-    
-    //==================main-contact====================
+    //==================main-PORTFOLIO====================
+    #projectsPage{
+        background-color: $second-color;
+        .wrapper{
+            @include confix;
+            h2{
+                padding: 55px 0 60px 0;
+                text-align: center;
+                color: $main-color;
+            }
+            .mockup-img{
+                img{
+                    width: 100%;
+                }
+            }
+            .project-txt{
+                font-size: 13px;
+                border-radius: 5%;
+                padding: 5%;
+                margin: 45px 0 217px 0;
+                background-color: $modal-color;
+                .pro-title{
+                    color: $main-color;
+                    margin-bottom: 19px;
+                    h3{
+                        font-size: 17px;
+                    }
+                }
+                .pro-box{
+                    margin-bottom: 23px;
+                    h3{
+                        font-size: 14px;
+                        color: $h3-color;
+                    }
+                    p{
+                        font-size: 11px;
+                    }
+                }
+                .pro-button{
+                    display: flex;
+                    justify-content: space-around;
+                    text-align: center;
+                    a{
+                        border: 1px solid $main-color;
+                        border-radius: 4px;
+                        padding: 8px;
+                        background-color: $main-color;
+                        color: $second-color;
+                    }
+                }
+            }
+        }
+    }
 }
 
 

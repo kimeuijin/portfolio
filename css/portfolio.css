@@ -59,7 +59,7 @@ body {
 
 .logo-menu .logo {
   width: 50px;
-  margin-left: 1%;
+  margin-left: 3%;
   padding-top: 12px;
 }
 
@@ -70,7 +70,7 @@ body {
 .logo-menu .menu-button {
   position: absolute;
   top: 0;
-  left: 22%;
+  left: 85%;
   padding-top: 25px;
 }
 
@@ -120,18 +120,18 @@ body {
   width: 90%;
   margin: 0 auto;
   padding: 0 10px;
-  background-color: #9ed79e;
 }
 
-.confix #homePage .wrapper img {
+.confix #homePage .wrapper .ellipse img {
   position: relative;
-  margin-top: 105px;
+  margin: 105px 0 37px 0;
   width: 100%;
   height: 73px;
 }
 
 .confix #homePage .wrapper .mainTxt {
   position: absolute;
+  top: 15%;
   margin-left: 20%;
   color: #6f5252;
 }
@@ -144,11 +144,226 @@ body {
   text-align: center;
 }
 
-.confix #homePage .wrapper .keyword li {
+.confix #homePage .wrapper .keyword ul {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10%;
+  margin-bottom: 70px;
+}
+
+.confix #homePage .wrapper .keyword ul li {
+  float: left;
   color: #f7f0e0;
 }
 
-.confix #homePage .wrapper .keyword li .modalTxt {
+.confix #homePage .wrapper .keyword ul li .modalTxt {
   display: none;
+}
+
+.confix #homePage .wrapper .scroll {
+  padding-bottom: 17px;
+}
+
+.confix #homePage .wrapper .scroll img {
+  width: 20px;
+  height: 40px;
+}
+
+.confix #homePage .wrapper .scroll span {
+  color: #f7f0e0;
+}
+
+.confix #aboutmePage {
+  background-color: #f7f0e0;
+}
+
+.confix #aboutmePage .wrapper {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.confix #aboutmePage .wrapper h2 {
+  padding: 55px 0 60px 0;
+  text-align: center;
+  color: #6f5252;
+}
+
+.confix #aboutmePage .wrapper .pictureImg img {
+  width: 275px;
+  margin-bottom: 37px;
+}
+
+.confix #aboutmePage .wrapper .aboutTxt {
+  font-size: 0.875em;
+}
+
+.confix #aboutmePage .wrapper .aboutTxt h3 {
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 30px;
+  margin-bottom: 50px;
+  color: #6f5252;
+}
+
+.confix #aboutmePage .wrapper .aboutTxt .txtBox {
+  margin: 0 10%;
+}
+
+.confix #aboutmePage .wrapper .aboutTxt .txtBox p {
+  color: #9f9887;
+}
+
+.confix #aboutmePage .wrapper .aboutTxt .txtBox .about-education {
+  margin-top: 44px;
+  color: #6f5252;
+}
+
+.confix #aboutmePage .wrapper .empty-leaf {
+  display: none;
+}
+
+.confix #aboutmePage .wrapper .greenYellow-leaf img {
+  width: 50%;
+  position: relative;
+  right: -140px;
+}
+
+.confix #skillsPage {
+  background-color: #6f5252;
+}
+
+.confix #skillsPage .wrapper {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.confix #skillsPage .wrapper h2 {
+  padding: 55px 0 60px 0;
+  text-align: center;
+  color: #f7f0e0;
+}
+
+@media screen and (min-width: 768px) {
+  .confix #skillsPage .wrapper .skill-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.confix #skillsPage .wrapper .skill-flex .skill-list {
+  height: 240px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #f7f0e0;
+  border-radius: 30px;
+  padding: 5%;
+  margin-bottom: 70px;
+}
+
+.confix #skillsPage .wrapper .skill-flex .skill-list li {
+  width: 50%;
+  height: 35px;
+  float: left;
+  margin: 10px 0;
+}
+
+.confix #skillsPage .wrapper .skill-flex .skill-list li a {
+  color: #6f5252;
+}
+
+.confix #skillsPage .wrapper .skill-flex .chart {
+  position: relative;
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.confix #skillsPage .wrapper .skill-flex .chart .center {
+  background-color: #f7f0e0;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 200px;
+  font-size: 30px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.confix #projectsPage {
+  background-color: #f7f0e0;
+}
+
+.confix #projectsPage .wrapper {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.confix #projectsPage .wrapper h2 {
+  padding: 55px 0 60px 0;
+  text-align: center;
+  color: #6f5252;
+}
+
+.confix #projectsPage .wrapper .mockup-img img {
+  width: 100%;
+}
+
+.confix #projectsPage .wrapper .project-txt {
+  font-size: 13px;
+  border-radius: 5%;
+  padding: 5%;
+  margin: 45px 0 217px 0;
+  background-color: #c6b793;
+}
+
+.confix #projectsPage .wrapper .project-txt .pro-title {
+  color: #6f5252;
+  margin-bottom: 19px;
+}
+
+.confix #projectsPage .wrapper .project-txt .pro-title h3 {
+  font-size: 17px;
+}
+
+.confix #projectsPage .wrapper .project-txt .pro-box {
+  margin-bottom: 23px;
+}
+
+.confix #projectsPage .wrapper .project-txt .pro-box h3 {
+  font-size: 14px;
+  color: #625a3c;
+}
+
+.confix #projectsPage .wrapper .project-txt .pro-box p {
+  font-size: 11px;
+}
+
+.confix #projectsPage .wrapper .project-txt .pro-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+}
+
+.confix #projectsPage .wrapper .project-txt .pro-button a {
+  border: 1px solid #6f5252;
+  border-radius: 4px;
+  padding: 8px;
+  background-color: #6f5252;
+  color: #f7f0e0;
 }
 /*# sourceMappingURL=portfolio.css.map */
