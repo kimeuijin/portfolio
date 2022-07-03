@@ -131,9 +131,15 @@ body {
 
 .confix #homePage .wrapper .ellipse img {
   position: relative;
-  margin: 105px 0 37px 0;
+  margin: 164px 0 37px 0;
   width: 100%;
-  height: 4.563em;
+  height: 25vw;
+}
+
+@media screen and (min-width: 768px) {
+  .confix #homePage .wrapper .ellipse img {
+    height: 30vw;
+  }
 }
 
 .confix #homePage .wrapper .ellipse .border-circle {
@@ -206,7 +212,7 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 50%;
+    padding: 0 20%;
   }
 }
 
@@ -263,16 +269,47 @@ body {
   color: #6f5252;
 }
 
-.confix #aboutmePage .wrapper .pictureImg img {
-  width: 275px;
-  margin-bottom: 37px;
-}
-
-.confix #aboutmePage .wrapper .aboutTxt {
+.confix #aboutmePage .wrapper .about-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 10%;
   font-size: 0.875em;
 }
 
-.confix #aboutmePage .wrapper .aboutTxt h3 {
+@media screen and (min-width: 768px) {
+  .confix #aboutmePage .wrapper .about-flex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 0;
+  }
+}
+
+.confix #aboutmePage .wrapper .about-flex .pictureImg img {
+  width: 65vw;
+  margin-bottom: 37px;
+}
+
+@media screen and (min-width: 768px) {
+  .confix #aboutmePage .wrapper .about-flex .pictureImg img {
+    width: 275px;
+    margin-right: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .confix #aboutmePage .wrapper .about-flex .txt-flex {
+    padding-left: 10px;
+  }
+}
+
+.confix #aboutmePage .wrapper .about-flex .txt-flex h3 {
   text-align: center;
   font-size: 1.2em;
   line-height: 30px;
@@ -280,27 +317,50 @@ body {
   color: #6f5252;
 }
 
-.confix #aboutmePage .wrapper .aboutTxt .txtBox {
-  margin: 0 10%;
-}
-
-.confix #aboutmePage .wrapper .aboutTxt .txtBox p {
+.confix #aboutmePage .wrapper .about-flex .txt-flex .aboutTxt .txtBox2 div {
+  padding-bottom: 15px;
   color: #9f9887;
 }
 
-.confix #aboutmePage .wrapper .aboutTxt .txtBox .about-education {
+.confix #aboutmePage .wrapper .about-flex .txt-flex .aboutTxt .about-education {
   margin-top: 44px;
   color: #6f5252;
 }
 
-.confix #aboutmePage .wrapper .empty-leaf {
+@media screen and (min-width: 768px) {
+  .confix #aboutmePage .wrapper .leafs {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.confix #aboutmePage .wrapper .leafs .empty-leaf {
   display: none;
 }
 
-.confix #aboutmePage .wrapper .greenYellow-leaf img {
+@media screen and (min-width: 768px) {
+  .confix #aboutmePage .wrapper .leafs .empty-leaf {
+    width: 19%;
+    display: inline-block;
+    left: 10px;
+  }
+}
+
+.confix #aboutmePage .wrapper .leafs .greenYellow-leaf {
   width: 50%;
-  position: relative;
-  right: -140px;
+  right: -20px;
+}
+
+@media screen and (min-width: 768px) {
+  .confix #aboutmePage .wrapper .leafs .greenYellow-leaf {
+    width: 20%;
+    right: 10px;
+  }
 }
 
 .confix #skillsPage {
@@ -390,11 +450,19 @@ body {
   color: #6f5252;
 }
 
-.confix #projectsPage .wrapper .mockup-img img {
+@media screen and (min-width: 768px) {
+  .confix #projectsPage .wrapper .Project-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.confix #projectsPage .wrapper .Project-flex .mockup-img img {
   width: 100%;
 }
 
-.confix #projectsPage .wrapper .project-txt {
+.confix #projectsPage .wrapper .Project-flex .project-txt {
   font-size: 13px;
   border-radius: 5%;
   padding: 5%;
@@ -402,29 +470,29 @@ body {
   background-color: #c6b793;
 }
 
-.confix #projectsPage .wrapper .project-txt .pro-title {
+.confix #projectsPage .wrapper .Project-flex .project-txt .pro-title {
   color: #6f5252;
   margin-bottom: 19px;
 }
 
-.confix #projectsPage .wrapper .project-txt .pro-title h3 {
+.confix #projectsPage .wrapper .Project-flex .project-txt .pro-title h3 {
   font-size: 17px;
 }
 
-.confix #projectsPage .wrapper .project-txt .pro-box {
+.confix #projectsPage .wrapper .Project-flex .project-txt .pro-box {
   margin-bottom: 23px;
 }
 
-.confix #projectsPage .wrapper .project-txt .pro-box h3 {
+.confix #projectsPage .wrapper .Project-flex .project-txt .pro-box h3 {
   font-size: 14px;
   color: #625a3c;
 }
 
-.confix #projectsPage .wrapper .project-txt .pro-box p {
+.confix #projectsPage .wrapper .Project-flex .project-txt .pro-box p {
   font-size: 11px;
 }
 
-.confix #projectsPage .wrapper .project-txt .pro-button {
+.confix #projectsPage .wrapper .Project-flex .project-txt .pro-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -433,11 +501,10 @@ body {
   text-align: center;
 }
 
-.confix #projectsPage .wrapper .project-txt .pro-button a {
+.confix #projectsPage .wrapper .Project-flex .project-txt .pro-button a {
   border: 1px solid #6f5252;
   border-radius: 4px;
   padding: 8px;
   background-color: #6f5252;
   color: #f7f0e0;
 }
-/*# sourceMappingURL=portfolio.css.map */
