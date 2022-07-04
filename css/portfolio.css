@@ -44,8 +44,10 @@ body {
 
 .logo-menu {
   position: fixed;
+  top: 0;
   width: 100%;
   height: 70px;
+  overflow: hidden;
   background-color: #6f5252;
 }
 
@@ -55,6 +57,11 @@ body {
     display: -ms-flexbox;
     display: flex;
   }
+}
+
+.logo-menu .active {
+  height: 420px;
+  background-color: #9f9887;
 }
 
 .logo-menu .logo {
@@ -89,11 +96,20 @@ body {
   }
 }
 
+.logo-menu .pc-button {
+  margin-top: 2%;
+}
+
 @media screen and (min-width: 768px) {
   .logo-menu .pc-button {
     width: auto;
     margin-left: auto;
-    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .logo-menu .pc-button {
+    margin-top: 1.5%;
   }
 }
 
@@ -107,11 +123,18 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 600px;
     color: #f7f0e0;
   }
   .logo-menu .pc-button .gnb li {
-    margin-right: 20px;
+    margin-right: 40px;
     font-size: 1.125rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .logo-menu .pc-button .gnb {
+    width: 700px;
   }
 }
 
@@ -119,8 +142,16 @@ body {
   display: none;
 }
 
+@media screen and (min-width: 768px) {
+  .logo-menu .github a {
+    display: contents;
+    height: 80px;
+  }
+}
+
 .confix #homePage {
   background-color: #6f5252;
+  height: 750px;
 }
 
 .confix #homePage .wrapper {
@@ -129,33 +160,50 @@ body {
   padding: 0 10px;
 }
 
+.confix #homePage .wrapper .ellipse {
+  height: 200px;
+  padding-bottom: 37px;
+}
+
+@media screen and (min-width: 768px) {
+  .confix #homePage .wrapper .ellipse {
+    padding-bottom: 234px;
+  }
+}
+
 .confix #homePage .wrapper .ellipse img {
   position: relative;
-  margin: 164px 0 37px 0;
+  margin: 92px 0 37px 0;
   width: 100%;
   height: 25vw;
 }
 
 @media screen and (min-width: 768px) {
   .confix #homePage .wrapper .ellipse img {
-    height: 30vw;
+    height: 21vw;
   }
 }
 
 .confix #homePage .wrapper .ellipse .border-circle {
   position: relative;
-  top: -120px;
+  top: -37vw;
   border: 1px solid #9c9484;
   border-radius: 60%;
   -webkit-transform: rotate(5deg);
           transform: rotate(5deg);
-  padding: 14%;
+  padding: 13%;
+}
+
+@media screen and (min-width: 768px) {
+  .confix #homePage .wrapper .ellipse .border-circle {
+    top: -24vw;
+  }
 }
 
 .confix #homePage .wrapper .ellipse .dot {
-  position: relative;
-  left: 46px;
-  top: -208px;
+  position: absolute;
+  left: 59px;
+  top: 87px;
   width: 8px;
   height: 8px;
   border-radius: 100px;
@@ -163,19 +211,38 @@ body {
   background-color: #f7f0e0;
 }
 
+@media screen and (min-width: 768px) {
+  .confix #homePage .wrapper .ellipse .dot {
+    left: 198px;
+    top: 96px;
+    width: 10px;
+    height: 10px;
+  }
+}
+
 .confix #homePage .wrapper .ellipse .mainTxt {
   position: absolute;
-  top: 15%;
-  margin-left: 20%;
+  top: 110px;
+  margin-left: 21%;
+}
+
+@media screen and (min-width: 768px) {
+  .confix #homePage .wrapper .ellipse .mainTxt {
+    top: 152px;
+    margin-left: 30%;
+  }
 }
 
 .confix #homePage .wrapper .ellipse .mainTxt h2 {
   color: #6f5252;
   font-size: 1.125em;
+  text-align: center;
 }
 
-.confix #homePage .wrapper .ellipse .mainTxt h2:last-child {
-  text-align: center;
+@media screen and (min-width: 768px) {
+  .confix #homePage .wrapper .ellipse .mainTxt h2 {
+    font-size: 40px;
+  }
 }
 
 .confix #homePage .wrapper .keywordTxt {
@@ -195,7 +262,11 @@ body {
 }
 
 .confix #homePage .wrapper .keywordTxt .topLine .topTxt {
-  margin-bottom: 19px;
+  margin-bottom: 37px;
+}
+
+.confix #homePage .wrapper .keywordTxt .topLine .topTxt p {
+  font-size: 22px;
 }
 
 @media screen and (min-width: 768px) {
@@ -216,8 +287,12 @@ body {
   }
 }
 
+.confix #homePage .wrapper .keywordTxt .underLine .underTxt {
+  padding-bottom: 37px;
+}
+
 .confix #homePage .wrapper .keywordTxt .underLine .underTxt p {
-  margin-bottom: 50px;
+  font-size: 22px;
 }
 
 .confix #homePage .wrapper .keywordTxt .modalTxt {
@@ -225,14 +300,21 @@ body {
 }
 
 .confix #homePage .wrapper .scroll {
-  position: relative;
-  padding: 17px 0;
+  position: absolute;
+  left: 50%;
+  bottom: 67px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .confix #homePage .wrapper .scroll .mouse {
+  position: absolute;
   width: 20px;
   height: 40px;
-  margin-left: 130px;
+  bottom: 22px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   border: 2px solid #f7f0e0;
   border-radius: 50%;
 }
@@ -241,13 +323,13 @@ body {
   position: absolute;
   width: 8px;
   height: 8px;
-  top: 25px;
-  left: 138px;
+  top: 9px;
+  right: 6px;
   border-radius: 4px;
   background-color: #f7f0e0;
 }
 
-.confix #homePage .wrapper .scroll p {
+.confix #homePage .wrapper .scroll span {
   text-align: center;
   font-size: 10px;
   color: #f7f0e0;
@@ -508,3 +590,4 @@ body {
   background-color: #6f5252;
   color: #f7f0e0;
 }
+/*# sourceMappingURL=portfolio.css.map */
