@@ -242,6 +242,7 @@ body {
                 text-align: center;
                 color: $main-color;
                 @include responsive(tablet-size) {
+                    font-size: 1.5em;
                     text-align: left;
                     padding: 55px 0 0 0;
                 }
@@ -286,8 +287,11 @@ body {
                     }
                     .aboutTxt {
                         margin: 0 5%;
-                        @include responsive(pc-size) {
+                        @include responsive(tablet-size) {
                             margin: 0 10%;
+                        }
+                        @include responsive(pc-size) {
+                            margin: 0 20%;
                         }
                         .txtBox2 {
                             div {
@@ -363,13 +367,18 @@ body {
                 color: $second-color;
                 @include responsive(tablet-size) {
                     text-align: left;
+                    font-size: 1.5em;
                 }
             }
             .skill-flex {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
                 @include responsive(tablet-size) {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    // align-items: center;
+                    padding-bottom: 10vw;
                 }
                 .skill-list {
                     height: 240px;
@@ -377,13 +386,16 @@ body {
                     background-color: $second-color;
                     border-radius: 30px;
                     padding: 5%;
-                    margin-bottom: 70px;
+                    // margin-bottom: 70px;
                     // overflow-y: hidden;
                     @include responsive(tablet-size) {
                         width: 30%;
-                        height: 480px;
-                        padding: 3%;
+                        height: 72vh;
+                        padding: 5%;
                     }
+                    @include responsive(tablet-size) {
+                        padding: 3%;
+                    } 
                     li {
                         width: 50%;
                         height: 35px;
@@ -443,44 +455,69 @@ body {
                 }
             }
             .Project-flex {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 20em;
                 @include responsive(tablet-size) {
                     display: flex;
-                    justify-content:space-between;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
                 }
                 .mockup-img {
+                    @include responsive(tablet-size) {
+                        padding: 0 2%;
+                    }
                     img {
                         width: 100%;
-                        @include responsive(tablet-size) {
-                            width: 90%;
-                            height: 70%;
-                        }
                     }
                 }
                 .project-txt {
+                    width: 100%;
+                    // max-height: 380px;
                     font-size: 13px;
                     border-radius: 5%;
-                    padding: 5%;
-                    margin: 45px 0 217px 0;
+                    // padding: 7% 2%;
+                    margin-top: 45px;
                     background-color: $modal-color;
                     @include responsive(tablet-size) {
-                        margin:0 0 217px 0;
-                        padding: 3%;
-                    }
+                        margin-top: 0;
+                    }    
+                   
                     .pro-title {
+                        padding: 5% 5%;
+                        padding-bottom: 1%;
+                        width: 100%;
                         color: $main-color;
                         margin-bottom: 19px;
                         h3 {
                             font-size: 17px;
+                            @include responsive(tablet-size) {
+                                font-size: 21px;
+                            }
                         }
                     }
-                    .pro-box {
-                        margin-bottom: 23px;
-                        h3 {
-                            font-size: 14px;
-                            color: $h3-color;
-                        }
-                        p {
-                            font-size: 11px;
+                    .pro-area {
+                        width: 100%;
+                        padding: 5% 0;
+                        padding-top: 0%;
+                        .pro-box {
+                            margin-bottom: 23px;
+                            h3 {
+                                font-size: 14px;
+                                color: $h3-color;
+                                @include responsive(tablet-size) {
+                                    font-size: 16px;
+                                }
+                            }
+                            // p {
+                            //     font-size: 11px;
+                            //     width: 400px;
+                            //     @include responsive(tablet-size) {
+                            //         font-size: 13px;
+                            //     }
+                            // }
+                            
                         }
                     }
                     .pro-button {
@@ -489,8 +526,8 @@ body {
                         text-align: center;
                         a {
                             border: 1px solid $main-color;
-                            border-radius: 4px;
-                            padding: 8px;
+                            border-radius: 13px;
+                            padding: 7px;
                             background-color: $main-color;
                             color: $second-color;
                         }

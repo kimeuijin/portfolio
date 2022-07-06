@@ -382,6 +382,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .confix #aboutmePage .wrapper h2 {
+    font-size: 1.5em;
     text-align: left;
     padding: 55px 0 0 0;
   }
@@ -457,9 +458,15 @@ body {
   margin: 0 5%;
 }
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 768px) {
   .confix #aboutmePage .wrapper .about-flex .txt-flex .aboutTxt {
     margin: 0 10%;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .confix #aboutmePage .wrapper .about-flex .txt-flex .aboutTxt {
+    margin: 0 20%;
   }
 }
 
@@ -572,20 +579,32 @@ body {
 @media screen and (min-width: 768px) {
   .confix #skillsPage .wrapper h2 {
     text-align: left;
+    font-size: 1.5em;
   }
+}
+
+.confix #skillsPage .wrapper .skill-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (min-width: 768px) {
   .confix #skillsPage .wrapper .skill-flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding-bottom: 10vw;
   }
 }
 
@@ -596,13 +615,18 @@ body {
   background-color: #f7f0e0;
   border-radius: 30px;
   padding: 5%;
-  margin-bottom: 70px;
 }
 
 @media screen and (min-width: 768px) {
   .confix #skillsPage .wrapper .skill-flex .skill-list {
     width: 30%;
-    height: 480px;
+    height: 72vh;
+    padding: 5%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .confix #skillsPage .wrapper .skill-flex .skill-list {
     padding: 3%;
   }
 }
@@ -682,14 +706,38 @@ body {
   }
 }
 
+.confix #projectsPage .wrapper .Project-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20em;
+}
+
 @media screen and (min-width: 768px) {
   .confix #projectsPage .wrapper .Project-flex {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .confix #projectsPage .wrapper .Project-flex .mockup-img {
+    padding: 0 2%;
   }
 }
 
@@ -697,29 +745,24 @@ body {
   width: 100%;
 }
 
-@media screen and (min-width: 768px) {
-  .confix #projectsPage .wrapper .Project-flex .mockup-img img {
-    width: 90%;
-    height: 70%;
-  }
-}
-
 .confix #projectsPage .wrapper .Project-flex .project-txt {
+  width: 100%;
   font-size: 13px;
   border-radius: 5%;
-  padding: 5%;
-  margin: 45px 0 217px 0;
+  margin-top: 45px;
   background-color: #c6b793;
 }
 
 @media screen and (min-width: 768px) {
   .confix #projectsPage .wrapper .Project-flex .project-txt {
-    margin: 0 0 217px 0;
-    padding: 3%;
+    margin-top: 0;
   }
 }
 
 .confix #projectsPage .wrapper .Project-flex .project-txt .pro-title {
+  padding: 5% 5%;
+  padding-bottom: 1%;
+  width: 100%;
   color: #6f5252;
   margin-bottom: 19px;
 }
@@ -728,17 +771,31 @@ body {
   font-size: 17px;
 }
 
-.confix #projectsPage .wrapper .Project-flex .project-txt .pro-box {
+@media screen and (min-width: 768px) {
+  .confix #projectsPage .wrapper .Project-flex .project-txt .pro-title h3 {
+    font-size: 21px;
+  }
+}
+
+.confix #projectsPage .wrapper .Project-flex .project-txt .pro-area {
+  width: 100%;
+  padding: 5% 0;
+  padding-top: 0%;
+}
+
+.confix #projectsPage .wrapper .Project-flex .project-txt .pro-area .pro-box {
   margin-bottom: 23px;
 }
 
-.confix #projectsPage .wrapper .Project-flex .project-txt .pro-box h3 {
+.confix #projectsPage .wrapper .Project-flex .project-txt .pro-area .pro-box h3 {
   font-size: 14px;
   color: #625a3c;
 }
 
-.confix #projectsPage .wrapper .Project-flex .project-txt .pro-box p {
-  font-size: 11px;
+@media screen and (min-width: 768px) {
+  .confix #projectsPage .wrapper .Project-flex .project-txt .pro-area .pro-box h3 {
+    font-size: 16px;
+  }
 }
 
 .confix #projectsPage .wrapper .Project-flex .project-txt .pro-button {
@@ -752,8 +809,8 @@ body {
 
 .confix #projectsPage .wrapper .Project-flex .project-txt .pro-button a {
   border: 1px solid #6f5252;
-  border-radius: 4px;
-  padding: 8px;
+  border-radius: 13px;
+  padding: 7px;
   background-color: #6f5252;
   color: #f7f0e0;
 }
