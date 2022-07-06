@@ -8,7 +8,7 @@ body {
 
 //==================header====================
 .logo-menu {
-    position: fixed;
+    position: relative;
     top: 0;
     width: 100%;
     height: 70px;
@@ -89,66 +89,52 @@ body {
 .confix {
     #homePage {
         background-color: $main-color;
-        height: 750px;
+        height: 670px;
+        position: relative;
+        @include responsive(tablet-size) {
+            height: 670px;
+        }
+        @include responsive(pc-size) {
+            height: 930px;
+        }
         .wrapper {
             @include confix;
             .ellipse {
-                height: 200px;
-                padding-bottom: 37px;
-                @include responsive(tablet-size) {
-                    padding-bottom: 234px;
-
-                }
                 img {
-                    position: relative;
-                    margin: 92px 0 37px 0;
+                    margin: 11vw 0 16vw 0;
                     width: 100%;
                     height: 25vw;
                     @include responsive(tablet-size) {
-                        height: 21vw;
+                        width: 90%;
+                        height: 19vw;
+                        margin: 9vw 0 12vw 0;
+                        padding: 0 5%;
                     }
-                }
-                .border-circle {
-                    position: relative;
-                    top: -37vw;
-                    border: 1px solid #9c9484;
-                    border-radius: 60%;
-                    transform: rotate(5deg);
-                    padding: 13%;
-                    @include responsive(tablet-size) {
-                        top: -24vw;
-                    }
-                }
-                .dot {
-                    position: absolute;
-                    left: 59px;
-                    top: 87px;
-                    width: 8px;
-                    height: 8px;
-                    border-radius: 100px;
-                    border: 4px solid  $second-color;
-                    background-color: $second-color;
-                    @include responsive(tablet-size) {
-                        left: 198px;
-                        top: 96px;
-                        width: 10px;
-                        height: 10px;
+                    @include responsive(pc-size) {
+                        width: 80%;
+                        height: 15vw;
+                        margin: 5vw 0 6vw 0;
+                        padding: 0 10%;
                     }
                 }
                 .mainTxt {
                     position: absolute;
-                    top: 110px;
-                    margin-left: 21%;
+                    top: 6.5vmax;
+                    left: 28%;
                     @include responsive(tablet-size) {
-                        top: 152px;
-                        margin-left: 30%;
+                        top: 10vmax;
+                        left: 30%;
+                    }
+                    @include responsive(pc-size) {
+                        top: 6vmax;
+                        left: 32%;
                     }
                     h2 {
                         color: $main-color;
-                        font-size: 1.125em;
+                        font-size: 5.5vw;
                         text-align: center;
-                        @include responsive(tablet-size) {
-                            font-size: 40px;
+                        @include responsive(pc-size) {
+                            font-size: 4.5vw;
                         }
                     }
                 }
@@ -162,12 +148,21 @@ body {
                         justify-content: space-between;
                     }
                     .topTxt {
-                        margin-bottom: 37px;
+                        margin-bottom: 12vw;
+                        @include responsive(tablet-size) {
+                            margin-bottom: 15vw;
+                        }
+                        @include responsive(pc-size) {
+                            margin-bottom: 8vw;
+                        }
                         p{
                             font-size: 22px;
-                        }
-                        @include responsive(tablet-size) {
-                            margin-bottom: 119px;
+                            @include responsive(tablet-size) {
+                                font-size: 24px;
+                            }
+                            @include responsive(pc-size) {
+                                font-size: 38px;
+                            }
                         }
                     }
                 }
@@ -181,9 +176,12 @@ body {
                         padding-bottom: 37px;
                         p{
                             font-size: 22px;
-                            // &:last-child{
-                            //     padding-bottom: 15px;
-                            // }
+                            @include responsive(tablet-size) {
+                                font-size: 24px;
+                            }
+                            @include responsive(pc-size) {
+                                font-size: 38px;
+                            }
                         }
                     }
                 }
@@ -193,11 +191,9 @@ body {
             }
             .scroll {
                 position: absolute;
-                // display: block;
                 left: 50%;
-                bottom: 67px;
+                bottom: 1.5%;
                 transform: translateX(-50%);
-                // background-color: $main-color;
                 .mouse {
                     position: absolute;
                     width: 20px;
@@ -207,6 +203,11 @@ body {
                     transform: translateX(-50%);
                     border: 2px solid  $second-color;
                     border-radius: 50%;
+                    @include responsive(pc-size) {
+                        width: 30px;
+                        height: 60px;
+                        bottom: 28px;
+                    }
                     .mouse-ball {
                         position: absolute;
                         width: 8px;
@@ -215,19 +216,30 @@ body {
                         right: 6px;
                         border-radius: 4px;
                         background-color: $second-color;
+                        @include responsive(pc-size) {
+                            width: 10px;
+                            height: 10px;
+                            top: 10px;
+                            right: 10px;
+                        }
                     }
                 }
                 span {
                     text-align: center;
                     font-size: 10px;
                     color: $second-color;
+                    @include responsive(pc-size) {
+                        font-size: 14px;
+                    }
                 }
             }
         }
     }
-    //==================main-aboutme====================
+   //==================main-aboutme====================
     #aboutmePage {
         background-color: $second-color;
+        position: relative;
+        
         .wrapper {
             @include confix;
             h2 {
@@ -241,6 +253,8 @@ body {
                 padding: 0 10%;
                 @include responsive(tablet-size) {
                     flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
                     padding: 0;
                 }
                 font-size: 0.875em;
@@ -249,8 +263,10 @@ body {
                         width: 65vw;
                         margin-bottom: 37px;
                         @include responsive(tablet-size) {
-                            width: 275px;
-                            margin-right: 15px;
+                            width: 25vw;
+                        }
+                        @include responsive(pc-size) {
+                            width: 30vw;
                         }
                     }
                 }
@@ -264,42 +280,76 @@ body {
                         line-height: 30px;
                         margin-bottom: 50px;
                         color: $main-color;
+                        @include responsive(tablet-size) {
+                            font-size: 18px;
+                        }
+                        @include responsive(pc-size) {
+                            font-size: 28px;
+                        }
                     }
                     .aboutTxt {
-                        // margin: 0 10%;
+                        margin: 0 5%;
+                        @include responsive(pc-size) {
+                            margin: 0 20%;
+                        }
                         .txtBox2 {
                             div {
                                 padding-bottom: 15px;
                                 color: $ham-button-color;
+                                @include responsive(tablet-size) {
+                                    font-size: 18px;
+                                }
+                                @include responsive(pc-size) {
+                                    font-size: 24px; 
+                                }
                             }
                         }
                         .about-education {
                             margin-top: 44px;
                             color: $main-color;
+                            @include responsive(tablet-size) {
+                                font-size: 18px;
+                            }
+                            @include responsive(pc-size) {
+                                font-size: 24px;
+                            }
                         }
                     }
                 }
             }
             .leafs {
+                position: relative;
+                padding-bottom: 129px;
                 @include responsive(tablet-size) {
-                    position: relative;
                     display: flex;
                     justify-content: space-between;
                 }
+
                 .empty-leaf {
                     display: none;
                     @include responsive(tablet-size) {
-                        width: 19%;
+                        position: absolute;
                         display: inline-block;
-                        left: 10px;
+                        max-width:  150px;
+                        bottom: 0px;
+                        left: 0px;
+                    }
+                    @include responsive(pc-size) {
+                        max-width:  250px; 
                     }
                 }
                 .greenYellow-leaf {
-                    width: 50%;
-                    right: -20px;
+                    position: absolute;
+                    max-width: 150px;
+                    right: 10px;
+                    bottom: 0px;
                     @include responsive(tablet-size) {
                         width: 20%;
-                        right: 10px;
+                        right: -4px;
+                    }
+                    @include responsive(pc-size) {
+                        max-width: 250px;
+                    
                     }
                 }
             }
@@ -318,6 +368,8 @@ body {
             .skill-flex {
                 @include responsive(tablet-size) {
                     display: flex;
+                    justify-content: center;
+                    align-items: center;
                 }
                 .skill-list {
                     height: 240px;
@@ -327,13 +379,27 @@ body {
                     padding: 5%;
                     margin-bottom: 70px;
                     // overflow-y: hidden;
+                    @include responsive(tablet-size) {
+                        width: 30%;
+                        height: 480px;
+                        padding: 3%;
+                    }
                     li {
                         width: 50%;
                         height: 35px;
                         float: left;
                         margin: 10px 0;
+                        text-align: center;
                         a {
                             color: $main-color;
+                            @include responsive(tablet-size) {
+                                font-size: 24px;
+                            }    
+                        }
+                        @include responsive(tablet-size) {
+                            width: 100%;
+                            height: 30px;
+                            padding: 3%;
                         }
                     }
                 }
@@ -343,6 +409,7 @@ body {
                     width: 300px;
                     height: 300px;
                     border-radius: 50%;
+                    margin-bottom: 70px;
                     transition: 0.3s;
                     .center {
                         background-color: opacify($second-color, .3);

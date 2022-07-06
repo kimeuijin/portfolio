@@ -54,3 +54,37 @@ Backend
 (2022.02~2022.07)
 
 -유한대학교 보건복지과 졸업 (2021.2)
+
+
+<!-- <div class="border-circle"></div>
+<div class="dot"></div> -->
+
+
+ // .border-circle {
+//     top: -37vw;
+//     border: 1px solid #9c9484;
+//     border-radius: 60%;
+//     transform: rotate(5deg);
+//     padding: 13%;
+//     @include responsive(tablet-size) {
+//         top: -26vw;
+//         padding: 10%;
+
+//     }
+// }
+// .dot {
+//     position: absolute;
+//     left: 59px;
+//     top: 87px;
+//     width: 8px;
+//     height: 8px;
+//     border-radius: 100px;
+//     border: 4px solid  $second-color;
+//     background-color: $second-color;
+//     @include responsive(tablet-size) {
+//         left: 170px;
+//         top: 87px;
+//         width: 10px;
+//         height: 10px;
+//     }
+// }
