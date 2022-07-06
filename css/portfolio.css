@@ -6,6 +6,7 @@
 a {
   display: block;
   text-decoration: none;
+  color: #f7f0e0;
 }
 
 h1 {
@@ -22,7 +23,6 @@ h3 {
 
 p {
   font-size: 1em;
-  line-height: 2;
 }
 
 ul,
@@ -107,7 +107,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1080px) {
   .logo-menu .pc-button {
     margin-top: 1.5%;
   }
@@ -132,7 +132,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1080px) {
   .logo-menu .pc-button .gnb {
     width: 700px;
   }
@@ -151,20 +151,7 @@ body {
 
 .confix #homePage {
   background-color: #6f5252;
-  height: 670px;
   position: relative;
-}
-
-@media screen and (min-width: 768px) {
-  .confix #homePage {
-    height: 670px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .confix #homePage {
-    height: 930px;
-  }
 }
 
 .confix #homePage .wrapper {
@@ -188,7 +175,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1080px) {
   .confix #homePage .wrapper .ellipse img {
     width: 80%;
     height: 15vw;
@@ -210,7 +197,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1080px) {
   .confix #homePage .wrapper .ellipse .mainTxt {
     top: 6vmax;
     left: 32%;
@@ -223,7 +210,7 @@ body {
   text-align: center;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1080px) {
   .confix #homePage .wrapper .ellipse .mainTxt h2 {
     font-size: 4.5vw;
   }
@@ -255,7 +242,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1080px) {
   .confix #homePage .wrapper .keywordTxt .topLine .topTxt {
     margin-bottom: 8vw;
   }
@@ -271,7 +258,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1080px) {
   .confix #homePage .wrapper .keywordTxt .topLine .topTxt p {
     font-size: 38px;
   }
@@ -290,7 +277,11 @@ body {
 }
 
 .confix #homePage .wrapper .keywordTxt .underLine .underTxt {
-  padding-bottom: 37px;
+  padding-bottom: 3em;
+}
+
+.confix #homePage .wrapper .keywordTxt .underLine .underTxt:last-child {
+  padding-bottom: 8em;
 }
 
 .confix #homePage .wrapper .keywordTxt .underLine .underTxt p {
@@ -303,7 +294,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1080px) {
   .confix #homePage .wrapper .keywordTxt .underLine .underTxt p {
     font-size: 38px;
   }
@@ -333,7 +324,7 @@ body {
   border-radius: 50%;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1080px) {
   .confix #homePage .wrapper .scroll .mouse {
     width: 30px;
     height: 60px;
@@ -351,7 +342,7 @@ body {
   background-color: #f7f0e0;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1080px) {
   .confix #homePage .wrapper .scroll .mouse .mouse-ball {
     width: 10px;
     height: 10px;
@@ -366,7 +357,7 @@ body {
   color: #f7f0e0;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1080px) {
   .confix #homePage .wrapper .scroll span {
     font-size: 14px;
   }
@@ -389,6 +380,13 @@ body {
   color: #6f5252;
 }
 
+@media screen and (min-width: 768px) {
+  .confix #aboutmePage .wrapper h2 {
+    text-align: left;
+    padding: 55px 0 0 0;
+  }
+}
+
 .confix #aboutmePage .wrapper .about-flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -398,6 +396,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 0 10%;
+  padding-bottom: 8em;
   font-size: 0.875em;
 }
 
@@ -428,12 +427,6 @@ body {
   }
 }
 
-@media screen and (min-width: 1024px) {
-  .confix #aboutmePage .wrapper .about-flex .pictureImg img {
-    width: 30vw;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .confix #aboutmePage .wrapper .about-flex .txt-flex {
     padding-left: 10px;
@@ -454,7 +447,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1080px) {
   .confix #aboutmePage .wrapper .about-flex .txt-flex h3 {
     font-size: 28px;
   }
@@ -464,9 +457,9 @@ body {
   margin: 0 5%;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1080px) {
   .confix #aboutmePage .wrapper .about-flex .txt-flex .aboutTxt {
-    margin: 0 20%;
+    margin: 0 10%;
   }
 }
 
@@ -481,7 +474,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1080px) {
   .confix #aboutmePage .wrapper .about-flex .txt-flex .aboutTxt .txtBox2 div {
     font-size: 24px;
   }
@@ -498,7 +491,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1080px) {
   .confix #aboutmePage .wrapper .about-flex .txt-flex .aboutTxt .about-education {
     font-size: 24px;
   }
@@ -534,7 +527,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1080px) {
   .confix #aboutmePage .wrapper .leafs .empty-leaf {
     max-width: 250px;
   }
@@ -554,7 +547,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1080px) {
   .confix #aboutmePage .wrapper .leafs .greenYellow-leaf {
     max-width: 250px;
   }
@@ -574,6 +567,12 @@ body {
   padding: 55px 0 60px 0;
   text-align: center;
   color: #f7f0e0;
+}
+
+@media screen and (min-width: 768px) {
+  .confix #skillsPage .wrapper h2 {
+    text-align: left;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -678,15 +677,31 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .confix #projectsPage .wrapper h2 {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .confix #projectsPage .wrapper .Project-flex {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
 .confix #projectsPage .wrapper .Project-flex .mockup-img img {
   width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .confix #projectsPage .wrapper .Project-flex .mockup-img img {
+    width: 90%;
+    height: 70%;
+  }
 }
 
 .confix #projectsPage .wrapper .Project-flex .project-txt {
@@ -695,6 +710,13 @@ body {
   padding: 5%;
   margin: 45px 0 217px 0;
   background-color: #c6b793;
+}
+
+@media screen and (min-width: 768px) {
+  .confix #projectsPage .wrapper .Project-flex .project-txt {
+    margin: 0 0 217px 0;
+    padding: 3%;
+  }
 }
 
 .confix #projectsPage .wrapper .Project-flex .project-txt .pro-title {

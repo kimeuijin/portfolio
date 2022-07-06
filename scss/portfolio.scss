@@ -89,14 +89,7 @@ body {
 .confix {
     #homePage {
         background-color: $main-color;
-        height: 670px;
         position: relative;
-        @include responsive(tablet-size) {
-            height: 670px;
-        }
-        @include responsive(pc-size) {
-            height: 930px;
-        }
         .wrapper {
             @include confix;
             .ellipse {
@@ -173,7 +166,10 @@ body {
                         padding: 0 20%;
                     }
                     .underTxt {
-                        padding-bottom: 37px;
+                        padding-bottom: 3em;
+                        &:last-child{
+                            padding-bottom: 8em;
+                        }
                         p{
                             font-size: 22px;
                             @include responsive(tablet-size) {
@@ -239,18 +235,22 @@ body {
     #aboutmePage {
         background-color: $second-color;
         position: relative;
-        
         .wrapper {
             @include confix;
             h2 {
                 padding: 55px 0 60px 0;
                 text-align: center;
                 color: $main-color;
+                @include responsive(tablet-size) {
+                    text-align: left;
+                    padding: 55px 0 0 0;
+                }
             }
             .about-flex {
                 display: flex;
                 flex-direction: column;
                 padding: 0 10%;
+                            padding-bottom: 8em;
                 @include responsive(tablet-size) {
                     flex-direction: row;
                     justify-content: center;
@@ -264,9 +264,6 @@ body {
                         margin-bottom: 37px;
                         @include responsive(tablet-size) {
                             width: 25vw;
-                        }
-                        @include responsive(pc-size) {
-                            width: 30vw;
                         }
                     }
                 }
@@ -290,7 +287,7 @@ body {
                     .aboutTxt {
                         margin: 0 5%;
                         @include responsive(pc-size) {
-                            margin: 0 20%;
+                            margin: 0 10%;
                         }
                         .txtBox2 {
                             div {
@@ -364,6 +361,9 @@ body {
                 padding: 55px 0 60px 0;
                 text-align: center;
                 color: $second-color;
+                @include responsive(tablet-size) {
+                    text-align: left;
+                }
             }
             .skill-flex {
                 @include responsive(tablet-size) {
@@ -438,14 +438,22 @@ body {
                 padding: 55px 0 60px 0;
                 text-align: center;
                 color: $main-color;
+                @include responsive(tablet-size) {
+                    text-align: left;
+                }
             }
             .Project-flex {
                 @include responsive(tablet-size) {
                     display: flex;
+                    justify-content:space-between;
                 }
                 .mockup-img {
                     img {
                         width: 100%;
+                        @include responsive(tablet-size) {
+                            width: 90%;
+                            height: 70%;
+                        }
                     }
                 }
                 .project-txt {
@@ -454,6 +462,10 @@ body {
                     padding: 5%;
                     margin: 45px 0 217px 0;
                     background-color: $modal-color;
+                    @include responsive(tablet-size) {
+                        margin:0 0 217px 0;
+                        padding: 3%;
+                    }
                     .pro-title {
                         color: $main-color;
                         margin-bottom: 19px;

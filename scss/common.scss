@@ -6,6 +6,7 @@
 a {
     display: block;
     text-decoration: none;
+    color: $second-color;
 }
 
 h1 {
@@ -22,7 +23,7 @@ h3 {
 
 p {
     font-size: 1em;
-    line-height: 2; //기본값(130%)에 2배
+    // line-height: 2; //기본값(130%)에 2배
 }
 
 ul,
