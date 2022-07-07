@@ -156,6 +156,7 @@ body {
 
 .confix #homePage .wrapper {
   width: 90%;
+  max-width: 1230px;
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -186,21 +187,21 @@ body {
 
 .confix #homePage .wrapper .ellipse .mainTxt {
   position: absolute;
-  top: 6.5vmax;
+  top: 15vw;
   left: 28%;
 }
 
 @media screen and (min-width: 768px) {
   .confix #homePage .wrapper .ellipse .mainTxt {
-    top: 10vmax;
+    top: 10.5vw;
     left: 30%;
   }
 }
 
 @media screen and (min-width: 1080px) {
   .confix #homePage .wrapper .ellipse .mainTxt {
-    top: 6vmax;
-    left: 32%;
+    top: 7.2vw;
+    left: 35%;
   }
 }
 
@@ -212,7 +213,7 @@ body {
 
 @media screen and (min-width: 1080px) {
   .confix #homePage .wrapper .ellipse .mainTxt h2 {
-    font-size: 4.5vw;
+    font-size: 4vw;
   }
 }
 
@@ -370,19 +371,21 @@ body {
 
 .confix #aboutmePage .wrapper {
   width: 90%;
+  max-width: 1230px;
   margin: 0 auto;
   padding: 0 10px;
 }
 
 .confix #aboutmePage .wrapper h2 {
   padding: 55px 0 60px 0;
+  font-size: 5vw;
   text-align: center;
   color: #6f5252;
 }
 
 @media screen and (min-width: 768px) {
   .confix #aboutmePage .wrapper h2 {
-    font-size: 1.5em;
+    font-size: 3vw;
     text-align: left;
     padding: 55px 0 0 0;
   }
@@ -566,12 +569,14 @@ body {
 
 .confix #skillsPage .wrapper {
   width: 90%;
+  max-width: 1230px;
   margin: 0 auto;
   padding: 0 10px;
 }
 
 .confix #skillsPage .wrapper h2 {
   padding: 55px 0 60px 0;
+  font-size: 5vw;
   text-align: center;
   color: #f7f0e0;
 }
@@ -579,7 +584,7 @@ body {
 @media screen and (min-width: 768px) {
   .confix #skillsPage .wrapper h2 {
     text-align: left;
-    font-size: 1.5em;
+    font-size: 3vw;
   }
 }
 
@@ -614,29 +619,39 @@ body {
           box-sizing: border-box;
   background-color: #f7f0e0;
   border-radius: 30px;
-  padding: 5%;
+  margin-bottom: 70px;
+  padding-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 @media screen and (min-width: 768px) {
   .confix #skillsPage .wrapper .skill-flex .skill-list {
     width: 30%;
-    height: 72vh;
+    height: 100%;
     padding: 5%;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .confix #skillsPage .wrapper .skill-flex .skill-list {
-    padding: 3%;
   }
 }
 
 .confix #skillsPage .wrapper .skill-flex .skill-list li {
   width: 50%;
-  height: 35px;
-  float: left;
-  margin: 10px 0;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .confix #skillsPage .wrapper .skill-flex .skill-list li {
+    width: 100%;
+    height: 30px;
+    padding: 3%;
+    margin: 1vw 0;
+  }
 }
 
 .confix #skillsPage .wrapper .skill-flex .skill-list li a {
@@ -645,15 +660,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .confix #skillsPage .wrapper .skill-flex .skill-list li a {
-    font-size: 24px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .confix #skillsPage .wrapper .skill-flex .skill-list li {
-    width: 100%;
-    height: 30px;
-    padding: 3%;
+    font-size: 1.8vw;
   }
 }
 
@@ -690,18 +697,30 @@ body {
 
 .confix #projectsPage .wrapper {
   width: 90%;
+  max-width: 600px;
   margin: 0 auto;
   padding: 0 10px;
 }
 
+@media screen and (min-width: 1080px) {
+  .confix #projectsPage .wrapper {
+    width: 90%;
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+}
+
 .confix #projectsPage .wrapper h2 {
   padding: 55px 0 60px 0;
+  font-size: 5vw;
   text-align: center;
   color: #6f5252;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1080px) {
   .confix #projectsPage .wrapper h2 {
+    font-size: 3vw;
     text-align: left;
   }
 }
@@ -717,11 +736,8 @@ body {
   margin-bottom: 20em;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1080px) {
   .confix #projectsPage .wrapper .Project-flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -729,15 +745,16 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1080px) {
   .confix #projectsPage .wrapper .Project-flex .mockup-img {
     padding: 0 2%;
+    width: 50%;
   }
 }
 
@@ -753,49 +770,71 @@ body {
   background-color: #c6b793;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1080px) {
   .confix #projectsPage .wrapper .Project-flex .project-txt {
     margin-top: 0;
+    width: 50%;
   }
 }
 
 .confix #projectsPage .wrapper .Project-flex .project-txt .pro-title {
   padding: 5% 5%;
   padding-bottom: 1%;
-  width: 100%;
+  width: 90%;
   color: #6f5252;
   margin-bottom: 19px;
 }
 
-.confix #projectsPage .wrapper .Project-flex .project-txt .pro-title h3 {
-  font-size: 17px;
+@media screen and (min-width: 1080px) {
+  .confix #projectsPage .wrapper .Project-flex .project-txt .pro-title {
+    padding-bottom: 0%;
+    height: 100%;
+  }
 }
 
-@media screen and (min-width: 768px) {
-  .confix #projectsPage .wrapper .Project-flex .project-txt .pro-title h3 {
+.confix #projectsPage .wrapper .Project-flex .project-txt .pro-title ul li {
+  margin-top: 1.1rem;
+}
+
+.confix #projectsPage .wrapper .Project-flex .project-txt .pro-title ul li span {
+  font-size: 2.5vw;
+}
+
+@media screen and (min-width: 1080px) {
+  .confix #projectsPage .wrapper .Project-flex .project-txt .pro-title ul li span {
+    font-size: 1rem;
+  }
+}
+
+.confix #projectsPage .wrapper .Project-flex .project-txt .pro-title ul li h3 {
+  font-size: 3vw;
+}
+
+@media screen and (min-width: 1080px) {
+  .confix #projectsPage .wrapper .Project-flex .project-txt .pro-title ul li h3 {
     font-size: 21px;
   }
 }
 
-.confix #projectsPage .wrapper .Project-flex .project-txt .pro-area {
-  width: 100%;
-  padding: 5% 0;
-  padding-top: 0%;
+.confix #projectsPage .wrapper .Project-flex .project-txt .pro-title ul li p {
+  font-size: 2.5vw;
+  line-height: 1.5rem;
+  margin-top: 1.2vw;
 }
 
-.confix #projectsPage .wrapper .Project-flex .project-txt .pro-area .pro-box {
-  margin-bottom: 23px;
-}
-
-.confix #projectsPage .wrapper .Project-flex .project-txt .pro-area .pro-box h3 {
-  font-size: 14px;
-  color: #625a3c;
-}
-
-@media screen and (min-width: 768px) {
-  .confix #projectsPage .wrapper .Project-flex .project-txt .pro-area .pro-box h3 {
-    font-size: 16px;
+@media screen and (min-width: 1080px) {
+  .confix #projectsPage .wrapper .Project-flex .project-txt .pro-title ul li p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
   }
+}
+
+.confix #projectsPage .wrapper .Project-flex .project-txt .pro-title ul li:last-child > p {
+  text-align: justify;
+}
+
+.confix #projectsPage .wrapper .Project-flex .project-txt .pro-title ul li:nth-child(2) > h3, .confix #projectsPage .wrapper .Project-flex .project-txt .pro-title ul li:nth-child(3) > h3, .confix #projectsPage .wrapper .Project-flex .project-txt .pro-title ul li:nth-child(4) > h3 {
+  color: #625a3c;
 }
 
 .confix #projectsPage .wrapper .Project-flex .project-txt .pro-button {
@@ -805,6 +844,7 @@ body {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   text-align: center;
+  padding-bottom: 1.2rem;
 }
 
 .confix #projectsPage .wrapper .Project-flex .project-txt .pro-button a {
@@ -813,5 +853,10 @@ body {
   padding: 7px;
   background-color: #6f5252;
   color: #f7f0e0;
+  cursor: pointer;
+}
+
+.confix #projectsPage .wrapper .projectScript-flex .toDoList-area .workImg {
+  height: 50px;
 }
 /*# sourceMappingURL=portfolio.css.map */
