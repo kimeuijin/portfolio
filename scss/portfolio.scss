@@ -551,16 +551,182 @@ body {
                     }
                 }
             }
-            .projectScript-flex{
-                // @include confix;
-                .toDoList-area{
-                    .workImg{
-                        height: 50px;
-                        img{
-
+            .projectScript{
+                position: relative;
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    @include responsive(tablet-size) {
+                        flex-direction: row;
+                    }
+                    li{
+                        position: relative;
+                        overflow: hidden;
+                        .toDoList-img{
+                            position: relative;
+                            max-width: 290px;
+                            height: 350px;
+                            margin-bottom: 155px;
+                            img{
+                                position: absolute;
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }    
+                        frame{
+                            position: absolute;
+                            top: 0;
+                            width: 100%;
+                            height: 100%;
+                            z-index: 1;
+                            .leftTop{
+                                position: absolute;
+                                transform: rotate(-45deg);
+                                width: 50vw;
+                                height: 20vw;
+                                top: -50px;
+                                left: -50px;
+                                background-color: $yellow-color;
+                            }
+                            .rightBottom{
+                                position: absolute;
+                                transform: rotate(-45deg);
+                                width: 50vw;
+                                height: 20vw;
+                                bottom: 130px;
+                                right: -75px;
+                                background-color: $yellow-color;
+                            }
+                        }
+                        .workInfo{
+                            position: absolute;
+                            text-align: center;
+                            // line-height: 13vw;
+                            h3{
+                                margin-bottom: 28px;
+                                padding-top: 20px;
+                                color: $second-color;
+                            }
+                            p{
+                                padding: 0 10%;
+                                margin-bottom: 44px;
+                                color: $second-color;
+                            }
+                            span{
+                                color: $yellow-color;
+                            }
+                            button{
+                                margin-top: 30px;
+                                border: none;
+                                border-radius: 52px;
+                                padding: 2% 5%;
+                                color: $main-color;
+                                background-color: $second-color;
+                            }
                         }
                     }
+                
+                
+                    .calculator-img{
+                        position: relative;
+                        height: 300px;
+                        margin-bottom: 155px;
+                        background-color: rgb(120, 136, 59);
+                        img{
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }    
+                    .frame{
+                        position: absolute;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        z-index: 1;
+                        .leftTop{
+                            position: absolute;
+                            transform: rotate(-45deg);
+                            width: 50vw;
+                            height: 20vw;
+                            top: -50px;
+                            left: -50px;
+                            background-color: $yellow-color;
+                        }
+                        .rightBottom{
+                            position: absolute;
+                            transform: rotate(-45deg);
+                            width: 50vw;
+                            height: 20vw;
+                            bottom: -50px;
+                            right: -50px;
+                            background-color: $yellow-color;
+                        }
+                    }
+                    .workInfo{
+                        position: absolute;
+                        text-align: center;
+                        // line-height: 13vw;
+                        h3{
+                            margin-bottom: 28px;
+                            padding-top: 20px;
+                            color: $second-color;
+                        }
+                        p{
+                            padding: 0 10%;
+                            margin-bottom: 44px;
+                            color: $second-color;
+                        }
+                        span{
+                            color: $yellow-color;
+                        }
+                        button{
+                            margin-top: 30px;
+                            border: none;
+                            border-radius: 52px;
+                            padding: 2% 5%;
+                            color: $main-color;
+                            background-color: $second-color;
+                        }
+                    }
+                }  
+            }
+        }
+    }
+    #contactPage{
+        padding-top: 31vw;
+        background-color: $main-color;
+        .e-mail{
+            margin-bottom: 16vw;
+            margin-left: 10vw;
+            justify-content: space-between;
+            a{
+                display: flex;
+                align-items: center;
+                img{
+                    width: 48px;
+                    margin-right: 1em;
                 }
+            }
+        }
+        .kakao{
+            padding-bottom: 29vw;
+            margin-left: 10vw;
+            justify-content: space-between;
+            a{
+                display: flex;
+                align-items: center;
+                img{
+                    width: 48px;
+                    margin-right: 1em;
+                }
+            }
+        }
+        .end-logo{
+            align-content: center;
+            img{
+                width: 45px;
+                padding: 0 40% 10% 40%;
             }
         }
     }
