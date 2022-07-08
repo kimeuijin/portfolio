@@ -833,7 +833,9 @@ body {
   text-align: justify;
 }
 
-.confix #projectsPage .wrapper .Project-flex .project-txt .pro-title ul li:nth-child(2) > h3, .confix #projectsPage .wrapper .Project-flex .project-txt .pro-title ul li:nth-child(3) > h3, .confix #projectsPage .wrapper .Project-flex .project-txt .pro-title ul li:nth-child(4) > h3 {
+.confix #projectsPage .wrapper .Project-flex .project-txt .pro-title ul li:nth-child(2) > h3,
+.confix #projectsPage .wrapper .Project-flex .project-txt .pro-title ul li:nth-child(3) > h3,
+.confix #projectsPage .wrapper .Project-flex .project-txt .pro-title ul li:nth-child(4) > h3 {
   color: #625a3c;
 }
 
@@ -856,11 +858,11 @@ body {
   cursor: pointer;
 }
 
-.confix #projectsPage .wrapper .projectScript {
+.confix #projectsPage .wrapper .projectScript-area {
   position: relative;
 }
 
-.confix #projectsPage .wrapper .projectScript ul {
+.confix #projectsPage .wrapper .projectScript-area .projectScript ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -871,7 +873,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .confix #projectsPage .wrapper .projectScript ul {
+  .confix #projectsPage .wrapper .projectScript-area .projectScript ul {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -879,25 +881,22 @@ body {
   }
 }
 
-.confix #projectsPage .wrapper .projectScript ul li {
+.confix #projectsPage .wrapper .projectScript-area .projectScript ul li {
   position: relative;
+  width: 85.2vw;
   overflow: hidden;
+  margin-bottom: 2em;
 }
 
-.confix #projectsPage .wrapper .projectScript ul li .toDoList-img {
-  position: relative;
-  max-width: 290px;
-  height: 350px;
-  margin-bottom: 155px;
-}
-
-.confix #projectsPage .wrapper .projectScript ul li .toDoList-img img {
-  position: absolute;
+.confix #projectsPage .wrapper .projectScript-area .projectScript ul li .works-img {
   width: 100%;
-  height: 100%;
 }
 
-.confix #projectsPage .wrapper .projectScript ul li frame {
+.confix #projectsPage .wrapper .projectScript-area .projectScript ul li .works-img img {
+  width: 100%;
+}
+
+.confix #projectsPage .wrapper .projectScript-area .projectScript ul li .frame {
   position: absolute;
   top: 0;
   width: 100%;
@@ -905,123 +904,53 @@ body {
   z-index: 1;
 }
 
-.confix #projectsPage .wrapper .projectScript ul li frame .leftTop {
+.confix #projectsPage .wrapper .projectScript-area .projectScript ul li .frame .leftTop {
   position: absolute;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   width: 50vw;
   height: 20vw;
-  top: -50px;
+  top: -36px;
   left: -50px;
   background-color: #f6e994;
 }
 
-.confix #projectsPage .wrapper .projectScript ul li frame .rightBottom {
+.confix #projectsPage .wrapper .projectScript-area .projectScript ul li .frame .rightBottom {
   position: absolute;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   width: 50vw;
   height: 20vw;
-  bottom: 130px;
-  right: -75px;
+  bottom: -36px;
+  right: -49px;
   background-color: #f6e994;
 }
 
-.confix #projectsPage .wrapper .projectScript ul li .workInfo {
+.confix #projectsPage .wrapper .projectScript-area .projectScript ul li .workInfo {
+  display: none;
   position: absolute;
   text-align: center;
+  top: 20px;
+  z-index: 2;
 }
 
-.confix #projectsPage .wrapper .projectScript ul li .workInfo h3 {
+.confix #projectsPage .wrapper .projectScript-area .projectScript ul li .workInfo h3 {
   margin-bottom: 28px;
   padding-top: 20px;
   color: #f7f0e0;
 }
 
-.confix #projectsPage .wrapper .projectScript ul li .workInfo p {
+.confix #projectsPage .wrapper .projectScript-area .projectScript ul li .workInfo p {
   padding: 0 10%;
   margin-bottom: 44px;
   color: #f7f0e0;
 }
 
-.confix #projectsPage .wrapper .projectScript ul li .workInfo span {
+.confix #projectsPage .wrapper .projectScript-area .projectScript ul li .workInfo span {
   color: #f6e994;
 }
 
-.confix #projectsPage .wrapper .projectScript ul li .workInfo button {
-  margin-top: 30px;
-  border: none;
-  border-radius: 52px;
-  padding: 2% 5%;
-  color: #6f5252;
-  background-color: #f7f0e0;
-}
-
-.confix #projectsPage .wrapper .projectScript ul .calculator-img {
-  position: relative;
-  height: 300px;
-  margin-bottom: 155px;
-  background-color: #78883b;
-}
-
-.confix #projectsPage .wrapper .projectScript ul .calculator-img img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-.confix #projectsPage .wrapper .projectScript ul .frame {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-}
-
-.confix #projectsPage .wrapper .projectScript ul .frame .leftTop {
-  position: absolute;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  width: 50vw;
-  height: 20vw;
-  top: -50px;
-  left: -50px;
-  background-color: #f6e994;
-}
-
-.confix #projectsPage .wrapper .projectScript ul .frame .rightBottom {
-  position: absolute;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  width: 50vw;
-  height: 20vw;
-  bottom: -50px;
-  right: -50px;
-  background-color: #f6e994;
-}
-
-.confix #projectsPage .wrapper .projectScript ul .workInfo {
-  position: absolute;
-  text-align: center;
-}
-
-.confix #projectsPage .wrapper .projectScript ul .workInfo h3 {
-  margin-bottom: 28px;
-  padding-top: 20px;
-  color: #f7f0e0;
-}
-
-.confix #projectsPage .wrapper .projectScript ul .workInfo p {
-  padding: 0 10%;
-  margin-bottom: 44px;
-  color: #f7f0e0;
-}
-
-.confix #projectsPage .wrapper .projectScript ul .workInfo span {
-  color: #f6e994;
-}
-
-.confix #projectsPage .wrapper .projectScript ul .workInfo button {
+.confix #projectsPage .wrapper .projectScript-area .projectScript ul li .workInfo button {
   margin-top: 30px;
   border: none;
   border-radius: 52px;
@@ -1088,4 +1017,3 @@ body {
   width: 45px;
   padding: 0 40% 10% 40%;
 }
-/*# sourceMappingURL=portfolio.css.map */
