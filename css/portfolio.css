@@ -42,8 +42,14 @@ body {
   font-family: "Hahmlet-Black";
 }
 
-.logo-menu {
+header {
   position: relative;
+  width: 100%;
+  z-index: 10;
+}
+
+header .logo-menu {
+  position: fixed;
   top: 0;
   width: 100%;
   height: 70px;
@@ -52,36 +58,32 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .logo-menu {
+  header .logo-menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
 }
 
-.logo-menu .active {
-  height: 420px;
-  background-color: #9f9887;
-}
-
-.logo-menu .logo {
+header .logo-menu .logo {
   width: 50px;
   margin-left: 3%;
   padding-top: 12px;
 }
 
-.logo-menu .logo img {
+header .logo-menu .logo img {
   width: 100%;
 }
 
-.logo-menu .menu-button {
+header .logo-menu .menu-button {
   position: absolute;
   top: 0;
   right: 5%;
   padding-top: 25px;
+  cursor: pointer;
 }
 
-.logo-menu .menu-button span {
+header .logo-menu .menu-button span {
   display: block;
   width: 30px;
   height: 6px;
@@ -91,84 +93,83 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .logo-menu .menu-button {
+  header .logo-menu .menu-button {
     display: none;
   }
 }
 
-.logo-menu .pc-button {
+header .logo-menu .pc-button {
   margin-top: 2%;
 }
 
 @media screen and (min-width: 768px) {
-  .logo-menu .pc-button {
+  header .logo-menu .pc-button {
     width: auto;
     margin-left: auto;
   }
 }
 
 @media screen and (min-width: 1080px) {
-  .logo-menu .pc-button {
+  header .logo-menu .pc-button {
     margin-top: 1.5%;
   }
 }
 
-.logo-menu .pc-button .gnb {
+header .logo-menu .pc-button .gnb {
   width: 100%;
   display: none;
 }
 
 @media screen and (min-width: 768px) {
-  .logo-menu .pc-button .gnb {
+  header .logo-menu .pc-button .gnb {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 600px;
     color: #f7f0e0;
   }
-  .logo-menu .pc-button .gnb li {
+  header .logo-menu .pc-button .gnb li {
     margin-right: 40px;
-    font-size: 1.125rem;
+  }
+  header .logo-menu .pc-button .gnb .gnbItem {
+    width: 28px;
+  }
+  header .logo-menu .pc-button .gnb .gnbItem img {
+    width: 100%;
   }
 }
 
 @media screen and (min-width: 1080px) {
-  .logo-menu .pc-button .gnb {
+  header .logo-menu .pc-button .gnb {
     width: 700px;
   }
 }
 
-.logo-menu .github {
-  display: none;
+main {
+  position: relative;
+  margin-top: 70px;
 }
 
-@media screen and (min-width: 768px) {
-  .logo-menu .github a {
-    display: contents;
-    height: 80px;
-  }
-}
-
-.confix #homePage {
+main .confix #homePage {
   background-color: #6f5252;
   position: relative;
 }
 
-.confix #homePage .wrapper {
+main .confix #homePage .wrapper {
   width: 90%;
   max-width: 1230px;
   margin: 0 auto;
   padding: 0 10px;
 }
 
-.confix #homePage .wrapper .ellipse img {
+main .confix #homePage .wrapper .ellipse img {
   margin: 11vw 0 16vw 0;
   width: 100%;
   height: 25vw;
 }
 
 @media screen and (min-width: 768px) {
-  .confix #homePage .wrapper .ellipse img {
+  main .confix #homePage .wrapper .ellipse img {
     width: 90%;
     height: 19vw;
     margin: 9vw 0 12vw 0;
@@ -177,7 +178,7 @@ body {
 }
 
 @media screen and (min-width: 1080px) {
-  .confix #homePage .wrapper .ellipse img {
+  main .confix #homePage .wrapper .ellipse img {
     width: 80%;
     height: 15vw;
     margin: 5vw 0 6vw 0;
@@ -185,45 +186,45 @@ body {
   }
 }
 
-.confix #homePage .wrapper .ellipse .mainTxt {
+main .confix #homePage .wrapper .ellipse .mainTxt {
   position: absolute;
   top: 15vw;
   left: 28%;
 }
 
 @media screen and (min-width: 768px) {
-  .confix #homePage .wrapper .ellipse .mainTxt {
+  main .confix #homePage .wrapper .ellipse .mainTxt {
     top: 10.5vw;
     left: 30%;
   }
 }
 
 @media screen and (min-width: 1080px) {
-  .confix #homePage .wrapper .ellipse .mainTxt {
+  main .confix #homePage .wrapper .ellipse .mainTxt {
     top: 7.2vw;
     left: 35%;
   }
 }
 
-.confix #homePage .wrapper .ellipse .mainTxt h2 {
+main .confix #homePage .wrapper .ellipse .mainTxt h2 {
   color: #6f5252;
   font-size: 5.5vw;
   text-align: center;
 }
 
 @media screen and (min-width: 1080px) {
-  .confix #homePage .wrapper .ellipse .mainTxt h2 {
+  main .confix #homePage .wrapper .ellipse .mainTxt h2 {
     font-size: 4vw;
   }
 }
 
-.confix #homePage .wrapper .keywordTxt {
+main .confix #homePage .wrapper .keywordTxt {
   text-align: center;
   color: #f7f0e0;
 }
 
 @media screen and (min-width: 768px) {
-  .confix #homePage .wrapper .keywordTxt .topLine {
+  main .confix #homePage .wrapper .keywordTxt .topLine {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -233,40 +234,40 @@ body {
   }
 }
 
-.confix #homePage .wrapper .keywordTxt .topLine .topTxt {
+main .confix #homePage .wrapper .keywordTxt .topLine .topTxt {
   margin-bottom: 12vw;
 }
 
 @media screen and (min-width: 768px) {
-  .confix #homePage .wrapper .keywordTxt .topLine .topTxt {
+  main .confix #homePage .wrapper .keywordTxt .topLine .topTxt {
     margin-bottom: 15vw;
   }
 }
 
 @media screen and (min-width: 1080px) {
-  .confix #homePage .wrapper .keywordTxt .topLine .topTxt {
+  main .confix #homePage .wrapper .keywordTxt .topLine .topTxt {
     margin-bottom: 8vw;
   }
 }
 
-.confix #homePage .wrapper .keywordTxt .topLine .topTxt p {
+main .confix #homePage .wrapper .keywordTxt .topLine .topTxt p {
   font-size: 22px;
 }
 
 @media screen and (min-width: 768px) {
-  .confix #homePage .wrapper .keywordTxt .topLine .topTxt p {
+  main .confix #homePage .wrapper .keywordTxt .topLine .topTxt p {
     font-size: 24px;
   }
 }
 
 @media screen and (min-width: 1080px) {
-  .confix #homePage .wrapper .keywordTxt .topLine .topTxt p {
+  main .confix #homePage .wrapper .keywordTxt .topLine .topTxt p {
     font-size: 38px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .confix #homePage .wrapper .keywordTxt .underLine {
+  main .confix #homePage .wrapper .keywordTxt .underLine {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -277,35 +278,35 @@ body {
   }
 }
 
-.confix #homePage .wrapper .keywordTxt .underLine .underTxt {
+main .confix #homePage .wrapper .keywordTxt .underLine .underTxt {
   padding-bottom: 3em;
 }
 
-.confix #homePage .wrapper .keywordTxt .underLine .underTxt:last-child {
+main .confix #homePage .wrapper .keywordTxt .underLine .underTxt:last-child {
   padding-bottom: 8em;
 }
 
-.confix #homePage .wrapper .keywordTxt .underLine .underTxt p {
+main .confix #homePage .wrapper .keywordTxt .underLine .underTxt p {
   font-size: 22px;
 }
 
 @media screen and (min-width: 768px) {
-  .confix #homePage .wrapper .keywordTxt .underLine .underTxt p {
+  main .confix #homePage .wrapper .keywordTxt .underLine .underTxt p {
     font-size: 24px;
   }
 }
 
 @media screen and (min-width: 1080px) {
-  .confix #homePage .wrapper .keywordTxt .underLine .underTxt p {
+  main .confix #homePage .wrapper .keywordTxt .underLine .underTxt p {
     font-size: 38px;
   }
 }
 
-.confix #homePage .wrapper .keywordTxt .modalTxt {
+main .confix #homePage .wrapper .keywordTxt .modalTxt {
   display: none;
 }
 
-.confix #homePage .wrapper .scroll {
+main .confix #homePage .wrapper .scroll {
   position: absolute;
   left: 50%;
   bottom: 1.5%;
@@ -313,7 +314,7 @@ body {
           transform: translateX(-50%);
 }
 
-.confix #homePage .wrapper .scroll .mouse {
+main .confix #homePage .wrapper .scroll .mouse {
   position: absolute;
   width: 20px;
   height: 40px;
@@ -326,14 +327,14 @@ body {
 }
 
 @media screen and (min-width: 1080px) {
-  .confix #homePage .wrapper .scroll .mouse {
+  main .confix #homePage .wrapper .scroll .mouse {
     width: 30px;
     height: 60px;
     bottom: 28px;
   }
 }
 
-.confix #homePage .wrapper .scroll .mouse .mouse-ball {
+main .confix #homePage .wrapper .scroll .mouse .mouse-ball {
   position: absolute;
   width: 8px;
   height: 8px;
@@ -344,7 +345,7 @@ body {
 }
 
 @media screen and (min-width: 1080px) {
-  .confix #homePage .wrapper .scroll .mouse .mouse-ball {
+  main .confix #homePage .wrapper .scroll .mouse .mouse-ball {
     width: 10px;
     height: 10px;
     top: 10px;
@@ -352,31 +353,31 @@ body {
   }
 }
 
-.confix #homePage .wrapper .scroll span {
+main .confix #homePage .wrapper .scroll span {
   text-align: center;
   font-size: 10px;
   color: #f7f0e0;
 }
 
 @media screen and (min-width: 1080px) {
-  .confix #homePage .wrapper .scroll span {
+  main .confix #homePage .wrapper .scroll span {
     font-size: 14px;
   }
 }
 
-.confix #aboutmePage {
+main .confix #aboutmePage {
   background-color: #f7f0e0;
   position: relative;
 }
 
-.confix #aboutmePage .wrapper {
+main .confix #aboutmePage .wrapper {
   width: 90%;
   max-width: 1230px;
   margin: 0 auto;
   padding: 0 10px;
 }
 
-.confix #aboutmePage .wrapper h2 {
+main .confix #aboutmePage .wrapper h2 {
   padding: 55px 0 60px 0;
   font-size: 5vw;
   text-align: center;
@@ -384,14 +385,14 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .confix #aboutmePage .wrapper h2 {
+  main .confix #aboutmePage .wrapper h2 {
     font-size: 3vw;
     text-align: left;
     padding: 55px 0 0 0;
   }
 }
 
-.confix #aboutmePage .wrapper .about-flex {
+main .confix #aboutmePage .wrapper .about-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -405,7 +406,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .confix #aboutmePage .wrapper .about-flex {
+  main .confix #aboutmePage .wrapper .about-flex {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -420,24 +421,24 @@ body {
   }
 }
 
-.confix #aboutmePage .wrapper .about-flex .pictureImg img {
+main .confix #aboutmePage .wrapper .about-flex .pictureImg img {
   width: 65vw;
   margin-bottom: 37px;
 }
 
 @media screen and (min-width: 768px) {
-  .confix #aboutmePage .wrapper .about-flex .pictureImg img {
+  main .confix #aboutmePage .wrapper .about-flex .pictureImg img {
     width: 25vw;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .confix #aboutmePage .wrapper .about-flex .txt-flex {
+  main .confix #aboutmePage .wrapper .about-flex .txt-flex {
     padding-left: 10px;
   }
 }
 
-.confix #aboutmePage .wrapper .about-flex .txt-flex h3 {
+main .confix #aboutmePage .wrapper .about-flex .txt-flex h3 {
   text-align: center;
   font-size: 1.2em;
   line-height: 30px;
@@ -446,74 +447,74 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .confix #aboutmePage .wrapper .about-flex .txt-flex h3 {
+  main .confix #aboutmePage .wrapper .about-flex .txt-flex h3 {
     font-size: 18px;
   }
 }
 
 @media screen and (min-width: 1080px) {
-  .confix #aboutmePage .wrapper .about-flex .txt-flex h3 {
+  main .confix #aboutmePage .wrapper .about-flex .txt-flex h3 {
     font-size: 28px;
   }
 }
 
-.confix #aboutmePage .wrapper .about-flex .txt-flex .aboutTxt {
+main .confix #aboutmePage .wrapper .about-flex .txt-flex .aboutTxt {
   margin: 0 5%;
 }
 
 @media screen and (min-width: 768px) {
-  .confix #aboutmePage .wrapper .about-flex .txt-flex .aboutTxt {
+  main .confix #aboutmePage .wrapper .about-flex .txt-flex .aboutTxt {
     margin: 0 10%;
   }
 }
 
 @media screen and (min-width: 1080px) {
-  .confix #aboutmePage .wrapper .about-flex .txt-flex .aboutTxt {
+  main .confix #aboutmePage .wrapper .about-flex .txt-flex .aboutTxt {
     margin: 0 20%;
   }
 }
 
-.confix #aboutmePage .wrapper .about-flex .txt-flex .aboutTxt .txtBox2 div {
+main .confix #aboutmePage .wrapper .about-flex .txt-flex .aboutTxt .txtBox2 div {
   padding-bottom: 15px;
   color: #9f9887;
 }
 
 @media screen and (min-width: 768px) {
-  .confix #aboutmePage .wrapper .about-flex .txt-flex .aboutTxt .txtBox2 div {
+  main .confix #aboutmePage .wrapper .about-flex .txt-flex .aboutTxt .txtBox2 div {
     font-size: 18px;
   }
 }
 
 @media screen and (min-width: 1080px) {
-  .confix #aboutmePage .wrapper .about-flex .txt-flex .aboutTxt .txtBox2 div {
+  main .confix #aboutmePage .wrapper .about-flex .txt-flex .aboutTxt .txtBox2 div {
     font-size: 24px;
   }
 }
 
-.confix #aboutmePage .wrapper .about-flex .txt-flex .aboutTxt .about-education {
+main .confix #aboutmePage .wrapper .about-flex .txt-flex .aboutTxt .about-education {
   margin-top: 44px;
   color: #6f5252;
 }
 
 @media screen and (min-width: 768px) {
-  .confix #aboutmePage .wrapper .about-flex .txt-flex .aboutTxt .about-education {
+  main .confix #aboutmePage .wrapper .about-flex .txt-flex .aboutTxt .about-education {
     font-size: 18px;
   }
 }
 
 @media screen and (min-width: 1080px) {
-  .confix #aboutmePage .wrapper .about-flex .txt-flex .aboutTxt .about-education {
+  main .confix #aboutmePage .wrapper .about-flex .txt-flex .aboutTxt .about-education {
     font-size: 24px;
   }
 }
 
-.confix #aboutmePage .wrapper .leafs {
+main .confix #aboutmePage .wrapper .leafs {
   position: relative;
   padding-bottom: 129px;
 }
 
 @media screen and (min-width: 768px) {
-  .confix #aboutmePage .wrapper .leafs {
+  main .confix #aboutmePage .wrapper .leafs {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -523,12 +524,12 @@ body {
   }
 }
 
-.confix #aboutmePage .wrapper .leafs .empty-leaf {
+main .confix #aboutmePage .wrapper .leafs .empty-leaf {
   display: none;
 }
 
 @media screen and (min-width: 768px) {
-  .confix #aboutmePage .wrapper .leafs .empty-leaf {
+  main .confix #aboutmePage .wrapper .leafs .empty-leaf {
     position: absolute;
     display: inline-block;
     max-width: 150px;
@@ -538,12 +539,12 @@ body {
 }
 
 @media screen and (min-width: 1080px) {
-  .confix #aboutmePage .wrapper .leafs .empty-leaf {
+  main .confix #aboutmePage .wrapper .leafs .empty-leaf {
     max-width: 250px;
   }
 }
 
-.confix #aboutmePage .wrapper .leafs .greenYellow-leaf {
+main .confix #aboutmePage .wrapper .leafs .greenYellow-leaf {
   position: absolute;
   max-width: 150px;
   right: 10px;
@@ -551,30 +552,30 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .confix #aboutmePage .wrapper .leafs .greenYellow-leaf {
+  main .confix #aboutmePage .wrapper .leafs .greenYellow-leaf {
     width: 20%;
     right: -4px;
   }
 }
 
 @media screen and (min-width: 1080px) {
-  .confix #aboutmePage .wrapper .leafs .greenYellow-leaf {
+  main .confix #aboutmePage .wrapper .leafs .greenYellow-leaf {
     max-width: 250px;
   }
 }
 
-.confix #skillsPage {
+main .confix #skillsPage {
   background-color: #6f5252;
 }
 
-.confix #skillsPage .wrapper {
+main .confix #skillsPage .wrapper {
   width: 90%;
   max-width: 1230px;
   margin: 0 auto;
   padding: 0 10px;
 }
 
-.confix #skillsPage .wrapper h2 {
+main .confix #skillsPage .wrapper h2 {
   padding: 55px 0 60px 0;
   font-size: 5vw;
   text-align: center;
@@ -582,13 +583,13 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .confix #skillsPage .wrapper h2 {
+  main .confix #skillsPage .wrapper h2 {
     text-align: left;
     font-size: 3vw;
   }
 }
 
-.confix #skillsPage .wrapper .skill-flex {
+main .confix #skillsPage .wrapper .skill-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -602,7 +603,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .confix #skillsPage .wrapper .skill-flex {
+  main .confix #skillsPage .wrapper .skill-flex {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -613,7 +614,7 @@ body {
   }
 }
 
-.confix #skillsPage .wrapper .skill-flex .skill-list {
+main .confix #skillsPage .wrapper .skill-flex .skill-list {
   height: 240px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -633,20 +634,20 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .confix #skillsPage .wrapper .skill-flex .skill-list {
+  main .confix #skillsPage .wrapper .skill-flex .skill-list {
     width: 30%;
     height: 100%;
     padding: 5%;
   }
 }
 
-.confix #skillsPage .wrapper .skill-flex .skill-list li {
+main .confix #skillsPage .wrapper .skill-flex .skill-list li {
   width: 50%;
   text-align: center;
 }
 
 @media screen and (min-width: 768px) {
-  .confix #skillsPage .wrapper .skill-flex .skill-list li {
+  main .confix #skillsPage .wrapper .skill-flex .skill-list li {
     width: 100%;
     height: 30px;
     padding: 3%;
@@ -654,17 +655,17 @@ body {
   }
 }
 
-.confix #skillsPage .wrapper .skill-flex .skill-list li a {
+main .confix #skillsPage .wrapper .skill-flex .skill-list li a {
   color: #6f5252;
 }
 
 @media screen and (min-width: 768px) {
-  .confix #skillsPage .wrapper .skill-flex .skill-list li a {
+  main .confix #skillsPage .wrapper .skill-flex .skill-list li a {
     font-size: 1.8vw;
   }
 }
 
-.confix #skillsPage .wrapper .skill-flex .chart {
+main .confix #skillsPage .wrapper .skill-flex .chart {
   position: relative;
   display: inline-block;
   width: 300px;
@@ -675,7 +676,7 @@ body {
   transition: 0.3s;
 }
 
-.confix #skillsPage .wrapper .skill-flex .chart .center {
+main .confix #skillsPage .wrapper .skill-flex .chart .center {
   background-color: #f7f0e0;
   display: block;
   position: absolute;
@@ -691,11 +692,11 @@ body {
           transform: translate(-50%, -50%);
 }
 
-.confix #projectsPage {
+main .confix #projectsPage {
   background-color: #f7f0e0;
 }
 
-.confix #projectsPage .wrapper {
+main .confix #projectsPage .wrapper {
   width: 90%;
   max-width: 600px;
   margin: 0 auto;
@@ -703,7 +704,7 @@ body {
 }
 
 @media screen and (min-width: 1080px) {
-  .confix #projectsPage .wrapper {
+  main .confix #projectsPage .wrapper {
     width: 90%;
     max-width: 1230px;
     margin: 0 auto;
@@ -711,7 +712,7 @@ body {
   }
 }
 
-.confix #projectsPage .wrapper h2 {
+main .confix #projectsPage .wrapper h2 {
   padding: 55px 0 60px 0;
   font-size: 5vw;
   text-align: center;
@@ -719,13 +720,13 @@ body {
 }
 
 @media screen and (min-width: 1080px) {
-  .confix #projectsPage .wrapper h2 {
+  main .confix #projectsPage .wrapper h2 {
     font-size: 3vw;
     text-align: left;
   }
 }
 
-.confix #projectsPage .wrapper .Project-flex {
+main .confix #projectsPage .wrapper .Project-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -733,11 +734,11 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 20em;
+  margin-bottom: 8em;
 }
 
 @media screen and (min-width: 1080px) {
-  .confix #projectsPage .wrapper .Project-flex {
+  main .confix #projectsPage .wrapper .Project-flex {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -752,17 +753,17 @@ body {
 }
 
 @media screen and (min-width: 1080px) {
-  .confix #projectsPage .wrapper .Project-flex .mockup-img {
+  main .confix #projectsPage .wrapper .Project-flex .mockup-img {
     padding: 0 2%;
     width: 50%;
   }
 }
 
-.confix #projectsPage .wrapper .Project-flex .mockup-img img {
+main .confix #projectsPage .wrapper .Project-flex .mockup-img img {
   width: 100%;
 }
 
-.confix #projectsPage .wrapper .Project-flex .project-txt {
+main .confix #projectsPage .wrapper .Project-flex .project-txt {
   width: 100%;
   font-size: 13px;
   border-radius: 5%;
@@ -771,13 +772,13 @@ body {
 }
 
 @media screen and (min-width: 1080px) {
-  .confix #projectsPage .wrapper .Project-flex .project-txt {
+  main .confix #projectsPage .wrapper .Project-flex .project-txt {
     margin-top: 0;
     width: 50%;
   }
 }
 
-.confix #projectsPage .wrapper .Project-flex .project-txt .pro-title {
+main .confix #projectsPage .wrapper .Project-flex .project-txt .pro-title {
   padding: 5% 5%;
   padding-bottom: 1%;
   width: 90%;
@@ -786,60 +787,60 @@ body {
 }
 
 @media screen and (min-width: 1080px) {
-  .confix #projectsPage .wrapper .Project-flex .project-txt .pro-title {
+  main .confix #projectsPage .wrapper .Project-flex .project-txt .pro-title {
     padding-bottom: 0%;
     height: 100%;
   }
 }
 
-.confix #projectsPage .wrapper .Project-flex .project-txt .pro-title ul li {
+main .confix #projectsPage .wrapper .Project-flex .project-txt .pro-title ul li {
   margin-top: 1.1rem;
 }
 
-.confix #projectsPage .wrapper .Project-flex .project-txt .pro-title ul li span {
+main .confix #projectsPage .wrapper .Project-flex .project-txt .pro-title ul li span {
   font-size: 2.5vw;
 }
 
 @media screen and (min-width: 1080px) {
-  .confix #projectsPage .wrapper .Project-flex .project-txt .pro-title ul li span {
+  main .confix #projectsPage .wrapper .Project-flex .project-txt .pro-title ul li span {
     font-size: 1rem;
   }
 }
 
-.confix #projectsPage .wrapper .Project-flex .project-txt .pro-title ul li h3 {
+main .confix #projectsPage .wrapper .Project-flex .project-txt .pro-title ul li h3 {
   font-size: 3vw;
 }
 
 @media screen and (min-width: 1080px) {
-  .confix #projectsPage .wrapper .Project-flex .project-txt .pro-title ul li h3 {
+  main .confix #projectsPage .wrapper .Project-flex .project-txt .pro-title ul li h3 {
     font-size: 21px;
   }
 }
 
-.confix #projectsPage .wrapper .Project-flex .project-txt .pro-title ul li p {
+main .confix #projectsPage .wrapper .Project-flex .project-txt .pro-title ul li p {
   font-size: 2.5vw;
   line-height: 1.5rem;
   margin-top: 1.2vw;
 }
 
 @media screen and (min-width: 1080px) {
-  .confix #projectsPage .wrapper .Project-flex .project-txt .pro-title ul li p {
+  main .confix #projectsPage .wrapper .Project-flex .project-txt .pro-title ul li p {
     margin-top: 0.5rem;
     font-size: 1rem;
   }
 }
 
-.confix #projectsPage .wrapper .Project-flex .project-txt .pro-title ul li:last-child > p {
+main .confix #projectsPage .wrapper .Project-flex .project-txt .pro-title ul li:last-child > p {
   text-align: justify;
 }
 
-.confix #projectsPage .wrapper .Project-flex .project-txt .pro-title ul li:nth-child(2) > h3,
-.confix #projectsPage .wrapper .Project-flex .project-txt .pro-title ul li:nth-child(3) > h3,
-.confix #projectsPage .wrapper .Project-flex .project-txt .pro-title ul li:nth-child(4) > h3 {
+main .confix #projectsPage .wrapper .Project-flex .project-txt .pro-title ul li:nth-child(2) > h3,
+main .confix #projectsPage .wrapper .Project-flex .project-txt .pro-title ul li:nth-child(3) > h3,
+main .confix #projectsPage .wrapper .Project-flex .project-txt .pro-title ul li:nth-child(4) > h3 {
   color: #625a3c;
 }
 
-.confix #projectsPage .wrapper .Project-flex .project-txt .pro-button {
+main .confix #projectsPage .wrapper .Project-flex .project-txt .pro-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -849,7 +850,7 @@ body {
   padding-bottom: 1.2rem;
 }
 
-.confix #projectsPage .wrapper .Project-flex .project-txt .pro-button a {
+main .confix #projectsPage .wrapper .Project-flex .project-txt .pro-button a {
   border: 1px solid #6f5252;
   border-radius: 13px;
   padding: 7px;
@@ -858,11 +859,12 @@ body {
   cursor: pointer;
 }
 
-.confix #projectsPage .wrapper .projectScript-area {
+main .confix #projectsPage .wrapper .projectScript-area {
   position: relative;
+  padding-bottom: 5em;
 }
 
-.confix #projectsPage .wrapper .projectScript-area .projectScript ul {
+main .confix #projectsPage .wrapper .projectScript-area .projectScript ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -873,7 +875,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .confix #projectsPage .wrapper .projectScript-area .projectScript ul {
+  main .confix #projectsPage .wrapper .projectScript-area .projectScript ul {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -881,22 +883,23 @@ body {
   }
 }
 
-.confix #projectsPage .wrapper .projectScript-area .projectScript ul li {
+main .confix #projectsPage .wrapper .projectScript-area .projectScript ul li {
   position: relative;
-  width: 85.2vw;
+  width: 84vw;
+  height: 45vh;
   overflow: hidden;
   margin-bottom: 2em;
 }
 
-.confix #projectsPage .wrapper .projectScript-area .projectScript ul li .works-img {
+main .confix #projectsPage .wrapper .projectScript-area .projectScript ul li .works-img {
   width: 100%;
 }
 
-.confix #projectsPage .wrapper .projectScript-area .projectScript ul li .works-img img {
+main .confix #projectsPage .wrapper .projectScript-area .projectScript ul li .works-img img {
   width: 100%;
 }
 
-.confix #projectsPage .wrapper .projectScript-area .projectScript ul li .frame {
+main .confix #projectsPage .wrapper .projectScript-area .projectScript ul li .frame {
   position: absolute;
   top: 0;
   width: 100%;
@@ -904,29 +907,29 @@ body {
   z-index: 1;
 }
 
-.confix #projectsPage .wrapper .projectScript-area .projectScript ul li .frame .leftTop {
+main .confix #projectsPage .wrapper .projectScript-area .projectScript ul li .frame .leftTop {
   position: absolute;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   width: 50vw;
   height: 20vw;
-  top: -36px;
-  left: -50px;
+  top: -2.250em;
+  left: -3.125em;
   background-color: #f6e994;
 }
 
-.confix #projectsPage .wrapper .projectScript-area .projectScript ul li .frame .rightBottom {
+main .confix #projectsPage .wrapper .projectScript-area .projectScript ul li .frame .rightBottom {
   position: absolute;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   width: 50vw;
   height: 20vw;
-  bottom: -36px;
-  right: -49px;
+  bottom: -2.250em;
+  right: -3.063em;
   background-color: #f6e994;
 }
 
-.confix #projectsPage .wrapper .projectScript-area .projectScript ul li .workInfo {
+main .confix #projectsPage .wrapper .projectScript-area .projectScript ul li .workInfo {
   display: none;
   position: absolute;
   text-align: center;
@@ -934,23 +937,23 @@ body {
   z-index: 2;
 }
 
-.confix #projectsPage .wrapper .projectScript-area .projectScript ul li .workInfo h3 {
+main .confix #projectsPage .wrapper .projectScript-area .projectScript ul li .workInfo h3 {
   margin-bottom: 28px;
   padding-top: 20px;
   color: #f7f0e0;
 }
 
-.confix #projectsPage .wrapper .projectScript-area .projectScript ul li .workInfo p {
+main .confix #projectsPage .wrapper .projectScript-area .projectScript ul li .workInfo p {
   padding: 0 10%;
   margin-bottom: 44px;
   color: #f7f0e0;
 }
 
-.confix #projectsPage .wrapper .projectScript-area .projectScript ul li .workInfo span {
+main .confix #projectsPage .wrapper .projectScript-area .projectScript ul li .workInfo span {
   color: #f6e994;
 }
 
-.confix #projectsPage .wrapper .projectScript-area .projectScript ul li .workInfo button {
+main .confix #projectsPage .wrapper .projectScript-area .projectScript ul li .workInfo button {
   margin-top: 30px;
   border: none;
   border-radius: 52px;
@@ -959,20 +962,22 @@ body {
   background-color: #f7f0e0;
 }
 
-.confix #contactPage {
-  padding-top: 31vw;
+main .confix #contactPage {
+  padding-top: 2em;
   background-color: #6f5252;
 }
 
-.confix #contactPage .e-mail {
-  margin-bottom: 16vw;
-  margin-left: 10vw;
+main .confix #contactPage .e-mail {
+  max-width: 300px;
+  margin: 0 auto;
+  margin-bottom: 2em;
+  padding-left: 2em;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-.confix #contactPage .e-mail a {
+main .confix #contactPage .e-mail a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -981,20 +986,22 @@ body {
           align-items: center;
 }
 
-.confix #contactPage .e-mail a img {
+main .confix #contactPage .e-mail a img {
   width: 48px;
   margin-right: 1em;
 }
 
-.confix #contactPage .kakao {
-  padding-bottom: 29vw;
-  margin-left: 10vw;
+main .confix #contactPage .kakao {
+  max-width: 300px;
+  margin: 0 auto;
+  margin-bottom: 3em;
+  padding-left: 2em;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-.confix #contactPage .kakao a {
+main .confix #contactPage .kakao a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1003,17 +1010,16 @@ body {
           align-items: center;
 }
 
-.confix #contactPage .kakao a img {
+main .confix #contactPage .kakao a img {
   width: 48px;
   margin-right: 1em;
 }
 
-.confix #contactPage .end-logo {
-  -ms-flex-line-pack: center;
-      align-content: center;
+main .confix #contactPage .end-logo {
+  text-align: center;
 }
 
-.confix #contactPage .end-logo img {
-  width: 45px;
-  padding: 0 40% 10% 40%;
+main .confix #contactPage .end-logo img {
+  width: 32px;
+  padding-bottom: 0.7em;
 }

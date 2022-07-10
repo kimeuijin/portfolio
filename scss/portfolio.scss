@@ -1,301 +1,316 @@
 @import "style.scss";
 @import "common.scss";
 @import "mixin.scss";
-//body
 body {
     font-family: $font-ham;
 }
 
 //==================header====================
-.logo-menu {
+header {
     position: relative;
-    top: 0;
     width: 100%;
-    height: 70px;
-    overflow: hidden;
-    background-color: $main-color;
-    @include responsive(tablet-size) {
-        display: flex;
-    }
-    .active {
-        height: 420px;
-        background-color: $ham-button-color;
-    }
-    .logo {
-        width: 50px;
-        margin-left: 3%;
-        padding-top: 12px;
-        img {
-            width: 100%;
-        }
-    }
-    .menu-button {
-        position: absolute;
+    z-index: 10;
+    .logo-menu {
+        position: fixed;
         top: 0;
-        right: 5%;
-        padding-top: 25px;
-        span {
-            display: block;
-            width: 30px;
-            height: 6px;
-            margin-bottom: 3px;
-            border-radius: 3px;
-            background-color: $second-color;
-        }
+        width: 100%;
+        height: 70px;
+        overflow: hidden;
+        background-color: $main-color;
         @include responsive(tablet-size) {
-            display: none;
+            display: flex;
         }
-    }
-    .pc-button {
-        margin-top: 2%;
-        @include responsive(tablet-size) {
-            width: auto;
-            margin-left: auto;
+        // .active {
+        //     height: 420px;
+        //     background-color: $ham-button-color;
+        // }
+        .logo {
+            width: 50px;
+            margin-left: 3%;
+            padding-top: 12px;
+            img {
+                width: 100%;
+            }
         }
-        @include responsive(pc-size) {
-            margin-top: 1.5%;
-        }
-        .gnb {
-            width: 100%;
-            display: none;
+        .menu-button {
+            position: absolute;
+            top: 0;
+            right: 5%;
+            padding-top: 25px;
+            cursor: pointer;
+            span {
+                display: block;
+                width: 30px;
+                height: 6px;
+                margin-bottom: 3px;
+                border-radius: 3px;
+                background-color: $second-color;
+            }
             @include responsive(tablet-size) {
-                display: flex;
-                width: 600px;
-                color: $second-color;
-                li {
-                    margin-right: 40px;
-                    font-size: 1.125rem;
-                }
+                display: none;
+            }
+        }
+        .pc-button {
+            margin-top: 2%;
+            @include responsive(tablet-size) {
+                width: auto;
+                margin-left: auto;
             }
             @include responsive(pc-size) {
-                width: 700px;
+                margin-top: 1.5%;
             }
-        }
-    }
-    .github {
-        display: none;
-        a {
-            @include responsive(tablet-size) {
-                display: contents;
-                height: 80px;
+            .gnb {
+                width: 100%;
+                display: none;
+                @include responsive(tablet-size) {
+                    display: flex;
+                    width: 600px;
+                    color: $second-color;
+                    li {
+                        margin-right: 40px;
+                    }
+                    .gnbItem {
+                        width: 28px;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+                @include responsive(pc-size) {
+                    width: 700px;
+                }
             }
         }
     }
 }
 
 //==================main-home====================
-.confix {
-    #homePage {
-        background-color: $main-color;
-        position: relative;
-        .wrapper {
-            @include confix;
-            .ellipse {
-                img {
-                    margin: 11vw 0 16vw 0;
-                    width: 100%;
-                    height: 25vw;
-                    @include responsive(tablet-size) {
-                        width: 90%;
-                        height: 19vw;
-                        margin: 9vw 0 12vw 0;
-                        padding: 0 5%;
-                    }
-                    @include responsive(pc-size) {
-                        width: 80%;
-                        height: 15vw;
-                        margin: 5vw 0 6vw 0;
-                        padding: 0 10%;
-                    }
-                }
-                .mainTxt {
-                    position: absolute;
-                    top: 15vw;
-                    left: 28%;
-                    @include responsive(tablet-size) {
-                        top: 10.5vw;
-                        left: 30%;
-                    }
-                    @include responsive(pc-size) {
-                        top: 7.2vw;
-                        left: 35%;
-                    }
-                    h2 {
-                        color: $main-color;
-                        font-size: 5.5vw;
-                        text-align: center;
-                        @include responsive(pc-size) {
-                            font-size: 4vw;
-                        }
-                    }
-                }
-            }
-            .keywordTxt {
-                text-align: center;
-                color: $second-color;
-                .topLine {
-                    @include responsive(tablet-size) {
-                        display: flex;
-                        justify-content: space-between;
-                    }
-                    .topTxt {
-                        margin-bottom: 12vw;
+main {
+    position: relative;
+    margin-top: 70px;
+    .confix {
+        #homePage {
+            background-color: $main-color;
+            position: relative;
+            .wrapper {
+                @include confix;
+                .ellipse {
+                    img {
+                        margin: 11vw 0 16vw 0;
+                        width: 100%;
+                        height: 25vw;
                         @include responsive(tablet-size) {
-                            margin-bottom: 15vw;
+                            width: 90%;
+                            height: 19vw;
+                            margin: 9vw 0 12vw 0;
+                            padding: 0 5%;
                         }
                         @include responsive(pc-size) {
-                            margin-bottom: 8vw;
-                        }
-                        p {
-                            font-size: 22px;
-                            @include responsive(tablet-size) {
-                                font-size: 24px;
-                            }
-                            @include responsive(pc-size) {
-                                font-size: 38px;
-                            }
+                            width: 80%;
+                            height: 15vw;
+                            margin: 5vw 0 6vw 0;
+                            padding: 0 10%;
                         }
                     }
-                }
-                .underLine {
-                    @include responsive(tablet-size) {
-                        display: flex;
-                        justify-content: space-between;
-                        padding: 0 20%;
-                    }
-                    .underTxt {
-                        padding-bottom: 3em;
-                        &:last-child {
-                            padding-bottom: 8em;
-                        }
-                        p {
-                            font-size: 22px;
-                            @include responsive(tablet-size) {
-                                font-size: 24px;
-                            }
-                            @include responsive(pc-size) {
-                                font-size: 38px;
-                            }
-                        }
-                    }
-                }
-                .modalTxt {
-                    display: none;
-                }
-            }
-            .scroll {
-                position: absolute;
-                left: 50%;
-                bottom: 1.5%;
-                transform: translateX(-50%);
-                .mouse {
-                    position: absolute;
-                    width: 20px;
-                    height: 40px;
-                    bottom: 22px;
-                    left: 50%;
-                    transform: translateX(-50%);
-                    border: 2px solid $second-color;
-                    border-radius: 50%;
-                    @include responsive(pc-size) {
-                        width: 30px;
-                        height: 60px;
-                        bottom: 28px;
-                    }
-                    .mouse-ball {
+                    .mainTxt {
                         position: absolute;
-                        width: 8px;
-                        height: 8px;
-                        top: 9px;
-                        right: 6px;
-                        border-radius: 4px;
-                        background-color: $second-color;
+                        top: 15vw;
+                        left: 28%;
+                        @include responsive(tablet-size) {
+                            top: 10.5vw;
+                            left: 30%;
+                        }
                         @include responsive(pc-size) {
-                            width: 10px;
-                            height: 10px;
-                            top: 10px;
-                            right: 10px;
+                            top: 7.2vw;
+                            left: 35%;
+                        }
+                        h2 {
+                            color: $main-color;
+                            font-size: 5.5vw;
+                            text-align: center;
+                            @include responsive(pc-size) {
+                                font-size: 4vw;
+                            }
                         }
                     }
                 }
-                span {
+                .keywordTxt {
                     text-align: center;
-                    font-size: 10px;
                     color: $second-color;
-                    @include responsive(pc-size) {
-                        font-size: 14px;
+                    .topLine {
+                        @include responsive(tablet-size) {
+                            display: flex;
+                            justify-content: space-between;
+                        }
+                        .topTxt {
+                            margin-bottom: 12vw;
+                            @include responsive(tablet-size) {
+                                margin-bottom: 15vw;
+                            }
+                            @include responsive(pc-size) {
+                                margin-bottom: 8vw;
+                            }
+                            p {
+                                font-size: 22px;
+                                @include responsive(tablet-size) {
+                                    font-size: 24px;
+                                }
+                                @include responsive(pc-size) {
+                                    font-size: 38px;
+                                }
+                            }
+                        }
+                    }
+                    .underLine {
+                        @include responsive(tablet-size) {
+                            display: flex;
+                            justify-content: space-between;
+                            padding: 0 20%;
+                        }
+                        .underTxt {
+                            padding-bottom: 3em;
+                            &:last-child {
+                                padding-bottom: 8em;
+                            }
+                            p {
+                                font-size: 22px;
+                                @include responsive(tablet-size) {
+                                    font-size: 24px;
+                                }
+                                @include responsive(pc-size) {
+                                    font-size: 38px;
+                                }
+                            }
+                        }
+                    }
+                    .modalTxt {
+                        display: none;
+                    }
+                }
+                .scroll {
+                    position: absolute;
+                    left: 50%;
+                    bottom: 1.5%;
+                    transform: translateX(-50%);
+                    .mouse {
+                        position: absolute;
+                        width: 20px;
+                        height: 40px;
+                        bottom: 22px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        border: 2px solid $second-color;
+                        border-radius: 50%;
+                        @include responsive(pc-size) {
+                            width: 30px;
+                            height: 60px;
+                            bottom: 28px;
+                        }
+                        .mouse-ball {
+                            position: absolute;
+                            width: 8px;
+                            height: 8px;
+                            top: 9px;
+                            right: 6px;
+                            border-radius: 4px;
+                            background-color: $second-color;
+                            @include responsive(pc-size) {
+                                width: 10px;
+                                height: 10px;
+                                top: 10px;
+                                right: 10px;
+                            }
+                        }
+                    }
+                    span {
+                        text-align: center;
+                        font-size: 10px;
+                        color: $second-color;
+                        @include responsive(pc-size) {
+                            font-size: 14px;
+                        }
                     }
                 }
             }
         }
-    }
-    //==================main-aboutme====================
-    #aboutmePage {
-        background-color: $second-color;
-        position: relative;
-        .wrapper {
-            @include confix;
-            h2 {
-                padding: 55px 0 60px 0;
-                font-size: 5vw;
-                text-align: center;
-                color: $main-color;
-                @include responsive(tablet-size) {
-                    font-size: 3vw;
-                    text-align: left;
-                    padding: 55px 0 0 0;
-                }
-            }
-            .about-flex {
-                display: flex;
-                flex-direction: column;
-                padding: 0 10%;
-                padding-bottom: 8em;
-                @include responsive(tablet-size) {
-                    flex-direction: row;
-                    justify-content: center;
-                    align-items: center;
-                    padding: 0;
-                }
-                font-size: 0.875em;
-                .pictureImg {
-                    img {
-                        width: 65vw;
-                        margin-bottom: 37px;
-                        @include responsive(tablet-size) {
-                            width: 25vw;
-                        }
-                    }
-                }
-                .txt-flex {
+        //==================main-aboutme====================
+        #aboutmePage {
+            background-color: $second-color;
+            position: relative;
+            .wrapper {
+                @include confix;
+                h2 {
+                    padding: 55px 0 60px 0;
+                    font-size: 5vw;
+                    text-align: center;
+                    color: $main-color;
                     @include responsive(tablet-size) {
-                        padding-left: 10px;
+                        font-size: 3vw;
+                        text-align: left;
+                        padding: 55px 0 0 0;
                     }
-                    h3 {
-                        text-align: center;
-                        font-size: 1.2em;
-                        line-height: 30px;
-                        margin-bottom: 50px;
-                        color: $main-color;
-                        @include responsive(tablet-size) {
-                            font-size: 18px;
-                        }
-                        @include responsive(pc-size) {
-                            font-size: 28px;
+                }
+                .about-flex {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 0 10%;
+                    padding-bottom: 8em;
+                    @include responsive(tablet-size) {
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 0;
+                    }
+                    font-size: 0.875em;
+                    .pictureImg {
+                        img {
+                            width: 65vw;
+                            margin-bottom: 37px;
+                            @include responsive(tablet-size) {
+                                width: 25vw;
+                            }
                         }
                     }
-                    .aboutTxt {
-                        margin: 0 5%;
+                    .txt-flex {
                         @include responsive(tablet-size) {
-                            margin: 0 10%;
+                            padding-left: 10px;
                         }
-                        @include responsive(pc-size) {
-                            margin: 0 20%;
+                        h3 {
+                            text-align: center;
+                            font-size: 1.2em;
+                            line-height: 30px;
+                            margin-bottom: 50px;
+                            color: $main-color;
+                            @include responsive(tablet-size) {
+                                font-size: 18px;
+                            }
+                            @include responsive(pc-size) {
+                                font-size: 28px;
+                            }
                         }
-                        .txtBox2 {
-                            div {
-                                padding-bottom: 15px;
-                                color: $ham-button-color;
+                        .aboutTxt {
+                            margin: 0 5%;
+                            @include responsive(tablet-size) {
+                                margin: 0 10%;
+                            }
+                            @include responsive(pc-size) {
+                                margin: 0 20%;
+                            }
+                            .txtBox2 {
+                                div {
+                                    padding-bottom: 15px;
+                                    color: $ham-button-color;
+                                    @include responsive(tablet-size) {
+                                        font-size: 18px;
+                                    }
+                                    @include responsive(pc-size) {
+                                        font-size: 24px;
+                                    }
+                                }
+                            }
+                            .about-education {
+                                margin-top: 44px;
+                                color: $main-color;
                                 @include responsive(tablet-size) {
                                     font-size: 18px;
                                 }
@@ -304,425 +319,354 @@ body {
                                 }
                             }
                         }
-                        .about-education {
-                            margin-top: 44px;
-                            color: $main-color;
-                            @include responsive(tablet-size) {
-                                font-size: 18px;
-                            }
-                            @include responsive(pc-size) {
-                                font-size: 24px;
-                            }
-                        }
                     }
                 }
-            }
-            .leafs {
-                position: relative;
-                padding-bottom: 129px;
-                @include responsive(tablet-size) {
-                    display: flex;
-                    justify-content: space-between;
-                }
-                .empty-leaf {
-                    display: none;
-                    @include responsive(tablet-size) {
-                        position: absolute;
-                        display: inline-block;
-                        max-width: 150px;
-                        bottom: 0px;
-                        left: 0px;
-                    }
-                    @include responsive(pc-size) {
-                        max-width: 250px;
-                    }
-                }
-                .greenYellow-leaf {
-                    position: absolute;
-                    max-width: 150px;
-                    right: 10px;
-                    bottom: 0px;
-                    @include responsive(tablet-size) {
-                        width: 20%;
-                        right: -4px;
-                    }
-                    @include responsive(pc-size) {
-                        max-width: 250px;
-                    }
-                }
-            }
-        }
-    }
-    //==================main-skills====================
-    #skillsPage {
-        background-color: $main-color;
-        .wrapper {
-            @include confix;
-            h2 {
-                padding: 55px 0 60px 0;
-                font-size: 5vw;
-                text-align: center;
-                color: $second-color;
-                @include responsive(tablet-size) {
-                    text-align: left;
-                    font-size: 3vw;
-                }
-            }
-            .skill-flex {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                @include responsive(tablet-size) {
-                    flex-direction: row;
-                    justify-content: space-around;
-                    // align-items: center;
-                    padding-bottom: 10vw;
-                }
-                .skill-list {
-                    height: 240px;
-                    box-sizing: border-box;
-                    background-color: $second-color;
-                    border-radius: 30px;
-                    margin-bottom: 70px;
-                    padding-top: 30px;
-                    display: flex;
-                    flex-direction: row;
-                    flex-wrap: wrap;
-                    @include responsive(tablet-size) {
-                        width: 30%;
-                        height: 100%;
-                        padding: 5%;
-                    }
-                    li {
-                        width: 50%;
-                        text-align: center;
-                        @include responsive(tablet-size) {
-                            width: 100%;
-                            height: 30px;
-                            padding: 3%;
-                            margin: 1vw 0;
-                        }
-                        a {
-                            color: $main-color;
-                            @include responsive(tablet-size) {
-                                font-size: 1.8vw;
-                            }
-                        }
-                    }
-                }
-                .chart {
+                .leafs {
                     position: relative;
-                    display: inline-block;
-                    width: 300px;
-                    height: 300px;
-                    border-radius: 50%;
-                    margin-bottom: 70px;
-                    transition: 0.3s;
-                    .center {
-                        background-color: opacify($second-color, .3);
-                        display: block;
+                    padding-bottom: 129px;
+                    @include responsive(tablet-size) {
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                    .empty-leaf {
+                        display: none;
+                        @include responsive(tablet-size) {
+                            position: absolute;
+                            display: inline-block;
+                            max-width: 150px;
+                            bottom: 0px;
+                            left: 0px;
+                        }
+                        @include responsive(pc-size) {
+                            max-width: 250px;
+                        }
+                    }
+                    .greenYellow-leaf {
                         position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        width: 200px;
-                        height: 200px;
-                        border-radius: 50%;
-                        text-align: center;
-                        line-height: 200px;
-                        font-size: 30px;
-                        transform: translate(-50%, -50%);
+                        max-width: 150px;
+                        right: 10px;
+                        bottom: 0px;
+                        @include responsive(tablet-size) {
+                            width: 20%;
+                            right: -4px;
+                        }
+                        @include responsive(pc-size) {
+                            max-width: 250px;
+                        }
                     }
                 }
             }
         }
-    }
-    //==================main-PORTFOLIO====================
-    #projectsPage {
-        background-color: $second-color;
-        .wrapper {
-            @include confix2;
-            @include responsive(pc-size) {
+        //==================main-skills====================
+        #skillsPage {
+            background-color: $main-color;
+            .wrapper {
                 @include confix;
-            }
-            h2 {
-                padding: 55px 0 60px 0;
-                font-size: 5vw;
-                text-align: center;
-                color: $main-color;
-                @include responsive(pc-size) {
-                    font-size: 3vw;
-                    text-align: left;
-                }
-            }
-            .Project-flex {
-                display: flex;
-                flex-direction: column;
-                margin-bottom: 20em;
-                @include responsive(pc-size) {
-                    flex-direction: row;
-                    justify-content: space-between;
-                    align-items: flex-start;
-                }
-                .mockup-img {
-                    @include responsive(pc-size) {
-                        padding: 0 2%;
-                        width: 50%;
-                    }
-                    img {
-                        width: 100%;
+                h2 {
+                    padding: 55px 0 60px 0;
+                    font-size: 5vw;
+                    text-align: center;
+                    color: $second-color;
+                    @include responsive(tablet-size) {
+                        text-align: left;
+                        font-size: 3vw;
                     }
                 }
-                .project-txt {
-                    width: 100%;
-                    // max-height: 380px;
-                    font-size: 13px;
-                    border-radius: 5%;
-                    // padding: 7% 2%;
-                    margin-top: 45px;
-                    background-color: $modal-color;
-                    @include responsive(pc-size) {
-                        margin-top: 0;
-                        width: 50%;
-                    }
-                    .pro-title {
-                        padding: 5% 5%;
-                        padding-bottom: 1%;
-                        width: 90%;
-                        color: $main-color;
-                        margin-bottom: 19px;
-                        @include responsive(pc-size) {
-                            padding-bottom: 0%;
-                            height: 100%;
-                        }
-                        ul {
-                            li {
-                                margin-top: 1.1rem;
-                                span {
-                                    font-size: 2.5vw;
-                                    @include responsive(pc-size) {
-                                        font-size: 1rem;
-                                    }
-                                }
-                                h3 {
-                                    font-size: 3vw;
-                                    @include responsive(pc-size) {
-                                        font-size: 21px;
-                                    }
-                                }
-                                p {
-                                    font-size: 2.5vw;
-                                    line-height: 1.5rem;
-                                    margin-top: 1.2vw;
-                                    @include responsive(pc-size) {
-                                        margin-top: 0.5rem;
-                                        font-size: 1rem;
-                                    }
-                                }
-                                &:last-child>p {
-                                    text-align: justify;
-                                }
-                                &:nth-child(2)>h3,
-                                &:nth-child(3)>h3,
-                                &:nth-child(4)>h3 {
-                                    color: $h3-color;
-                                }
-                            }
-                        }
-                    }
-                    .pro-button {
-                        display: flex;
+                .skill-flex {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    @include responsive(tablet-size) {
+                        flex-direction: row;
                         justify-content: space-around;
-                        text-align: center;
-                        padding-bottom: 1.2rem;
-                        a {
-                            border: 1px solid $main-color;
-                            border-radius: 13px;
-                            padding: 7px;
-                            background-color: $main-color;
-                            color: $second-color;
-                            cursor: pointer;
-                        }
+                        // align-items: center;
+                        padding-bottom: 10vw;
                     }
-                }
-            }
-            .projectScript-area {
-                position: relative;
-                .projectScript {
-                    ul {
+                    .skill-list {
+                        height: 240px;
+                        box-sizing: border-box;
+                        background-color: $second-color;
+                        border-radius: 30px;
+                        margin-bottom: 70px;
+                        padding-top: 30px;
                         display: flex;
-                        flex-direction: column;
+                        flex-direction: row;
+                        flex-wrap: wrap;
                         @include responsive(tablet-size) {
-                            flex-direction: row;
+                            width: 30%;
+                            height: 100%;
+                            padding: 5%;
                         }
                         li {
-                            position: relative;
-                            width: 85.2vw;
-                            overflow: hidden;
-                            margin-bottom: 2em;
-                            .works-img {
+                            width: 50%;
+                            text-align: center;
+                            @include responsive(tablet-size) {
                                 width: 100%;
-                                img {
-                                    width: 100%;
-                                }
+                                height: 30px;
+                                padding: 3%;
+                                margin: 1vw 0;
                             }
-                            .frame {
-                                position: absolute;
-                                top: 0;
-                                width: 100%;
-                                height: 100%;
-                                z-index: 1;
-                                .leftTop {
-                                    position: absolute;
-                                    transform: rotate(-45deg);
-                                    width: 50vw;
-                                    height: 20vw;
-                                    top: -36px;
-                                    left: -50px;
-                                    background-color: $yellow-color;
-                                }
-                                .rightBottom {
-                                    position: absolute;
-                                    transform: rotate(-45deg);
-                                    width: 50vw;
-                                    height: 20vw;
-                                    bottom: -36px;
-                                    right: -49px;
-                                    background-color: $yellow-color;
-                                }
-                            }
-                            .workInfo {
-                                display: none;
-                                position: absolute;
-                                text-align: center;
-                                top: 20px;
-                                z-index: 2;
-                                h3 {
-                                    margin-bottom: 28px;
-                                    padding-top: 20px;
-                                    color: $second-color;
-                                }
-                                p {
-                                    padding: 0 10%;
-                                    margin-bottom: 44px;
-                                    color: $second-color;
-                                }
-                                span {
-                                    color: $yellow-color;
-                                }
-                                button {
-                                    margin-top: 30px;
-                                    border: none;
-                                    border-radius: 52px;
-                                    padding: 2% 5%;
-                                    color: $main-color;
-                                    background-color: $second-color;
+                            a {
+                                color: $main-color;
+                                @include responsive(tablet-size) {
+                                    font-size: 1.8vw;
                                 }
                             }
                         }
-                        // li {
-                        //     .calculator-img {
-                        //         position: relative;
-                        //         height: 300px;
-                        //         margin-bottom: 155px;
-                        //         background-color: rgb(120, 136, 59);
-                        //         img {
-                        //             position: absolute;
-                        //             width: 100%;
-                        //             height: 100%;
-                        //         }
-                        //     }
-                        //     .frame {
-                        //         position: absolute;
-                        //         top: 0;
-                        //         width: 100%;
-                        //         height: 100%;
-                        //         z-index: 1;
-                        //         .leftTop {
-                        //             position: absolute;
-                        //             transform: rotate(-45deg);
-                        //             width: 50vw;
-                        //             height: 20vw;
-                        //             top: 490px;
-                        //             left: -50px;
-                        //             background-color: $yellow-color;
-                        //         }
-                        //         .rightBottom {
-                        //             position: absolute;
-                        //             transform: rotate(-45deg);
-                        //             width: 50vw;
-                        //             height: 20vw;
-                        //             bottom: 130px;
-                        //             right: -50px;
-                        //             background-color: $yellow-color;
-                        //         }
-                        //     }
-                        //     .workInfo {
-                        //         position: absolute;
-                        //         text-align: center;
-                        //         bottom: 170px;
-                        //         // line-height: 13vw;
-                        //         h3 {
-                        //             margin-bottom: 28px;
-                        //             padding-top: 20px;
-                        //             color: $second-color;
-                        //         }
-                        //         p {
-                        //             padding: 0 10%;
-                        //             margin-bottom: 44px;
-                        //             color: $second-color;
-                        //         }
-                        //         span {
-                        //             color: $yellow-color;
-                        //         }
-                        //         button {
-                        //             margin-top: 30px;
-                        //             border: none;
-                        //             border-radius: 52px;
-                        //             padding: 2% 5%;
-                        //             color: $main-color;
-                        //             background-color: $second-color;
-                        //         }
-                        //     }
-                        // }
+                    }
+                    .chart {
+                        position: relative;
+                        display: inline-block;
+                        width: 300px;
+                        height: 300px;
+                        border-radius: 50%;
+                        margin-bottom: 70px;
+                        transition: 0.3s;
+                        .center {
+                            background-color: opacify($second-color, .3);
+                            display: block;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            width: 200px;
+                            height: 200px;
+                            border-radius: 50%;
+                            text-align: center;
+                            line-height: 200px;
+                            font-size: 30px;
+                            transform: translate(-50%, -50%);
+                        }
                     }
                 }
             }
         }
-    }
-    #contactPage {
-        padding-top: 31vw;
-        background-color: $main-color;
-        .e-mail {
-            margin-bottom: 16vw;
-            margin-left: 10vw;
-            justify-content: space-between;
-            a {
-                display: flex;
-                align-items: center;
-                img {
-                    width: 48px;
-                    margin-right: 1em;
+        //==================main-PORTFOLIO====================
+        #projectsPage {
+            background-color: $second-color;
+            .wrapper {
+                @include confix2;
+                @include responsive(pc-size) {
+                    @include confix;
+                }
+                h2 {
+                    padding: 55px 0 60px 0;
+                    font-size: 5vw;
+                    text-align: center;
+                    color: $main-color;
+                    @include responsive(pc-size) {
+                        font-size: 3vw;
+                        text-align: left;
+                    }
+                }
+                .Project-flex {
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 8em;
+                    @include responsive(pc-size) {
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: flex-start;
+                    }
+                    .mockup-img {
+                        @include responsive(pc-size) {
+                            padding: 0 2%;
+                            width: 50%;
+                        }
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    .project-txt {
+                        width: 100%;
+                        // max-height: 380px;
+                        font-size: 13px;
+                        border-radius: 5%;
+                        // padding: 7% 2%;
+                        margin-top: 45px;
+                        background-color: $modal-color;
+                        @include responsive(pc-size) {
+                            margin-top: 0;
+                            width: 50%;
+                        }
+                        .pro-title {
+                            padding: 5% 5%;
+                            padding-bottom: 1%;
+                            width: 90%;
+                            color: $main-color;
+                            margin-bottom: 19px;
+                            @include responsive(pc-size) {
+                                padding-bottom: 0%;
+                                height: 100%;
+                            }
+                            ul {
+                                li {
+                                    margin-top: 1.1rem;
+                                    span {
+                                        font-size: 2.5vw;
+                                        @include responsive(pc-size) {
+                                            font-size: 1rem;
+                                        }
+                                    }
+                                    h3 {
+                                        font-size: 3vw;
+                                        @include responsive(pc-size) {
+                                            font-size: 21px;
+                                        }
+                                    }
+                                    p {
+                                        font-size: 2.5vw;
+                                        line-height: 1.5rem;
+                                        margin-top: 1.2vw;
+                                        @include responsive(pc-size) {
+                                            margin-top: 0.5rem;
+                                            font-size: 1rem;
+                                        }
+                                    }
+                                    &:last-child>p {
+                                        text-align: justify;
+                                    }
+                                    &:nth-child(2)>h3,
+                                    &:nth-child(3)>h3,
+                                    &:nth-child(4)>h3 {
+                                        color: $h3-color;
+                                    }
+                                }
+                            }
+                        }
+                        .pro-button {
+                            display: flex;
+                            justify-content: space-around;
+                            text-align: center;
+                            padding-bottom: 1.2rem;
+                            a {
+                                border: 1px solid $main-color;
+                                border-radius: 13px;
+                                padding: 7px;
+                                background-color: $main-color;
+                                color: $second-color;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+                .projectScript-area {
+                    position: relative;
+                    padding-bottom: 5em;
+                    .projectScript {
+                        ul {
+                            display: flex;
+                            flex-direction: column;
+                            @include responsive(tablet-size) {
+                                flex-direction: row;
+                            }
+                            li {
+                                position: relative;
+                                width: 84vw;
+                                height: 45vh;
+                                overflow: hidden;
+                                margin-bottom: 2em;
+                                .works-img {
+                                    width: 100%;
+                                    img {
+                                        width: 100%;
+                                    }
+                                }
+                                .frame {
+                                    position: absolute;
+                                    top: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                    z-index: 1;
+                                    .leftTop {
+                                        position: absolute;
+                                        transform: rotate(-45deg);
+                                        width: 50vw;
+                                        height: 20vw;
+                                        top: -2.250em;
+                                        left: -3.125em;
+                                        background-color: $yellow-color;
+                                    }
+                                    .rightBottom {
+                                        position: absolute;
+                                        transform: rotate(-45deg);
+                                        width: 50vw;
+                                        height: 20vw;
+                                        bottom: -2.250em;
+                                        right: -3.063em;
+                                        background-color: $yellow-color;
+                                    }
+                                }
+                                .workInfo {
+                                    display: none;
+                                    position: absolute;
+                                    text-align: center;
+                                    top: 20px;
+                                    z-index: 2;
+                                    h3 {
+                                        margin-bottom: 28px;
+                                        padding-top: 20px;
+                                        color: $second-color;
+                                    }
+                                    p {
+                                        padding: 0 10%;
+                                        margin-bottom: 44px;
+                                        color: $second-color;
+                                    }
+                                    span {
+                                        color: $yellow-color;
+                                    }
+                                    button {
+                                        margin-top: 30px;
+                                        border: none;
+                                        border-radius: 52px;
+                                        padding: 2% 5%;
+                                        color: $main-color;
+                                        background-color: $second-color;
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
-        .kakao {
-            padding-bottom: 29vw;
-            margin-left: 10vw;
-            justify-content: space-between;
-            a {
-                display: flex;
-                align-items: center;
-                img {
-                    width: 48px;
-                    margin-right: 1em;
+        #contactPage {
+            padding-top: 2em;
+            background-color: $main-color;
+            .e-mail {
+                @include contact;
+                margin-bottom: 2em;
+                padding-left: 2em;
+                justify-content: space-between;
+                a {
+                    display: flex;
+                    align-items: center;
+                    img {
+                        width: 48px;
+                        margin-right: 1em;
+                    }
                 }
             }
-        }
-        .end-logo {
-            align-content: center;
-            img {
-                width: 45px;
-                padding: 0 40% 10% 40%;
+            .kakao {
+                @include contact;
+                margin-bottom: 3em;
+                padding-left: 2em;
+                justify-content: space-between;
+                a {
+                    display: flex;
+                    align-items: center;
+                    img {
+                        width: 48px;
+                        margin-right: 1em;
+                    }
+                }
+            }
+            .end-logo {
+                text-align: center;
+                img {
+                    width: 32px;
+                    padding-bottom: 0.7em;
+                }
             }
         }
     }
