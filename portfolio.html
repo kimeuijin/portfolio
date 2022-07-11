@@ -5,10 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website" />
+    <meta name="image" property="og:image" content="./images/meta_euijin.png" />
+    <meta name="title" property="og:title" content="김의진 | 포트폴리오" />
+    <meta name="description" property="og:description" content="신입 웹 퍼블리셔 김의진입니다." />
     <meta name="keywords" content="웹디자이너, 웹퍼블리셔, 포트폴리오, 자기소개서, 이력서">
     <link rel="stylesheet" href="./css/portfolio.css">
-    <!-- <link rel="stylesheet" href="">파비콘 연결 -->
     <link rel="stylesheet" href="./js/portfolio.js">
+    <link rel="shortcut icon" href="./images/파비콘.ico">
     <title>김의진 | 포트폴리오</title>
 </head>
 
@@ -16,25 +20,24 @@
     <div class="wrapper">
         <h1>Web developer portfolio</h1>
         <header>
-            <div class="logo-menu active">
+            <div class="logo-menu">
                 <div class="logo">
                     <a href="./portfolio.html"><img src="./images/logo.png" alt="로고"></a>
                 </div>
-                <div class="menu-button active">
+                <div class="menu-button" onclick="openNav()">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
-                <nav class="pc-button">
-                    <ul class="gnb active">
+                <nav class="overlay" id="myNav" >
+                    <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+                    <ul class="gnb" id="overlay-content">
                         <li><a href="#homePage">Home</a></li>
                         <li><a href="#aboutmePage">About Me</a></li>
                         <li><a href="#skillsPage">Skills</a></li>
                         <li><a href="#projectsPage">Projects</a></li>
-                        <li>
-                            <a href="#contactPage">Contact</a></li>
-                        <li class="gnbItem">
-                            <a href="#"></a><img src="./images/github.png" alt="깃허브아이콘"></li>
+                        <li><a href="#contactPage">Contact</a></li>
+                        <li class="gnbItem"><a href="https://github.com/kimeuijin" target="_blank"><img src="./images/github.png" alt="깃허브아이콘"></a></li>
                     </ul>
                 </nav>
             </div>
@@ -240,10 +243,10 @@
                                         <div class="works-img">
                                             <img src="./images/todolist.png" alt="to-do-list">
                                         </div>
-                                        <div class="frame">
+                                        <!-- <div class="frame">
                                             <div class="leftTop"></div>
                                             <div class="rightBottom"></div>
-                                        </div>
+                                        </div> -->
                                         <div class="workInfo">
                                             <h3>To Do List</h3>
                                             <p>
@@ -259,10 +262,7 @@
                                         <div class="works-img">
                                             <img src="./images/calculator.png" alt="계산기">
                                         </div>
-                                        <div class="frame">
-                                            <div class="leftTop"></div>
-                                            <div class="rightBottom"></div>
-                                        </div>
+                                        
                                         <div class="workInfo">
                                             <h3>행렬 계산기</h3>
                                             <p>
@@ -281,19 +281,21 @@
                 </section>
                 <section id="contactPage">
                     <div class="e-mail">
-                        <a href="">
+                        <a href="mailto:kej1480k@naver.com">
                             <img src="./images/mail-icon.png" alt="mail-icon">
                             <span>kej1480k@naver.com</span>
                         </a>
                     </div>
                     <div class="kakao">
-                        <a href="">
+                        <a href="https://open.kakao.com/o/sYhWbCYd">
                             <img src="./images/kakao-icon.png" alt="kakaoTallk">
                             <span>Open kakaotalk</span>
                         </a>
                     </div>
                     <div class="end-logo">
-                        <img src="./images/logo.png" alt="logo">
+                        <a href="./portfolio.html">
+                            <img src="./images/logo.png" alt="logo">
+                        </a>
                     </div>
                 </section>
             </div>

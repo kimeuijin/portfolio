@@ -98,49 +98,50 @@ header .logo-menu .menu-button span {
   }
 }
 
-header .logo-menu .pc-button {
+header .logo-menu .overlay {
   margin-top: 2%;
 }
 
 @media screen and (min-width: 768px) {
-  header .logo-menu .pc-button {
+  header .logo-menu .overlay {
     width: auto;
     margin-left: auto;
   }
 }
 
 @media screen and (min-width: 1080px) {
-  header .logo-menu .pc-button {
+  header .logo-menu .overlay {
     margin-top: 1.5%;
   }
 }
 
-header .logo-menu .pc-button .gnb {
+header .logo-menu .overlay .gnb {
   width: 100%;
   display: none;
 }
 
 @media screen and (min-width: 768px) {
-  header .logo-menu .pc-button .gnb {
+  header .logo-menu .overlay .gnb {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 600px;
     color: #f7f0e0;
   }
-  header .logo-menu .pc-button .gnb li {
+  header .logo-menu .overlay .gnb li {
     margin-right: 40px;
   }
-  header .logo-menu .pc-button .gnb .gnbItem {
+  header .logo-menu .overlay .gnb .gnbItem {
     width: 28px;
+    cursor: pointer;
   }
-  header .logo-menu .pc-button .gnb .gnbItem img {
+  header .logo-menu .overlay .gnb .gnbItem img {
     width: 100%;
   }
 }
 
 @media screen and (min-width: 1080px) {
-  header .logo-menu .pc-button .gnb {
+  header .logo-menu .overlay .gnb {
     width: 700px;
   }
 }
@@ -714,7 +715,7 @@ main .confix #projectsPage .wrapper {
 
 main .confix #projectsPage .wrapper h2 {
   padding: 55px 0 60px 0;
-  font-size: 5vw;
+  font-size: 4.5vw;
   text-align: center;
   color: #6f5252;
 }
@@ -860,6 +861,10 @@ main .confix #projectsPage .wrapper .Project-flex .project-txt .pro-button a {
 }
 
 main .confix #projectsPage .wrapper .projectScript-area {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 10px;
   position: relative;
   padding-bottom: 5em;
 }
@@ -872,6 +877,7 @@ main .confix #projectsPage .wrapper .projectScript-area .projectScript ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 2em;
 }
 
 @media screen and (min-width: 768px) {
@@ -885,48 +891,20 @@ main .confix #projectsPage .wrapper .projectScript-area .projectScript ul {
 
 main .confix #projectsPage .wrapper .projectScript-area .projectScript ul li {
   position: relative;
-  width: 84vw;
-  height: 45vh;
-  overflow: hidden;
   margin-bottom: 2em;
 }
 
-main .confix #projectsPage .wrapper .projectScript-area .projectScript ul li .works-img {
-  width: 100%;
+@media screen and (min-width: 768px) {
+  main .confix #projectsPage .wrapper .projectScript-area .projectScript ul li {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 main .confix #projectsPage .wrapper .projectScript-area .projectScript ul li .works-img img {
   width: 100%;
-}
-
-main .confix #projectsPage .wrapper .projectScript-area .projectScript ul li .frame {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-}
-
-main .confix #projectsPage .wrapper .projectScript-area .projectScript ul li .frame .leftTop {
-  position: absolute;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  width: 50vw;
-  height: 20vw;
-  top: -2.250em;
-  left: -3.125em;
-  background-color: #f6e994;
-}
-
-main .confix #projectsPage .wrapper .projectScript-area .projectScript ul li .frame .rightBottom {
-  position: absolute;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  width: 50vw;
-  height: 20vw;
-  bottom: -2.250em;
-  right: -3.063em;
-  background-color: #f6e994;
+  max-height: 300px;
 }
 
 main .confix #projectsPage .wrapper .projectScript-area .projectScript ul li .workInfo {
@@ -1023,3 +1001,4 @@ main .confix #contactPage .end-logo img {
   width: 32px;
   padding-bottom: 0.7em;
 }
+/*# sourceMappingURL=portfolio.css.map */
