@@ -11,8 +11,9 @@
     <meta name="description" property="og:description" content="신입 웹 퍼블리셔 김의진입니다." />
     <meta name="keywords" content="웹디자이너, 웹퍼블리셔, 포트폴리오, 자기소개서, 이력서">
     <link rel="stylesheet" href="./css/portfolio.css">
-    <link rel="stylesheet" href="./js/portfolio.js">
     <link rel="shortcut icon" href="./images/파비콘.ico">
+    <link href="./js/jquery.js">
+    <link defer src="./js/mobile-button.js">
     <title>김의진 | 포트폴리오</title>
 </head>
 
@@ -24,14 +25,16 @@
                 <div class="logo">
                     <a href="./portfolio.html"><img src="./images/logo.png" alt="로고"></a>
                 </div>
-                <div class="menu-button" onclick="openNav()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <div class="hamburgerButton">
+                    <input type="checkbox" id="menu">
+                    <label for="menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
                 </div>
-                <nav class="overlay" id="myNav" >
-                    <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
-                    <ul class="gnb" id="overlay-content">
+                <nav class="mobilemenu" id="myNav">
+                    <ul class="gnb">
                         <li><a href="#homePage">Home</a></li>
                         <li><a href="#aboutmePage">About Me</a></li>
                         <li><a href="#skillsPage">Skills</a></li>

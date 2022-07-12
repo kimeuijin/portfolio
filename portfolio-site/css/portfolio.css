@@ -75,73 +75,77 @@ header .logo-menu .logo img {
   width: 100%;
 }
 
-header .logo-menu .menu-button {
+header .logo-menu .hamburgerButton {
   position: absolute;
   top: 0;
   right: 5%;
   padding-top: 25px;
-  cursor: pointer;
 }
 
-header .logo-menu .menu-button span {
+header .logo-menu .hamburgerButton input {
+  display: none;
+}
+
+header .logo-menu .hamburgerButton span {
   display: block;
   width: 30px;
   height: 6px;
   margin-bottom: 3px;
   border-radius: 3px;
   background-color: #f7f0e0;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
-  header .logo-menu .menu-button {
+  header .logo-menu .hamburgerButton {
     display: none;
   }
 }
 
-header .logo-menu .overlay {
+header .logo-menu .mobilemenu {
   margin-top: 2%;
 }
 
 @media screen and (min-width: 768px) {
-  header .logo-menu .overlay {
+  header .logo-menu .mobilemenu {
     width: auto;
     margin-left: auto;
   }
 }
 
 @media screen and (min-width: 1080px) {
-  header .logo-menu .overlay {
+  header .logo-menu .mobilemenu {
     margin-top: 1.5%;
   }
 }
 
-header .logo-menu .overlay .gnb {
+header .logo-menu .mobilemenu .gnb {
   width: 100%;
   display: none;
 }
 
 @media screen and (min-width: 768px) {
-  header .logo-menu .overlay .gnb {
+  header .logo-menu .mobilemenu .gnb {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 600px;
     color: #f7f0e0;
   }
-  header .logo-menu .overlay .gnb li {
+  header .logo-menu .mobilemenu .gnb li {
     margin-right: 40px;
   }
-  header .logo-menu .overlay .gnb .gnbItem {
+  header .logo-menu .mobilemenu .gnb .gnbItem {
     width: 28px;
     cursor: pointer;
   }
-  header .logo-menu .overlay .gnb .gnbItem img {
+  header .logo-menu .mobilemenu .gnb .gnbItem img {
     width: 100%;
   }
 }
 
 @media screen and (min-width: 1080px) {
-  header .logo-menu .overlay .gnb {
+  header .logo-menu .mobilemenu .gnb {
     width: 700px;
   }
 }
@@ -735,7 +739,7 @@ main .confix #projectsPage .wrapper .Project-flex {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 8em;
+  margin: 4em 0 20em 0;
 }
 
 @media screen and (min-width: 1080px) {
@@ -869,6 +873,13 @@ main .confix #projectsPage .wrapper .projectScript-area {
   padding-bottom: 5em;
 }
 
+@media screen and (min-width: 768px) {
+  main .confix #projectsPage .wrapper .projectScript-area {
+    width: 100%;
+    padding-bottom: 12em;
+  }
+}
+
 main .confix #projectsPage .wrapper .projectScript-area .projectScript ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -880,8 +891,11 @@ main .confix #projectsPage .wrapper .projectScript-area .projectScript ul {
   margin-bottom: 2em;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 660px) {
   main .confix #projectsPage .wrapper .projectScript-area .projectScript ul {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -892,19 +906,16 @@ main .confix #projectsPage .wrapper .projectScript-area .projectScript ul {
 main .confix #projectsPage .wrapper .projectScript-area .projectScript ul li {
   position: relative;
   margin-bottom: 2em;
+  padding: 0 5%;
 }
 
-@media screen and (min-width: 768px) {
-  main .confix #projectsPage .wrapper .projectScript-area .projectScript ul li {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
+main .confix #projectsPage .wrapper .projectScript-area .projectScript ul li .works-img {
+  width: 235px;
 }
 
 main .confix #projectsPage .wrapper .projectScript-area .projectScript ul li .works-img img {
   width: 100%;
-  max-height: 300px;
+  height: 224px;
 }
 
 main .confix #projectsPage .wrapper .projectScript-area .projectScript ul li .workInfo {

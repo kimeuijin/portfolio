@@ -5,6 +5,12 @@
             @content;
         }
     }
+    @else if $break==script-size {
+        @media screen and (min-width: $break-script) {
+            // 660px
+            @content;
+        }
+    }
     @else if $break==tablet-size {
         @media screen and (min-width: $break-tablet) {
             // 768px
