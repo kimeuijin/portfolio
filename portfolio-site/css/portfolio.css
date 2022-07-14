@@ -66,6 +66,11 @@ header .logo-menu {
           align-items: center;
 }
 
+header .logo-menu .active {
+  height: 580px;
+  background-color: #9f9887;
+}
+
 @media screen and (min-width: 768px) {
   header .logo-menu {
     display: -webkit-box;
@@ -76,7 +81,7 @@ header .logo-menu {
 
 header .logo-menu .logo {
   width: 50px;
-  margin-left: 3%;
+  margin-left: 5%;
   padding-top: 12px;
 }
 
@@ -84,112 +89,107 @@ header .logo-menu .logo img {
   width: 100%;
 }
 
-header .logo-menu .hamburgerButton {
-  width: 25px;
-  height: 20px;
-  -webkit-transform: translate(33vw);
-          transform: translate(33vw);
+header .logo-menu .toggleBtn {
+  position: absolute;
+  top: 0;
+  right: 5%;
+  padding-top: 25px;
+  cursor: pointer;
+}
+
+header .logo-menu .toggleBtn span {
+  display: block;
+  width: 30px;
+  height: 6px;
+  margin-bottom: 3px;
+  border-radius: 3px;
+  background-color: #f7f0e0;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+header .logo-menu .toggleBtn span .active:first-child {
+  -webkit-transform: translateY(14px) rotate(45deg);
+          transform: translateY(14px) rotate(45deg);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+header .logo-menu .toggleBtn span .active:nth-child(2) {
+  opacity: 0;
+}
+
+header .logo-menu .toggleBtn span .active:last-child {
+  -webkit-transform: translateY(-14px) rotate(-45deg);
+          transform: translateY(-14px) rotate(-45deg);
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 @media screen and (min-width: 768px) {
-  header .logo-menu .hamburgerButton {
+  header .logo-menu .toggleBtn {
     display: none;
   }
 }
 
-header .logo-menu .hamburgerButton input[id="menu"] {
-  display: none;
-}
-
-header .logo-menu .hamburgerButton input[id="menu"] + label {
-  position: relative;
-  display: block;
-  width: 25px;
-  height: 20px;
-  cursor: pointer;
-}
-
-header .logo-menu .hamburgerButton input[id="menu"] + label span {
-  position: absolute;
-  display: block;
+header .logo-menu .mainMenu {
   width: 100%;
-  height: 5px;
-  border-radius: 30px;
-  background: #f7f0e0;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-header .logo-menu .hamburgerButton input[id="menu"] + label span:nth-child(1) {
-  top: 0;
-}
-
-header .logo-menu .hamburgerButton input[id="menu"] + label span:nth-child(2) {
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-header .logo-menu .hamburgerButton input[id="menu"] + label span:nth-child(3) {
-  bottom: 0;
-}
-
-header .logo-menu .hamburgerButton input[id="menu"]:checked + label span:nth-child(1) {
-  top: 50%;
-  -webkit-transform: translateY(-50%) rotate(45deg);
-          transform: translateY(-50%) rotate(45deg);
-}
-
-header .logo-menu .hamburgerButton input[id="menu"]:checked + label span:nth-child(2) {
-  opacity: 0;
-}
-
-header .logo-menu .hamburgerButton input[id="menu"]:checked + label span:nth-child(3) {
-  bottom: 50%;
-  -webkit-transform: translateY(50%) rotate(-45deg);
-          transform: translateY(50%) rotate(-45deg);
+  padding-top: 20px;
 }
 
 @media screen and (min-width: 768px) {
-  header .logo-menu .mobilemenu {
+  header .logo-menu .mainMenu {
     width: auto;
     margin-left: auto;
   }
 }
 
 @media screen and (min-width: 1080px) {
-  header .logo-menu .mobilemenu {
+  header .logo-menu .mainMenu {
     margin-top: 1.5%;
   }
 }
 
-header .logo-menu .mobilemenu .gnb {
+header .logo-menu .mainMenu .gnb {
   width: 100%;
   display: none;
   cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
-  header .logo-menu .mobilemenu .gnb {
+  header .logo-menu .mainMenu .gnb {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 600px;
     color: #f7f0e0;
   }
-  header .logo-menu .mobilemenu .gnb li {
+}
+
+header .logo-menu .mainMenu .gnb li {
+  text-align: center;
+  padding: 2.5% 0;
+  font-size: 2.7rem;
+}
+
+@media screen and (min-width: 768px) {
+  header .logo-menu .mainMenu .gnb li {
     margin-right: 40px;
-  }
-  header .logo-menu .mobilemenu .gnb .gnbItem {
-    width: 28px;
-  }
-  header .logo-menu .mobilemenu .gnb .gnbItem img {
-    width: 100%;
+    font-size: 1rem;
+    padding: 0;
   }
 }
 
+header .logo-menu .mainMenu .gnb .gnbItem {
+  width: 28px;
+}
+
+header .logo-menu .mainMenu .gnb .gnbItem img {
+  width: 100%;
+}
+
 @media screen and (min-width: 1080px) {
-  header .logo-menu .mobilemenu .gnb {
+  header .logo-menu .mainMenu .gnb {
     width: 700px;
   }
 }
@@ -981,7 +981,6 @@ main .confix #projectsPage {
 }
 
 main .confix #projectsPage .wrapper {
-  width: 90%;
   max-width: 600px;
   margin: 0 auto;
   padding: 0 10px;
@@ -1018,7 +1017,7 @@ main .confix #projectsPage .wrapper .Project-flex {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 4em 0 20em 0;
+  padding: 4em 0 10em 0;
 }
 
 @media screen and (min-width: 1080px) {
@@ -1143,23 +1142,24 @@ main .confix #projectsPage .wrapper .Project-flex .project-txt .pro-button a {
   cursor: pointer;
 }
 
-main .confix #projectsPage .wrapper .projectScript-area {
-  width: 90%;
-  max-width: 600px;
+main .confix #projectScript {
+  background-color: #f7f0e0;
+}
+
+main .confix #projectScript .projectScript-area {
+  max-width: 700px;
   margin: 0 auto;
-  padding: 0 10px;
   position: relative;
   padding-bottom: 5em;
 }
 
 @media screen and (min-width: 768px) {
-  main .confix #projectsPage .wrapper .projectScript-area {
-    width: 100%;
+  main .confix #projectScript .projectScript-area {
     padding-bottom: 12em;
   }
 }
 
-main .confix #projectsPage .wrapper .projectScript-area .projectScript ul {
+main .confix #projectScript .projectScript-area .projectScript ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1167,20 +1167,12 @@ main .confix #projectsPage .wrapper .projectScript-area .projectScript ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 2em;
+  width: 100%;
+  min-width: 300px;
 }
 
 @media screen and (min-width: 660px) {
-  main .confix #projectsPage .wrapper .projectScript-area .projectScript ul {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+  main .confix #projectScript .projectScript-area .projectScript ul {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1188,21 +1180,52 @@ main .confix #projectsPage .wrapper .projectScript-area .projectScript ul {
   }
 }
 
-main .confix #projectsPage .wrapper .projectScript-area .projectScript ul li {
+main .confix #projectScript .projectScript-area .projectScript ul li {
   position: relative;
-  margin-bottom: 2em;
-}
-
-main .confix #projectsPage .wrapper .projectScript-area .projectScript ul li .works-img {
-  width: 100%;
-}
-
-main .confix #projectsPage .wrapper .projectScript-area .projectScript ul li .works-img img {
-  width: 100%;
-}
-
-main .confix #projectsPage .wrapper .projectScript-area .projectScript ul li .frame {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 3vw;
   overflow: hidden;
+}
+
+main .confix #projectScript .projectScript-area .projectScript ul li::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 101%;
+  content: '';
+  background-color: #6f5252;
+  opacity: 0;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  z-index: 1;
+}
+
+main .confix #projectScript .projectScript-area .projectScript ul li:hover {
+  background-color: #f6e994;
+  border: 1px solid #f6e994;
+  -webkit-box-shadow: 0 0 5px #f6e994;
+  box-shadow: 0 0 5px #f6e994;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+main .confix #projectScript .projectScript-area .projectScript ul li:hover::before {
+  opacity: .95;
+  -webkit-box-shadow: 0 0 0 #47278c;
+  box-shadow: 0 0 0 #47278c;
+}
+
+main .confix #projectScript .projectScript-area .projectScript ul li .works-img {
+  width: 100%;
+}
+
+main .confix #projectScript .projectScript-area .projectScript ul li .works-img img {
+  width: 100%;
+}
+
+main .confix #projectScript .projectScript-area .projectScript ul li .frame {
   position: absolute;
   top: 0;
   width: 100%;
@@ -1210,59 +1233,84 @@ main .confix #projectsPage .wrapper .projectScript-area .projectScript ul li .fr
   z-index: 1;
 }
 
-main .confix #projectsPage .wrapper .projectScript-area .projectScript ul li .frame .leftTop {
+main .confix #projectScript .projectScript-area .projectScript ul li .frame .leftTop {
   position: absolute;
   -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  width: 50vw;
-  height: 20vw;
-  top: -2.250em;
-  left: -3.125em;
+  transform: rotate(-45deg);
+  width: 38vw;
+  height: 14vw;
   background-color: #f6e994;
+  top: 0%;
+  left: -50%;
 }
 
-main .confix #projectsPage .wrapper .projectScript-area .projectScript ul li .frame .rightBottom {
+main .confix #projectScript .projectScript-area .projectScript ul li .frame .rightBottom {
   position: absolute;
   -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  width: 50vw;
-  height: 20vw;
-  bottom: -2.250em;
-  right: -3.063em;
+  transform: rotate(-45deg);
+  width: 38vw;
+  height: 14vw;
   background-color: #f6e994;
+  right: -50%;
+  bottom: 0%;
 }
 
-main .confix #projectsPage .wrapper .projectScript-area .projectScript ul li .workInfo {
+main .confix #projectScript .projectScript-area .projectScript ul li .workInfo {
   display: none;
   position: absolute;
+  top: 18%;
+  width: 100%;
+  padding: 2%;
   text-align: center;
-  top: 20px;
   z-index: 2;
 }
 
-main .confix #projectsPage .wrapper .projectScript-area .projectScript ul li .workInfo h3 {
+main .confix #projectScript .projectScript-area .projectScript ul li .workInfo h3 {
   margin-bottom: 28px;
   padding-top: 20px;
   color: #f7f0e0;
 }
 
-main .confix #projectsPage .wrapper .projectScript-area .projectScript ul li .workInfo p {
+main .confix #projectScript .projectScript-area .projectScript ul li .workInfo p {
   padding: 0 10%;
   margin-bottom: 44px;
   color: #f7f0e0;
 }
 
-main .confix #projectsPage .wrapper .projectScript-area .projectScript ul li .workInfo span {
+main .confix #projectScript .projectScript-area .projectScript ul li .workInfo span {
   color: #f6e994;
 }
 
-main .confix #projectsPage .wrapper .projectScript-area .projectScript ul li .workInfo button {
+main .confix #projectScript .projectScript-area .projectScript ul li .workInfo button {
   margin-top: 30px;
   border: none;
   border-radius: 52px;
   padding: 2% 5%;
   color: #6f5252;
   background-color: #f7f0e0;
+}
+
+main .confix #projectScript .projectScript-area .projectScript ul li .workInfo button a {
+  z-index: 2;
+  margin-top: 1.8vw;
+  padding: .5rem 1.5rem;
+  background-color: transparent;
+  border: 1px solid #16f2b4;
+  -webkit-box-shadow: 0 0 5px #16f2b4;
+  box-shadow: 0 0 5px #16f2b4;
+  font-size: 1.5rem;
+  color: #16f2b4;
+  z-index: 2;
+}
+
+main .confix #projectScript .projectScript-area .projectScript ul li .workInfo button a:hover {
+  background-color: #f085f2;
+  border: 1px solid #f085f2;
+  -webkit-box-shadow: 0 0 5px #f085f2;
+  box-shadow: 0 0 5px #f085f2;
+  color: #47278c;
+  -webkit-transition: .6s;
+  transition: .6s;
 }
 
 main .confix #contactPage {

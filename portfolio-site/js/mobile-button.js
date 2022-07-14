@@ -1,19 +1,21 @@
+const toggleBtn = document.querySelector('.toggleBtn');
+const logoMenu = document.querySelector('.logo-menu');
+const menu = document.querySelector('.gnb');
+const github = document.querySelector('.github');
 
-// document.querySelector(".close-btn").addEventListener("click", showMenu);
-window.onload = function() {
-    const hamberger = document.querySelector(".hamburgerButton");
-    const menuBar = document.querySelector(".gnb");
-    
-    let subToggle = true;
-    function showMenu(){
-        if(subToggle) {
-            menuBar.style.setProperty('height', 'calc(100vh - 80px)');
-            subToggle =! subToggle;
-        } else {
-            menuBar.style.height = "0px";
-            subToggle =! subToggle;
-        }
-    }
-    
-    hamberger.addEventListener("click", showMenu);
+toggleBtn.addEventListener('click', () => {
+    toggleBtn.classList.toggle('active');
+    logoMenu.classList.toggle('active');
+    menu.classList.toggle('active');
+    github.classList.toggle('active');
+});
+
+menu.addEventListener('click', removeToggleMenu);
+window.addEventListener('resize', removeToggleMenu);
+
+function removeToggleMenu() {
+    toggleBtn.classList.remove('active');
+    logoMenu.classList.remove('active');
+    menu.classList.remove('active');
+    github.classList.remove('active');
 }

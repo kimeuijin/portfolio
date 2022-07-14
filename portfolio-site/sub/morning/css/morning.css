@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 0;
+}
+
+h2 {
+  font-size: 1.3em;
+}
+
+h3 {
+  font-size: 1.1em;
+}
+
+p {
+  font-size: 1em;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+@font-face {
+  font-family: 'Hahmlet-Black';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/Hahmlet-Black.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Hahmlet-Black";
+}
+
+.wrapper header {
+  background-color: #6f5252;
+}
+
+.wrapper header .fix-menu {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 50px;
+  z-index: 5;
+  background-color: #6f5252;
+}
+
+.wrapper header .fix-menu .logo {
+  width: 30px;
+  padding-top: 10px;
+  margin-left: 5%;
+}
+
+.wrapper header .fix-menu .logo img {
+  width: 100%;
+}
+
+.wrapper header .fix-menu .home-button {
+  padding-top: 6px;
+}
+
+.wrapper main {
+  position: relative;
+  background-color: #6f5252;
+}
+
+.wrapper main .confix {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #9ed79e;
+  position: relative;
+}
+
+.wrapper main .confix .title {
+  padding-top: 20vw;
+}
+
+.wrapper main .confix .title span {
+  font-size: 30px;
+  color: #f7f0e0;
+}
+
+.wrapper main .confix .title span:last-child {
+  display: block;
+  text-align: center;
+}
+
+.wrapper main .confix .mockup img {
+  width: 100%;
+}
+
+.wrapper footer {
+  background-color: #6f5252;
+}
+
+.wrapper footer p {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #9ed79e;
+  text-align: center;
+  font-size: 0.8em;
+  color: #f7f0e0;
+}
+/*# sourceMappingURL=morning.css.map */

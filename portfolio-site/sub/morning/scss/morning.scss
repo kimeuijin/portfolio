@@ -1,0 +1,70 @@
+@import "./../scss/style.scss";
+@import "./../scss/common.scss";
+@import "./../scss/mixin.scss";
+
+body{
+    font-family: $font-ham;
+}
+
+.wrapper{
+    header{
+        background-color: $main-color;
+        .fix-menu{
+            position: fixed;
+            display: flex;
+            top: 0;
+            justify-content: space-between;
+            width: 100%;
+            height: 50px;
+            z-index: 5;
+            background-color: $main-color;
+            .logo{
+                width: 30px;
+                padding-top: 10px;
+                margin-left: 5%;
+                img{
+                    width: 100%;
+                }
+            }
+            .home-button{
+                padding-top: 6px;
+            }
+        }
+    }
+
+    main{
+        position: relative;
+        background-color: $main-color;
+        .confix{
+            @include confix;
+            position: relative;
+            .title{
+                padding-top: 20vw;
+                span{
+                    font-size: 30px;
+                    color: $second-color;
+                    &:last-child{
+                        display: block;
+                        text-align: center;
+                    }
+                }
+            }
+            .mockup{
+                img{
+                    width: 100%;
+                }
+            }
+        } 
+        
+    }
+
+    footer{
+        background-color: $main-color;
+        p{
+            @include confix;
+            text-align: center;
+            font-size: 0.8em;
+            color: $second-color;
+        }
+    }
+}
