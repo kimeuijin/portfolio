@@ -78,9 +78,7 @@ header {
                 width: auto;
                 margin-left: auto;
             }
-            @include responsive(pc-size) {
-                margin-top: 1.5%;
-            }
+            
             .gnb {
                 width: 100%;
                 display: none;
@@ -417,7 +415,7 @@ main {
                             max-width: 150px;
                             bottom: 0px;
                             left: 0px;
-                            animation: moveleafs 10s linear infinite alternate;
+                            animation: moveleafs 8s linear infinite alternate;
                             @keyframes moveleafs {
                                 0% {transform: rotate(0deg); transform-origin: bottom;}
                                 100% {transform: rotate(-10deg); transform-origin: bottom;}
@@ -432,7 +430,7 @@ main {
                         max-width: 150px;
                         right: 10px;
                         bottom: 0px;
-                        animation: moveleaf 5s linear infinite alternate;
+                        animation: moveleaf 6s linear infinite alternate;
                         @keyframes moveleaf {
                             0% {transform: rotate(0deg); transform-origin: bottom;}
                             100% {transform: rotate(-10deg); transform-origin: bottom;}
@@ -558,7 +556,6 @@ main {
                     @include responsive(pc-size) {
                         flex-direction: row;
                         justify-content: space-between;
-                        align-items: flex-start;
                     }
                     .mockup-img {
                         @include responsive(pc-size) {
@@ -571,10 +568,8 @@ main {
                     }
                     .project-txt {
                         width: 100%;
-                        // max-height: 380px;
                         font-size: 13px;
                         border-radius: 5%;
-                        // padding: 7% 2%;
                         margin-top: 45px;
                         background-color: $modal-color;
                         @include responsive(pc-size) {
@@ -583,13 +578,12 @@ main {
                         }
                         .pro-title {
                             padding: 5% 5%;
-                            padding-bottom: 1%;
+                            // padding-bottom: 1%;
                             width: 90%;
                             color: $main-color;
                             margin-bottom: 19px;
                             @include responsive(pc-size) {
-                                padding-bottom: 0%;
-                                height: 100%;
+                                margin-bottom: -10px;
                             }
                             ul {
                                 li {

@@ -144,12 +144,6 @@ header .logo-menu .mainMenu {
   }
 }
 
-@media screen and (min-width: 1080px) {
-  header .logo-menu .mainMenu {
-    margin-top: 1.5%;
-  }
-}
-
 header .logo-menu .mainMenu .gnb {
   width: 100%;
   display: none;
@@ -757,8 +751,8 @@ main .confix #aboutmePage .wrapper .leafs .empty-leaf {
     max-width: 150px;
     bottom: 0px;
     left: 0px;
-    -webkit-animation: moveleafs 10s linear infinite alternate;
-            animation: moveleafs 10s linear infinite alternate;
+    -webkit-animation: moveleafs 8s linear infinite alternate;
+            animation: moveleafs 8s linear infinite alternate;
   }
   @-webkit-keyframes moveleafs {
     0% {
@@ -801,8 +795,8 @@ main .confix #aboutmePage .wrapper .leafs .greenYellow-leaf {
   max-width: 150px;
   right: 10px;
   bottom: 0px;
-  -webkit-animation: moveleaf 5s linear infinite alternate;
-          animation: moveleaf 5s linear infinite alternate;
+  -webkit-animation: moveleaf 6s linear infinite alternate;
+          animation: moveleaf 6s linear infinite alternate;
 }
 
 @-webkit-keyframes moveleaf {
@@ -1029,9 +1023,6 @@ main .confix #projectsPage .wrapper .Project-flex {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
   }
 }
 
@@ -1063,7 +1054,6 @@ main .confix #projectsPage .wrapper .Project-flex .project-txt {
 
 main .confix #projectsPage .wrapper .Project-flex .project-txt .pro-title {
   padding: 5% 5%;
-  padding-bottom: 1%;
   width: 90%;
   color: #6f5252;
   margin-bottom: 19px;
@@ -1071,8 +1061,7 @@ main .confix #projectsPage .wrapper .Project-flex .project-txt .pro-title {
 
 @media screen and (min-width: 1080px) {
   main .confix #projectsPage .wrapper .Project-flex .project-txt .pro-title {
-    padding-bottom: 0%;
-    height: 100%;
+    margin-bottom: -10px;
   }
 }
 
