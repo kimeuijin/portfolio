@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./css/portfolio.css">
     <link rel="shortcut icon" href="./images/파비콘.ico">
     <script src="./js/jquery.js"></script>
-    <script src="/js/mobile-button.js"></script>
+    <script src="./js/index.js"></script>
     <title>김의진 | 포트폴리오</title>
 </head>
 
@@ -25,10 +25,25 @@
                 <div class="logo">
                     <a href="./portfolio.html"><img src="./images/logo.png" alt="로고"></a>
                 </div>
-                <div class="toggleBtn">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <div class="mobile-menu">
+                    <div class="hamburger">
+                        <input type="checkbox" id="menu">
+                        <label for="menu" class="menuChild">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </label>
+                    </div>
+                    <ul class="mobile-gnb">
+                        <div class="gnb-list">
+                            <li class="gnbItem"><a href="#homePage">Home</a></li>
+                            <li class="gnbItem"><a href="#aboutmePage">About Me</a></li>
+                            <li class="gnbItem"><a href="#skillsPage">Skills</a></li>
+                            <li class="gnbItem"><a href="#projectsPage">Projects</a></li>
+                            <li class="gnbItem"><a href="#contactPage">Contact</a></li>
+                            <li class="gnbItem"><a href="https://github.com/kimeuijin" target="_blank"><img src="./images/github.png" alt="깃허브아이콘"></a></li>
+                        </div>
+                    </ul>
                 </div>
                 <nav class="mainMenu">
                     <ul class="gnb">

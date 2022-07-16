@@ -66,11 +66,6 @@ header .logo-menu {
           align-items: center;
 }
 
-header .logo-menu .active {
-  height: 580px;
-  background-color: #9f9887;
-}
-
 @media screen and (min-width: 768px) {
   header .logo-menu {
     display: -webkit-box;
@@ -89,47 +84,110 @@ header .logo-menu .logo img {
   width: 100%;
 }
 
-header .logo-menu .toggleBtn {
+header .logo-menu .mobile-menu {
   position: absolute;
+  width: 100%;
   top: 0;
-  right: 5%;
-  padding-top: 25px;
-  cursor: pointer;
+  z-index: 1000;
+  background-color: #9f9887;
 }
 
-header .logo-menu .toggleBtn span {
-  display: block;
-  width: 30px;
-  height: 6px;
-  margin-bottom: 3px;
-  border-radius: 3px;
-  background-color: #f7f0e0;
-  -webkit-transition: .5s;
-  transition: .5s;
-}
-
-header .logo-menu .toggleBtn span .active:first-child {
-  -webkit-transform: translateY(14px) rotate(45deg);
-          transform: translateY(14px) rotate(45deg);
-  -webkit-transition: .5s;
-  transition: .5s;
-}
-
-header .logo-menu .toggleBtn span .active:nth-child(2) {
-  opacity: 0;
-}
-
-header .logo-menu .toggleBtn span .active:last-child {
-  -webkit-transform: translateY(-14px) rotate(-45deg);
-          transform: translateY(-14px) rotate(-45deg);
-  -webkit-transition: .5s;
-  transition: .5s;
+header .logo-menu .mobile-menu .hamburger {
+  position: fixed;
+  float: right;
+  top: 23px;
+  right: 10%;
+  width: 17px;
+  height: 20px;
+  z-index: 999;
 }
 
 @media screen and (min-width: 768px) {
-  header .logo-menu .toggleBtn {
+  header .logo-menu .mobile-menu .hamburger {
     display: none;
   }
+}
+
+header .logo-menu .mobile-menu .hamburger input[id="menu"] {
+  display: none;
+}
+
+header .logo-menu .mobile-menu .hamburger input[id="menu"] + label {
+  position: relative;
+  display: block;
+  width: 27px;
+  height: 20px;
+}
+
+header .logo-menu .mobile-menu .hamburger input[id="menu"] + label span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 5px;
+  border-radius: 100px;
+  background-color: #f7f0e0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+header .logo-menu .mobile-menu .hamburger input[id="menu"] + label span:first-child {
+  top: 0;
+}
+
+header .logo-menu .mobile-menu .hamburger input[id="menu"] + label span:nth-child(2) {
+  top: 30%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+header .logo-menu .mobile-menu .hamburger input[id="menu"] + label span:last-child {
+  top: 40%;
+}
+
+header .logo-menu .mobile-menu .hamburger input[id="menu"]:checked + label span:first-child {
+  top: 0%;
+  -webkit-transform: translateY(12px) rotate(40deg);
+          transform: translateY(12px) rotate(40deg);
+}
+
+header .logo-menu .mobile-menu .hamburger input[id="menu"]:checked + label span:nth-child(2) {
+  opacity: 0;
+}
+
+header .logo-menu .mobile-menu .hamburger input[id="menu"]:checked + label span:last-child {
+  top: 0%;
+  -webkit-transform: translateY(2px) rotate(-40deg);
+          transform: translateY(2px) rotate(-40deg);
+}
+
+header .logo-menu .mobile-menu .mobile-gnb {
+  height: 0vh;
+  padding: 0 20px;
+  z-index: 1200;
+  overflow: hidden;
+  -webkit-transition: height 0.3s linear;
+  transition: height 0.3s linear;
+}
+
+header .logo-menu .mobile-menu .mobile-gnb .gnb-list {
+  position: relative;
+  top: 170px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+header .logo-menu .mobile-menu .mobile-gnb .gnb-list li {
+  text-align: center;
+  margin: 20px;
+}
+
+header .logo-menu .mobile-menu .mobile-gnb .gnb-list li a:hover {
+  color: #6f5252;
+}
+
+header .logo-menu .mobile-menu .mobile-gnb .gnb-list li a img {
+  width: 25px;
 }
 
 header .logo-menu .mainMenu {
