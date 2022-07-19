@@ -31,12 +31,11 @@ li {
 }
 
 @font-face {
-  font-family: 'Hahmlet-Black';
+  font-family: "Hahmlet-Black";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/Hahmlet-Black.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
-
 body {
   font-family: "Hahmlet-Black";
 }
@@ -44,41 +43,31 @@ body {
 .wrapper header {
   background-color: #6f5252;
 }
-
 .wrapper header .fix-menu {
   position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   top: 0;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   width: 100%;
   height: 50px;
   z-index: 5;
   background-color: #6f5252;
 }
-
 .wrapper header .fix-menu .logo {
   width: 30px;
   padding-top: 10px;
   margin-left: 5%;
 }
-
 .wrapper header .fix-menu .logo img {
   width: 100%;
 }
-
 .wrapper header .fix-menu .home-button {
   padding-top: 6px;
 }
-
 .wrapper main {
   position: relative;
   background-color: #6f5252;
 }
-
 .wrapper main .confix {
   width: 90%;
   max-width: 1200px;
@@ -86,34 +75,28 @@ body {
   padding-bottom: 6vw;
   position: relative;
 }
-
 .wrapper main .confix .title {
   padding-top: 20vw;
   margin-bottom: 35px;
 }
-
 .wrapper main .confix .title span {
   font-size: 30px;
   color: #f7f0e0;
 }
-
 .wrapper main .confix .title span:last-child {
   display: block;
   text-align: center;
 }
-
 .wrapper main .confix .mockup {
   position: absolute;
   width: 200px;
   top: 52vw;
   left: 3em;
 }
-
 .wrapper main .confix .mockup img {
   width: 100%;
   display: block;
 }
-
 .wrapper main .confix .guide-txt {
   border-radius: 22px;
   padding: 1em;
@@ -121,40 +104,31 @@ body {
   margin-top: 35%;
   background-color: #f7f0e0;
 }
-
 .wrapper main .confix .guide-txt .description {
   margin-bottom: 70px;
 }
-
 .wrapper main .confix .guide-txt .description h2 {
   color: #6f5252;
 }
-
 .wrapper main .confix .guide-txt .grid {
   margin-bottom: 70px;
 }
-
 .wrapper main .confix .guide-txt .grid h2 {
   color: #6f5252;
 }
-
 .wrapper main .confix .guide-txt .font {
   margin-bottom: 70px;
 }
-
 .wrapper main .confix .guide-txt .font h2 {
   color: #6f5252;
 }
-
 .wrapper main .confix .guide-txt .color h2 {
   color: #6f5252;
 }
-
 .wrapper footer {
   background-color: #6f5252;
   padding-bottom: 6vw;
 }
-
 .wrapper footer p {
   width: 90%;
   max-width: 1200px;
@@ -163,4 +137,3 @@ body {
   font-size: 0.8em;
   color: #f7f0e0;
 }
-/*# sourceMappingURL=portfoliositeGuide.css.map */

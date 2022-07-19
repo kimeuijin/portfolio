@@ -10,7 +10,6 @@ header {
     position: relative;
     width: 100%;
     z-index: 10;
-    
     .logo-menu {
         position: fixed;
         top: 0;
@@ -24,7 +23,6 @@ header {
         @include responsive(tablet-size) {
             display: flex;
         }
-
         .logo {
             width: 50px;
             margin-left: 5%;
@@ -47,23 +45,19 @@ header {
                 width: 17px;
                 height: 20px;
                 z-index: 999;
-
                 @include responsive(tablet-size) {
                     display: none;
                 }
-
-                input[id="menu"]{
+                input[id="menu"] {
                     display: none;
                 }
-
-                input[id="menu"] + label {
+                input[id="menu"]+label {
                     position: relative;
                     display: block;
                     width: 27px;
                     height: 20px;
                 }
-
-                input[id="menu"] + label span{
+                input[id="menu"]+label span {
                     position: relative;
                     display: block;
                     width: 100%;
@@ -72,63 +66,54 @@ header {
                     background-color: $second-color;
                     transition: 0.2s;
                 }
-
-                input[id="menu"] + label span:first-child{
+                input[id="menu"]+label span:first-child {
                     top: 0;
                 }
-
-                input[id="menu"] + label span:nth-child(2){
+                input[id="menu"]+label span:nth-child(2) {
                     top: 30%;
                     transform: translateY(-50%);
                 }
-
-                input[id="menu"] + label span:last-child{
+                input[id="menu"]+label span:last-child {
                     top: 40%;
                 }
-
-
                 //click
-                input[id="menu"]:checked + label span:first-child{
+                input[id="menu"]:checked+label span:first-child {
                     top: 0%;
                     transform: translateY(12px) rotate(40deg);
                 }
-
-                input[id="menu"]:checked + label span:nth-child(2){
+                input[id="menu"]:checked+label span:nth-child(2) {
                     opacity: 0;
                 }
-
-                input[id="menu"]:checked + label span:last-child{
+                input[id="menu"]:checked+label span:last-child {
                     top: 0%;
                     transform: translateY(2px) rotate(-40deg);
                 }
             }
-            .mobile-gnb{
+            .mobile-gnb {
                 height: 0vh;
                 padding: 0 20px;
                 z-index: 1200;
                 overflow: hidden;
                 transition: height 0.3s linear;
-
-                .gnb-list{
+                .gnb-list {
                     position: relative;
                     top: 170px;
                     left: 50%;
                     transform: translate(-50%, -50%);
-                    li{
+                    li {
                         text-align: center;
                         margin: 20px;
-                        a{
-                            &:hover{
+                        a {
+                            &:hover {
                                 color: $main-color;
                             }
-                            img{
+                            img {
                                 width: 25px;
                             }
                         }
                     }
                 }
             }
-            
         }
         .mainMenu {
             width: 100%;
@@ -145,15 +130,17 @@ header {
                     display: flex;
                     width: 600px;
                     color: $second-color;
-                }    
+                }
                 li {
                     text-align: center;
                     padding: 2.5% 0;
-                    font-size: 2.7rem;
                     @include responsive(tablet-size) {
                         margin-right: 40px;
                         font-size: 1rem;
-                        padding:0;
+                        padding: 0;
+                    }
+                    @include responsive(pc-size) {
+                        font-size: 1.3rem;
                     }
                 }
                 .gnbItem {
@@ -224,7 +211,6 @@ main {
                     text-align: center;
                     color: $second-color;
                     overflow: hidden;
-
                     .topLine {
                         @include responsive(tablet-size) {
                             padding-top: 8vw;
@@ -235,69 +221,94 @@ main {
                             padding-top: 5vw;
                         }
                         .topTxt {
+                            cursor: pointer;
                             padding-bottom: 12vw;
-                            &:last-child{
+                            &:last-child {
                                 padding-bottom: 170px;
                             }
-                            &:first-child > p, &:nth-child(3) > p,&:nth-child(5) > p {
+                            &:first-child>p,
+                            &:nth-child(3)>p,
+                            &:nth-child(5)>p {
                                 font-size: 5vw;
                                 animation: mobiletxt-right 1.5s ease;
                                 animation-fill-mode: both;
                                 @keyframes mobiletxt-right {
-                                    0% {transform: translateX(15vw); opacity: 0;}
-                                    100% {transform: translateX(0vw); opacity: 1;}
+                                    0% {
+                                        transform: translateX(15vw);
+                                        opacity: 0;
+                                    }
+                                    100% {
+                                        transform: translateX(0vw);
+                                        opacity: 1;
+                                    }
                                 }
                                 @include responsive(tablet-size) {
                                     font-size: 3vw;
                                     animation: tabletText-downup 1.5s ease;
                                     animation-fill-mode: both;
                                     @keyframes tabletText-downup {
-                                        0% {transform: translateY(9.7vw); opacity: 0;}
-                                        100% {transform: translateY(0vw); opacity: 1;}
+                                        0% {
+                                            transform: translateY(9.7vw);
+                                            opacity: 0;
+                                        }
+                                        100% {
+                                            transform: translateY(0vw);
+                                            opacity: 1;
+                                        }
                                     }
                                 }
                                 @include responsive(pc-size) {
                                     font-size: 42px;
                                 }
                             }
-                            &:nth-child(2) > p, &:nth-child(4) > p {
+                            &:nth-child(2)>p,
+                            &:nth-child(4)>p {
                                 font-size: 5vw;
                                 animation: mobiletxt-left 1.5s ease;
                                 animation-fill-mode: both;
                                 @keyframes mobiletxt-left {
-                                    0% {transform: translateX(-15vw); opacity: 0;}
-                                    100% {transform: translateX(0vw); opacity: 1;}
+                                    0% {
+                                        transform: translateX(-15vw);
+                                        opacity: 0;
+                                    }
+                                    100% {
+                                        transform: translateX(0vw);
+                                        opacity: 1;
+                                    }
                                 }
                                 @include responsive(tablet-size) {
                                     font-size: 3vw;
                                     animation: tabletText-updown 1.5s ease;
                                     animation-fill-mode: both;
                                     @keyframes tabletText-updown {
-                                        0% {transform: translateY(-9.7vw); opacity: 0;}
-                                        100% {transform: translateY(0vw); opacity: 1;}
+                                        0% {
+                                            transform: translateY(-9.7vw);
+                                            opacity: 0;
+                                        }
+                                        100% {
+                                            transform: translateY(0vw);
+                                            opacity: 1;
+                                        }
                                     }
                                 }
                                 @include responsive(pc-size) {
                                     font-size: 42px;
                                 }
                             }
-                            // @include responsive(tablet-size) {
-                            //     margin-bottom: 15vw;
-                            // }
-                            // @include responsive(pc-size) {
-                            //     margin-bottom: 8vw;
-                            // }
-                            // p {
-                            //     font-size: 22px;
-                                
-                            //     @include responsive(pc-size) {
-                            //         font-size: 38px;
-                            //     }
-                            // }
-                        }                      
+                        }
+                    }
+                    .respons p :hover {
+                        opacity: 0;
                     }
                     .modalTxt {
                         display: none;
+                        width: 37px;
+                        height: 30px;
+                        padding: 10px;
+                        border-radius: 10px;
+                        line-height: 1.7;
+                        background-color: $modal-color;
+                        font-size: 4vw;
                     }
                 }
                 .scroll {
@@ -327,33 +338,43 @@ main {
                             right: 6px;
                             border-radius: 4px;
                             background-color: $second-color;
-                            animation: mouseball 2s ease infinite ;
+                            animation: mouseball 2s ease infinite;
                             @keyframes mouseball {
-                                0% {transform: translateY(-7vw); }
-                                100% {transform: translateY(0);}
+                                0% {
+                                    transform: translateY(-7vw);
+                                }
+                                100% {
+                                    transform: translateY(0);
+                                }
                             }
-
                             @include responsive(tablet-size) {
                                 width: 8px;
                                 height: 8px;
                                 top: 30px;
                                 right: 6px;
-                                animation: mouseball-tablet 2s ease infinite ;
+                                animation: mouseball-tablet 2s ease infinite;
                                 @keyframes mouseball-tablet {
-                                    0% {transform: translateY(-3vw); }
-                                    100% {transform: translateY(0);}
+                                    0% {
+                                        transform: translateY(-3vw);
+                                    }
+                                    100% {
+                                        transform: translateY(0);
+                                    }
                                 }
                             }
-
                             @include responsive(pc-size) {
                                 width: 10px;
                                 height: 10px;
                                 top: 40px;
                                 right: 10px;
-                                animation: mouseball-pc 2s ease infinite ;
+                                animation: mouseball-pc 2s ease infinite;
                                 @keyframes mouseball-pc {
-                                    0% {transform: translateY(-2vw); }
-                                    100% {transform: translateY(0);}
+                                    0% {
+                                        transform: translateY(-2vw);
+                                    }
+                                    100% {
+                                        transform: translateY(0);
+                                    }
                                 }
                             }
                         }
@@ -474,8 +495,14 @@ main {
                             left: 0px;
                             animation: moveleafs 8s linear infinite alternate;
                             @keyframes moveleafs {
-                                0% {transform: rotate(0deg); transform-origin: bottom;}
-                                100% {transform: rotate(-10deg); transform-origin: bottom;}
+                                0% {
+                                    transform: rotate(0deg);
+                                    transform-origin: bottom;
+                                }
+                                100% {
+                                    transform: rotate(-10deg);
+                                    transform-origin: bottom;
+                                }
                             }
                         }
                         @include responsive(pc-size) {
@@ -489,8 +516,14 @@ main {
                         bottom: 0px;
                         animation: moveleaf 6s linear infinite alternate;
                         @keyframes moveleaf {
-                            0% {transform: rotate(0deg); transform-origin: bottom;}
-                            100% {transform: rotate(-10deg); transform-origin: bottom;}
+                            0% {
+                                transform: rotate(0deg);
+                                transform-origin: bottom;
+                            }
+                            100% {
+                                transform: rotate(-10deg);
+                                transform-origin: bottom;
+                            }
                         }
                         @include responsive(tablet-size) {
                             width: 20%;
@@ -695,146 +728,101 @@ main {
                 }
             }
         }
-        #projectScript{
+        #projectScript {
+            position: relative;
+            width: 100%;
+            padding-bottom: 5em;
             background-color: $second-color;
+            @include responsive(tablet-size) {
+                padding-bottom: 12em;
+            }
             .projectScript-area {
-                max-width: 700px;
-                margin: 0 auto;
-                position: relative;
-                padding-bottom: 5em;
-                @include responsive(tablet-size) {
-                    padding-bottom: 12em;
-                }
-                .projectScript {
-                    ul {
-                        display: -webkit-box;
-                        display: -ms-flexbox;
-                        display: flex;
-                        flex-direction: column;
-                        width: 100%;
-                        min-width: 300px;
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    margin: 0 auto;
+                    min-width: 300px;
+                    @include responsive(script-size) {
+                        flex-direction: row;
+                    }
+                    li {
+                        position: relative;
+                        width: 70vw;
+                        margin: 0 auto;
+                        margin-bottom: 3vw;
+                        overflow: hidden;
                         @include responsive(script-size) {
-                            flex-direction: row;
-                            // padding: 0 10px;
-                        }  
-                        li {
-                            position: relative;
-                            width: 90%;
-                            margin: 0 auto;
-                            margin-bottom: 3vw;
-                            overflow: hidden;
-                            &::before{
-                                position: absolute;
-                                top: 0;
-                                left: 0;
-                                width: 100%;
-                                height: 101%;
-                                content: '';
-                                background-color: $main-color;
-                                opacity: 0;
-                                -webkit-transition: all .2s;
-                                transition: all .2s;
-                                z-index: 1;
+                            width: 41.5vw;
+                        }
+                        &::before {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            content: '';
+                            background-color: $main-color;
+                            opacity: 0;
+                            transition: all .2s;
+                            z-index: 1;
+                        }
+                        &:hover {
+                            border: 1px solid $yellow-color;
+                            box-shadow: 0 0 5px $yellow-color;
+                            transition: .6s;
+                            &::before {
+                                opacity: .95;
                             }
-                            &:hover{
-                                background-color: $yellow-color;
-                                border: 1px solid $yellow-color;
-                                -webkit-box-shadow: 0 0 5px $yellow-color;
-                                        box-shadow: 0 0 5px $yellow-color;
-                                // color: #47278c;
-                                -webkit-transition: .6s;
-                                transition: .6s;
-                                &::before{
-                                    opacity: .95;
-                                    -webkit-box-shadow: 0 0 0 #47278c;
-                                            box-shadow: 0 0 0 #47278c;
-                                }
-                            }
-                            .works-img {
-                                // width: 300px;
+                        }
+                        &:hover .workInfo {
+                            display: block;
+                        }
+                        .works-img {
+                            width: 100%;
+                            img {
                                 width: 100%;
-                                img{
-                                    width: 100%;
-                                    @include responsive(script-size) {
-                                        
-                                    }
-                                }
                             }
-                            .frame {
-                                position: absolute;
-                                top: 0;
-                                width: 100%;
-                                height: 100%;
-                                z-index: 1;
-                                .leftTop {
-                                    position: absolute;
-                                    -webkit-transform: rotate(-45deg);
-                                            transform: rotate(-45deg);
-                                    width: 38vw;
-                                    height: 14vw;
-                                    background-color: $yellow-color;
-                                    top: 0%;
-                                    left: -50%;
-                                }
-                                .rightBottom {
-                                    position: absolute;
-                                    -webkit-transform: rotate(-45deg);
-                                            transform: rotate(-45deg);
-                                    width: 38vw;
-                                    height: 14vw;
-                                    background-color: $yellow-color;
-                                    right: -50%;
-                                    bottom: 0%;
-                                }
+                        }
+                        .workInfo {
+                            display: none;
+                            position: absolute;
+                            top: 10%;
+                            width: 100%;
+                            text-align: center;
+                            z-index: 2;
+                            h3 {
+                                margin-bottom: 28px;
+                                padding-top: 20px;
+                                color: $second-color;
                             }
-                            .workInfo {
-                                display: none;
-                                position: absolute;
-                                top: 18%;
-                                width: 100%;
-                                padding: 2%;
-                                text-align: center;
-                                z-index: 2;
-                                h3 {
-                                    margin-bottom: 28px;
-                                    padding-top: 20px;
-                                    color: $second-color;
+                            p {
+                                padding: 0 10%;
+                                margin-bottom: 44px;
+                                color: $second-color;
+                            }
+                            span {
+                                display: block;
+                                color: $yellow-color;
+                            }
+                            button {
+                                margin-top: 2em;
+                                border: none;
+                                border-radius: 52px;
+                                padding: 2% 5%;
+                                background-color: $second-color;
+                                &:hover {
+                                    background-color: $ham-button-color;
+                                    transition: .6s;
                                 }
-                                p {
-                                    padding: 0 10%;
-                                    margin-bottom: 44px;
-                                    color: $second-color;
-                                }
-                                span {
-                                    color: $yellow-color;
-                                }
-                                button {
-                                    margin-top: 30px;
-                                    border: none;
-                                    border-radius: 52px;
-                                    padding: 2% 5%;
+                                a {
+                                    z-index: 2;
+                                    padding: 1px;
+                                    font-size: 1rem;
                                     color: $main-color;
-                                    background-color: $second-color;
-                                    a{
-                                        z-index: 2;
-                                        margin-top: 1.8vw;
-                                        padding: .5rem 1.5rem;
-                                        background-color: transparent;
-                                        border: 1px solid #16f2b4;
-                                        -webkit-box-shadow: 0 0 5px #16f2b4;
-                                                box-shadow: 0 0 5px #16f2b4;
-                                        font-size: 1.5rem;
-                                        color: #16f2b4;
-                                        z-index: 2;
-                                        &:hover{
-                                            background-color: #f085f2;
-                                            border: 1px solid #f085f2;
-                                            -webkit-box-shadow: 0 0 5px #f085f2;
-                                                    box-shadow: 0 0 5px #f085f2;
-                                            color: #47278c;
-                                            -webkit-transition: .6s;
-                                            transition: .6s;
-                                        }
+                                    z-index: 2;
+                                    &:hover {
+                                        color: $second-color;
                                     }
                                 }
                             }
