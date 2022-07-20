@@ -7,6 +7,9 @@ body{
 }
 
 .wrapper{
+    position: relative;
+    width: 100vw;
+    margin: 0 auto;
     header{
         background-color: $main-color;
         .fix-menu{
@@ -19,21 +22,33 @@ body{
             z-index: 5;
             background-color: $main-color;
             .logo{
-                width: 30px;
+                width: 6vw;
                 padding-top: 10px;
                 margin-left: 5%;
                 img{
                     width: 100%;
                 }
+                @include responsive(tablet-size) {
+                    width: 4vw;
+                
+                }
             }
             .home-button{
                 padding-top: 6px;
+                padding-right: 6px;
+                img{
+                    width: 100%;
+                }
+                @include responsive(tablet-size) {
+                    padding-right: 6px;
+                }
             }
         }
     }
 
     main{
         position: relative;
+        width: 100vw;
         background-color: $main-color;
         .confix{
             @include confix;
@@ -42,9 +57,13 @@ body{
             .title{
                 padding-top: 20vw;
                 margin-bottom: 35px;
+                @include responsive(tablet-size) {
+                    padding-top: 15vw;
+                }
                 span{
-                    font-size: 30px;
+                    font-size: 9vw;
                     color: $second-color;
+                    margin-left: 50px;
                     &:last-child{
                         display: block;
                         text-align: center;
@@ -53,44 +72,73 @@ body{
             }
             .mockup{
                 position: absolute;
-                width: 200px;
-                top: 52vw;
-                left: 3em;
-                // padding-bottom: 2em;
+                width: 90%;
+                top: 51vw;
+                left: 50%;
+                transform: translateX(-50%);
                 img{
                     width: 100%;
                     display: block;
                 }
+                @include responsive(tablet-size) {
+                    width: 70%;
+                }
             }
             .guide-txt{
+                width: 90%;
                 border-radius: 22px;
-                padding: 1em;
-                padding-top: 40%;
-                margin-top: 35%;
+                width: 100%;
+                margin-top: 50vw;
+                padding: 0 1vw;
+                padding-top: 30vw;
                 background-color: $second-color;
                 .description{
+                    margin-bottom: 6em;
                     h2{
                         color: $main-color;
                     }
-                    margin-bottom: 70px;
+                    p{
+                        margin-bottom: 30px;
+                    }
                 }
                 .grid{
                     h2{
                         color: $main-color;
                     }
-                    margin-bottom: 70px;
+                    margin-bottom: 6em;
 
                 }
                 .font{
                     h2{
                         color: $main-color;
                     }
-                    margin-bottom: 70px;
+                    margin-bottom: 6em;
 
                 }
                 .color{
                     h2{
                         color: $main-color;
+                    }
+                    .white-circle{
+                        width: 7.5rem;
+                        height: 7.5rem;
+                        margin-right: 2vw;
+                        border-radius: 50%;
+                        background-color: rgb(255, 255, 254);
+                    }
+                    .yellow-circle{
+                        width: 7.5rem;
+                        height: 7.5rem;
+                        margin-right: 2vw;
+                        border-radius: 50%;
+                        background-color: rgb(241, 238, 149);
+                    }
+                    .gray-circle{
+                        width: 7.5rem;
+                        height: 7.5rem;
+                        margin-right: 2vw;
+                        border-radius: 50%;
+                        background-color:rgb(100, 97, 93);
                     }
                 }
             }

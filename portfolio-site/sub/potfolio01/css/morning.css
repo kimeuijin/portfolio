@@ -1,0 +1,209 @@
+@charset "UTF-8";
+
+/* header area */
+
+.confix {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    /* background-color: rgb(240, 196, 196); */
+}
+
+/*================== header ==================*/
+header {
+    width: 100%;
+    background: url(../images/vegetable.png) no-repeat left top;
+    background-size: cover;
+}
+
+.title {
+    font-size: 0;
+}
+
+.menu-button {
+    margin-top: 35px;
+    margin-left: 55px;
+    margin-bottom: 35px;
+}
+
+/* slide */
+.slide {
+    display: flex;
+    flex-direction: row-reverse;
+    /* height: 830px; */
+    /* align-items: center; */
+    padding-right: 11%;
+    /* background-color: cadetblue; */
+}
+
+
+.slide-text {
+    margin-left: 0.8333333333333333%;
+    background-color: bisque;
+}
+
+.slide-text .mornings {
+    display: block;
+    margin-top: 17.46987951807229%;
+    margin-bottom: 6.5%;
+}
+
+.slide-text strong {
+    display: block;
+    font-family: 'Hahmlet';
+    line-height: 100%;
+    margin-bottom: 8.5%;
+    font-size: calc(60px + 1.2vw);
+}
+
+.slide-text .more-button {
+    margin-top: 6.5%;
+}
+
+.more-button .plus {
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 100px 100px 100px 100px;
+    border: 1px solid black ;
+    background-color: rgb(252, 252, 252);
+}
+
+
+.sand-photo {
+    width: 39.21875%;
+    padding: 5% 0; 
+    /* background-color: aqua; */
+  
+}
+
+.sand-photo img {
+    width: 100%;
+}
+
+
+/*================== main ====================*/
+
+/* SANDWICH */
+.BAKERY h2 {
+    margin-top: 265px;
+    margin-bottom: 177px;
+    /* background-color: blue; */
+}
+
+.BAKERY{ 
+    display: flex;
+    /* background-color: rgb(130, 191, 219); */
+}
+
+.sandwich-main-img img{
+    width: 500px;
+    height: 500px;
+    margin-left: 20px;
+    background-color: beige;
+}
+
+.section-1 {
+    display: inline-flex;
+}
+
+.sandwich-img img{
+    display: inline-flex;
+    width: 150px;
+}
+
+
+
+/* SALAD */
+
+.SALAD {
+    background-color: rgb(192, 204, 168)
+}
+
+.SALAD h2{
+    margin-bottom: 177px;
+    background-color: blue;
+}
+
+.salad-img {
+    display: inline-flex;
+    margin-left: 41px;
+    height: 200px;
+    background-color: bisque;
+}
+
+.salad-text {
+    display: inline-flex;
+    background-color: aliceblue;
+}
+
+.salad-main-img {
+    display: inline-flex;
+    margin-right: 20px;
+    margin-bottom: 447px;
+    height: 400px;
+    background-color: beige;
+}
+
+/* DRINK */
+
+.DRINK {
+    background-color: beige;
+}
+
+.DRINK h2 {
+    background-color: blue;
+}
+
+.latte img{
+    display: inline-flex;
+    height: 350px;
+    margin-top: 109px;
+    margin-left: 90px;
+    background-color: antiquewhite;
+}
+
+.americano img{
+    display: inline-flex;
+    height: 350px;
+    margin-top: 67px;
+    margin-left: 407px;
+    background-color: antiquewhite;
+}
+
+.Omiga img {
+    display: inline-flex;
+    height: 350px;
+    background-color: antiquewhite;
+}
+
+/*================== footer ==================*/
+/* footer area */
+
+footer {
+    width: 100%;
+    height: 380px;
+    background-color: rgb(255, 255, 174);
+}
+
+.morning-logo img{
+    background-color: rgb(253, 255, 155);
+    width: 180px;
+    margin-top: 78px;
+    margin-left: 20px;
+}
+
+
+.morning-address ul {
+    display: flex;
+   
+}
+
+.sns-img ul li{
+    display: inline-block;
+    
+    width: 10px;
+    height: 10px;
+}

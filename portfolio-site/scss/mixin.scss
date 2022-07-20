@@ -33,6 +33,7 @@
 }
 
 @mixin confix {
+    position: relative;
     width: 90%;
     max-width: 1230px;
     margin: 0 auto;

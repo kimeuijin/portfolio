@@ -1,166 +1,153 @@
 @import "style.scss";
 @import "common.scss";
 @import "mixin.scss";
-body {
-    font-family: $font-ham;
-}
+
+
 
 //==================header====================
 header {
     position: relative;
     width: 100%;
-    z-index: 10;
-    .logo-menu {
+    z-index: 50;
+
+    .header-box {
         position: fixed;
-        top: 0;
-        width: 100%;
-        height: 70px;
-        overflow: hidden;
-        background-color: $main-color;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        @include responsive(tablet-size) {
-            display: flex;
-        }
-        .logo {
-            width: 50px;
-            margin-left: 5%;
-            padding-top: 12px;
-            img {
-                width: 100%;
-            }
-        }
-        .mobile-menu {
-            position: absolute;
-            width: 100%;
+
+        .logo-menu {
+            position: fixed;
             top: 0;
-            z-index: 1000;
-            background-color: $ham-button-color;
+            left: 0;
+            width: 100%;
+            height: 70px;
+            overflow: hidden;
+            background-color: $main-color;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .logo {
+                width: 50px;
+                margin-left: 5%;
+                margin-top: 12px;
+                img {
+                    width: 100%;
+                }
+            }
+
             .hamburger {
-                position: fixed;
-                float: right;
-                top: 23px;
-                right: 10%;
-                width: 17px;
-                height: 20px;
-                z-index: 999;
+                width: 24px;
+                height: 24px;
+                z-index: 100;
+                margin-right: 5%;
+                cursor: pointer;
+
                 @include responsive(tablet-size) {
                     display: none;
                 }
-                input[id="menu"] {
-                    display: none;
-                }
-                input[id="menu"]+label {
-                    position: relative;
-                    display: block;
-                    width: 27px;
-                    height: 20px;
-                }
-                input[id="menu"]+label span {
-                    position: relative;
+
+                span {
                     display: block;
                     width: 100%;
-                    height: 5px;
+                    border: 2px solid $second-color;
                     border-radius: 100px;
-                    background-color: $second-color;
-                    transition: 0.2s;
-                }
-                input[id="menu"]+label span:first-child {
-                    top: 0;
-                }
-                input[id="menu"]+label span:nth-child(2) {
-                    top: 30%;
-                    transform: translateY(-50%);
-                }
-                input[id="menu"]+label span:last-child {
-                    top: 40%;
-                }
-                //click
-                input[id="menu"]:checked+label span:first-child {
-                    top: 0%;
-                    transform: translateY(12px) rotate(40deg);
-                }
-                input[id="menu"]:checked+label span:nth-child(2) {
-                    opacity: 0;
-                }
-                input[id="menu"]:checked+label span:last-child {
-                    top: 0%;
-                    transform: translateY(2px) rotate(-40deg);
-                }
-            }
-            .mobile-gnb {
-                height: 0vh;
-                padding: 0 20px;
-                z-index: 1200;
-                overflow: hidden;
-                transition: height 0.3s linear;
-                .gnb-list {
-                    position: relative;
-                    top: 170px;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    li {
-                        text-align: center;
-                        margin: 20px;
-                        a {
-                            &:hover {
-                                color: $main-color;
-                            }
-                            img {
-                                width: 25px;
-                            }
-                        }
+
+                    &:nth-child(2) {
+                        margin: 6px 0;
                     }
                 }
-            }
+            }       
         }
-        .mainMenu {
-            width: 100%;
-            padding-top: 20px;
+        
+        .menu-box {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 100;
+            overflow: hidden;
+            background-color: $ham-button-color;
+
             @include responsive(tablet-size) {
-                width: auto;
-                margin-left: auto;
+                margin-left: 31vw;
+                margin-top: 13px;
+                width: 73vw;
+                height: auto;
+                display: flex;
+                font-size: 1.5vw;
+                background-color: transparent;
             }
+
+            @include responsive(pc-size) {
+                width: 66vw;
+                margin-left: 53vw;
+                font-size: 1vw;
+            }
+
             .gnb {
-                width: 100%;
-                display: none;
-                cursor: pointer;
+                // width: 100%;
+                padding: 20% 0;
+
                 @include responsive(tablet-size) {
                     display: flex;
-                    width: 600px;
-                    color: $second-color;
-                }
+                    padding: 0;
+                    // margin-right: -146px;
+                }    
+
                 li {
-                    text-align: center;
-                    padding: 2.5% 0;
+                    margin: 10% 0;
+
                     @include responsive(tablet-size) {
-                        margin-right: 40px;
-                        font-size: 1rem;
-                        padding: 0;
-                    }
-                    @include responsive(pc-size) {
-                        font-size: 1.3rem;
+                        margin: 0;
+                        margin-right: 29px;
+                    }    
+
+                    a {
+                        font-size: 2em; 
+                        text-align: center;
+                        color: $second-color;
+                        
+                        @include responsive(tablet-size) {
+                            font-size: 1.5em; 
+                        }
+                        &:hover {
+                            color: $modal-color;
+                        }
+
+
+                        
                     }
                 }
-                .gnbItem {
-                    width: 28px;
-                    img {
-                        width: 100%;
-                    }
-                }
+            }
+
+            .git-icon {
+                width: 40px;
+                margin: 0 auto;
+                
+                @include responsive(tablet-size) {
+                    width: 4vw;
+                    margin: 0;
+                }  
+
                 @include responsive(pc-size) {
-                    width: 700px;
+                    width: 2.6vw;
+                }
+                
+                img {
+                    width: 100%;
                 }
             }
         }
     }
 }
 
+
 //==================main-home====================
 main {
     position: relative;
-    margin-top: 70px;
+    padding-top: 70px;
     .confix {
         #homePage {
             background-color: $main-color;
@@ -593,7 +580,7 @@ main {
                             }
                         }
                     }
-                    .chart {
+                    .graph {
                         position: relative;
                         display: inline-block;
                         width: 300px;
@@ -612,8 +599,14 @@ main {
                             border-radius: 50%;
                             text-align: center;
                             line-height: 200px;
-                            font-size: 30px;
+                            font-size: 20px;
                             transform: translate(-50%, -50%);
+                        }
+                        .graph-txt{
+                            display: block;
+                            position: absolute;
+                            top: 100%;
+                            left: 10%;
                         }
                     }
                 }

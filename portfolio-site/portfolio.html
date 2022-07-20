@@ -18,302 +18,324 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <header>
         <h1>Web developer portfolio</h1>
-        <header>
-            <div class="logo-menu">
-                <div class="logo">
-                    <a href="./portfolio.html"><img src="./images/logo.png" alt="로고"></a>
-                </div>
-                <div class="mobile-menu">
-                    <div class="hamburger">
-                        <!-- <input type="checkbox"> -->
-                        <div id="menu" class="menuChild">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
+            <div class="header-box">
+                <div class="logo-menu">
+                    <div class="logo">
+                        <a href="./portfolio.html"><img src="./images/logo.png" alt="로고"></a>
                     </div>
-                    <ul class="mobile-gnb">
-                        <li class="gnbItem"><a href="#homePage">Home</a></li>
-                        <li class="gnbItem"><a href="#aboutmePage">About Me</a></li>
-                        <li class="gnbItem"><a href="#skillsPage">Skills</a></li>
-                        <li class="gnbItem"><a href="#projectsPage">Projects</a></li>
-                        <li class="gnbItem"><a href="#contactPage">Contact</a></li>
-                        <li class="gnbItem">
-                            <a href="https://github.com/kimeuijin" target="_blank"><img src="./images/github.png" alt="깃허브아이콘"></a>
-                        </li>
-                    </ul>
+
+                    <div class="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                    </div>
                 </div>
-                <nav class="mainMenu">
+    
+                <div class="menu-box">
                     <ul class="gnb">
                         <li><a href="#homePage">Home</a></li>
                         <li><a href="#aboutmePage">About Me</a></li>
                         <li><a href="#skillsPage">Skills</a></li>
                         <li><a href="#projectsPage">Projects</a></li>
                         <li><a href="#contactPage">Contact</a></li>
-                        <li class="gnbItem">
-                            <a href="https://github.com/kimeuijin" target="_blank"><img src="./images/github.png" alt="깃허브아이콘"></a>
+                    </ul>
+    
+                    <div class="git-icon">
+                        <a href="https://github.com/kimeuijin" target="_blank"><img src="./images/github.png" alt="깃허브아이콘"></a>
+                    </div>
+                </div><!-- menu-box -->
+            </div><!-- header-box -->
+    </header>
+    <main>
+        <div class="confix">
+            <section id="homePage">
+                <div class="wrapper">
+                    <div class="ellipse">
+                        <img src="./images/ellipse.png" alt="타원">
+                        <div class="mainTxt">
+                            <h2>Web developer</h2>
+                            <h2>portfolio</h2>
+                        </div>
+                    </div>
+                    <div class="keywordTxt">
+                        <div class="topLine">
+                            <div class="topTxt respons">
+                                <p>#책임감</p>
+                                <div class="modalTxt respon-modal">제가 맡은 일에 대해 중요하게 생각하며 맡은 일에 책임감을 가지고 끝까지 해내요</div>
+                            </div>
+                            <div class="topTxt patience">
+                                <p>#끈기</p>
+                                <div class="modalTxt patience-modal">제가 맡은 일에 대해 중요하게 생각하며 맡은 일에 책임감을 가지고 끝까지 해내요</div>
+                            </div>
+                            <div class="topTxt detailed">
+                                <p>#꼼꼼함</p>
+                                <div class="modalTxt detailed-modal">제가 맡은 일에 대해 중요하게 생각하며 맡은 일에 책임감을 가지고 끝까지 해내요</div>
+                            </div>
+                            <div class="topTxt develop">
+                                <p>#자기개발</p>
+                                <div class="modalTxt develop-modal">제가 맡은 일에 대해 중요하게 생각하며 맡은 일에 책임감을 가지고 끝까지 해내요</div>
+                            </div>
+                            <div class="topTxt teamwork">
+                                <p>#협동심</p>
+                                <div class="modalTxt teamwork-modal">제가 맡은 일에 대해 중요하게 생각하며 맡은 일에 책임감을 가지고 끝까지 해내요</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scroll">
+                        <div class="mouse">
+                            <div class="mouse-ball"></div>
+                        </div>
+                        <span>Scroll Down</span>
+                    </div>
+                </div>
+            </section>
+            <section id="aboutmePage">
+                <div class="wrapper">
+                    <h2>ABOUT</h2>
+                    <div class="about-flex">
+                        <div class="pictureImg">
+                            <img src="./images/euijin-picture.png" alt="김의진사진">
+                        </div>
+                        <div class="txt-flex">
+                            <h3>“ 성장이 즐거운 <br> 웹 퍼블리셔 김의진입니다 ”</h3>
+                            <div class="aboutTxt">
+                                <div class="txtBox2">
+                                    <div>
+                                        끊임없는 자기성장을 원동력으로 삼아, 어제보다 발전하는 내일을 만들어가는 점진적인 사람입니다.
+                                    </div>
+                                    <div>
+                                        탄탄한 코드, 쉬운 유지보수를 할 수 있는 마크업을 추구하고 사용자의 입장에서 바라보며 고민합니다.
+                                    </div>
+                                    <div>
+                                        좋아하는 일을 잘하는 일로 만드는것이 저의 목표입니다!
+                                    </div>
+                                </div>
+                                <p class="about-education">
+                                    [교육]
+                                    <br> -방송정보국제교육원 웹퍼블리싱&프론트앤드 양성과정 수료 (2022.02~2022.07)
+                                    <br> -유한대학교 보건복지과 졸업 (2021.2)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="leafs">
+                        <img class="empty-leaf" src="./images/red-green-leaf.png" alt="빈나뭇잎">
+                        <img class="greenYellow-leaf" src="./images/green-yellow-leaf.png" alt="나뭇잎">
+                    </div>
+                </div>
+            </section>
+            <section id="skillsPage">
+                <div class="wrapper">
+                    <h2>SKILLS</h2>
+                    <div class="skill-flex">
+                        <ul class="skill-list">
+                            <li><a href="#">HTML</a></li>
+                            <li><a href="#">CSS3</a></li>
+                            <li><a href="#">SASS</a></li>
+                            <li><a href="#">JavaScript</a></li>
+                            <li><a href="#">React</a></li>
+                            <li><a href="#">jQuery</a></li>
+                            <li><a href="#">DesignTool</a></li>
+                        </ul>
+                        <div class="graph html">
+                            <span class="center">
+                               HTML
+                            </span>
+                            <span class="graph-txt">
+                                html
+                                웹표준을 준수하며,
+                                접근성이 뛰어난 웹사이트를 제작 할 수 있습니다.
+                                시멘틱 태그의 필요성을 알고 있으며 자유자재로 구조를 만들 수 있습니다.
+                            </span>
+                        </div>
+                        <div class="graph css">
+                            <span class="center">
+                               CSS3
+                            </span>
+                            <span class="graph-txt">
+                                다양한 호버, 애니메이션 효과 적용할 수 있고, 미디어쿼리를 사용하여 반응형으로 구현 가능합니다
+                            </span>
+                        </div>
+                        <div class="graph">
+                            <span class="center">
+                              SASS
+                            </span>
+                            <span class="graph-txt">
+                                중복을 최소화하여 변수로 만들거나 믹스인을 적절히 사용하여 코드를 간결하게 작성할 수 있습니다.
+                            </span>
+                        </div>
+                        <div class="graph">
+                            <span class="center">
+                               JavaScript
+                            </span>
+                            <span class="graph-txt">
+                                자바스크립트 ES6문법을 이해하고 활용할 수 있으며,다양한 이벤트들을 제어할 수 있고 if, for, while문 등을 적절하게 사용하여 기능 구현이 가능합니다.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="projectsPage">
+                <div class="wrapper">
+                    <h2>PORTFOLIO</h2>
+                    <div class="Project-flex">
+                        <div class="mockup-img">
+                            <img src="./images/morning-mockup.png" alt="개인 포트폴리오 목업">
+                        </div>
+                        <div class="project-txt">
+                            <div class="pro-title">
+                                <ul>
+                                    <li>
+                                        <span>Renewal Page</span>
+                                        <h3>개인 리뉴얼 사이트</h3>
+                                    </li>
+                                    <li>
+                                        <h3>기여도</h3>
+                                        <p>디자인 100% + 퍼블리싱 100%</p>
+                                    </li>
+                                    <li>
+                                        <h3>사용프로그램</h3>
+                                        <p>Photoshop, Illustrator, VS Code</p>
+                                    </li>
+                                    <li>
+                                        <h3>프로젝트 소개</h3>
+                                        <p>웹 디자인 실무 교육과정을 통해 디자인과 코딩을 접하고 처음 만들었던 사이트입니다. 기존에 만들었던 작업물에 부족함을 느껴 한 번 더 디자인과 코드를 수정하면서 부족했던 부분을 보완하고 새로 공부한 내용을 적용하여 작업했습니다.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="pro-button">
+                                <a href="./sub/morning/morningGuide.html"><span>디자인가이드 보기</span></a>
+                                <a href="./sub/potfolio01/morning.html" target="_blank"><span>사이트 보기</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Project-flex">
+                        <div class="mockup-img">
+                            <img src="./images/mockup-team.png" alt="팀 포트폴리오 목업">
+                        </div>
+                        <div class="project-txt">
+                            <div class="pro-title">
+                                <ul>
+                                    <li>
+                                        <span>Group Page</span>
+                                        <h3>팀 리뉴얼 사이트</h3>
+                                    </li>
+                                    <li>
+                                        <h3>기여도</h3>
+                                        <p>디자인 90% + 퍼블리싱 80%</p>
+                                    </li>
+                                    <li>
+                                        <h3>사용프로그램</h3>
+                                        <p>Photoshop, Illustrator, VS Code</p>
+                                    </li>
+                                    <li>
+                                        <h3>프로젝트 소개</h3>
+                                        <p>웹 디자인 실무 교육과정을 통해 디자인과 코딩을 접하고 처음 만들었던 사이트입니다. 기존에 만들었던 작업물에 부족함을 느껴 한 번 더 디자인과 코드를 수정하면서 부족했던 부분을 보완하고 새로 공부한 내용을 적용하여 작업했습니다.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="pro-button">
+                                <a href=""><span>디자인가이드 보기</span></a>
+                                <a href=""><span>사이트 보기</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Project-flex">
+                        <div class="mockup-img">
+                            <img src="./images/portfolio-mockup.png" alt="개인사이트 포트폴리오 목업">
+                        </div>
+                        <div class="project-txt">
+                            <div class="pro-title">
+                                <ul>
+                                    <li>
+                                        <span>Group Page</span>
+                                        <h3>팀 리뉴얼 사이트</h3>
+                                    </li>
+                                    <li>
+                                        <h3>기여도</h3>
+                                        <p>디자인 90% + 퍼블리싱 80%</p>
+                                    </li>
+                                    <li>
+                                        <h3>사용프로그램</h3>
+                                        <p>Photoshop, Illustrator, VS Code</p>
+                                    </li>
+                                    <li>
+                                        <h3>프로젝트 소개</h3>
+                                        <p>만들었던 포트폴리오들을 전시할 목적으로 만든 반응형 웹으로 제작하였습니다.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="pro-button">
+                                <a href=""><span>디자인가이드 보기</span></a>
+                                <a><span>사이트 보기</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 자바스크립트 포폴 -->
+            <section id="projectScript">
+                <div class="projectScript-area">
+                    <ul>
+                        <li>
+                            <div class="works-img">
+                                <img src="./images/todolist.png" alt="to-do-list">
+                            </div>
+                            <div class="workInfo">
+                                <h3>To Do List</h3>
+                                <p>
+                                    react를 이용하여<br> local storage에 저장되는 <br> todo list를 만들었습니다.
+                                </p>
+                                <span>
+                                    React
+                                </span>
+                                <button><a>자세히 보기</a></button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="works-img">
+                                <img src="./images/calculator.png" alt="계산기">
+                            </div>
+                            <div class="workInfo">
+                                <h3>행렬 계산기</h3>
+                                <p>
+                                    Javascript 이용하여 <br> 행렬 계산기를 만들었습니다.
+                                </p>
+                                <span>
+                                    HTML5 / CSS3 / Javascript
+                                </span>
+                                <button><a>자세히 보기</a></button>
+                            </div>
                         </li>
                     </ul>
-                </nav>
-            </div>
-        </header>
-        <main>
-            <div class="confix">
-                <section id="homePage">
-                    <div class="wrapper">
-                        <div class="ellipse">
-                            <img src="./images/ellipse.png" alt="타원">
-                            <div class="mainTxt">
-                                <h2>Web developer</h2>
-                                <h2>portfolio</h2>
-                            </div>
-                        </div>
-                        <div class="keywordTxt">
-                            <div class="topLine">
-                                <div class="topTxt respons">
-                                    <p>#책임감</p>
-                                    <div class="modalTxt respon-modal">제가 맡은 일에 대해 중요하게 생각하며 맡은 일에 책임감을 가지고 끝까지 해내요</div>
-                                </div>
-                                <div class="topTxt patience">
-                                    <p>#끈기</p>
-                                    <div class="modalTxt patience-modal">제가 맡은 일에 대해 중요하게 생각하며 맡은 일에 책임감을 가지고 끝까지 해내요</div>
-                                </div>
-                                <div class="topTxt detailed">
-                                    <p>#꼼꼼함</p>
-                                    <div class="modalTxt detailed-modal">제가 맡은 일에 대해 중요하게 생각하며 맡은 일에 책임감을 가지고 끝까지 해내요</div>
-                                </div>
-                                <div class="topTxt develop">
-                                    <p>#자기개발</p>
-                                    <div class="modalTxt develop-modal">제가 맡은 일에 대해 중요하게 생각하며 맡은 일에 책임감을 가지고 끝까지 해내요</div>
-                                </div>
-                                <div class="topTxt teamwork">
-                                    <p>#협동심</p>
-                                    <div class="modalTxt teamwork-modal">제가 맡은 일에 대해 중요하게 생각하며 맡은 일에 책임감을 가지고 끝까지 해내요</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="scroll">
-                            <div class="mouse">
-                                <div class="mouse-ball"></div>
-                            </div>
-                            <span>Scroll Down</span>
-                        </div>
-                    </div>
-                </section>
-                <section id="aboutmePage">
-                    <div class="wrapper">
-                        <h2>ABOUT</h2>
-                        <div class="about-flex">
-                            <div class="pictureImg">
-                                <img src="./images/euijin-picture.png" alt="김의진사진">
-                            </div>
-                            <div class="txt-flex">
-                                <h3>“ 성장이 즐거운 <br> 웹 퍼블리셔 김의진입니다 ”</h3>
-                                <div class="aboutTxt">
-                                    <div class="txtBox2">
-                                        <div>
-                                            끊임없는 자기성장을 원동력으로 삼아, 어제보다 발전하는 내일을 만들어가는 점진적인 사람입니다.
-                                        </div>
-                                        <div>
-                                            탄탄한 코드, 쉬운 유지보수를 할 수 있는 마크업을 추구하고 사용자의 입장에서 바라보며 고민합니다.
-                                        </div>
-                                        <div>
-                                            좋아하는 일을 잘하는 일로 만드는것이 저의 목표입니다!
-                                        </div>
-                                    </div>
-                                    <p class="about-education">
-                                        [교육]
-                                        <br> -방송정보국제교육원 웹퍼블리싱&프론트앤드 양성과정 수료 (2022.02~2022.07)
-                                        <br> -유한대학교 보건복지과 졸업 (2021.2)
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="leafs">
-                            <img class="empty-leaf" src="./images/red-green-leaf.png" alt="빈나뭇잎">
-                            <img class="greenYellow-leaf" src="./images/green-yellow-leaf.png" alt="나뭇잎">
-                        </div>
-                    </div>
-                </section>
-                <section id="skillsPage">
-                    <div class="wrapper">
-                        <h2>SKILLS</h2>
-                        <div class="skill-flex">
-                            <ul class="skill-list">
-                                <li><a href="#">HTML</a></li>
-                                <li><a href="#">CSS3</a></li>
-                                <li><a href="#">SASS</a></li>
-                                <li><a href="#">JavaScript</a></li>
-                                <li><a href="#">React</a></li>
-                                <li><a href="#">jQuery</a></li>
-                                <li><a href="#">DesignTool</a></li>
-                            </ul>
-                            <div class="chart pie1"><span class="center">95%</span></div>
-                        </div>
-                    </div>
-                </section>
-                <section id="projectsPage">
-                    <div class="wrapper">
-                        <h2>PORTFOLIO</h2>
-                        <div class="Project-flex">
-                            <div class="mockup-img">
-                                <img src="./images/mockup-team.png" alt="팀 포트폴리오 목업">
-                            </div>
-                            <div class="project-txt">
-                                <div class="pro-title">
-                                    <ul>
-                                        <li>
-                                            <span>Renewal Page</span>
-                                            <h3>개인 리뉴얼 사이트</h3>
-                                        </li>
-                                        <li>
-                                            <h3>기여도</h3>
-                                            <p>디자인 100% + 퍼블리싱 100%</p>
-                                        </li>
-                                        <li>
-                                            <h3>사용프로그램</h3>
-                                            <p>Photoshop, Illustrator, VS Code</p>
-                                        </li>
-                                        <li>
-                                            <h3>프로젝트 소개</h3>
-                                            <p>웹 디자인 실무 교육과정을 통해 디자인과 코딩을 접하고 처음 만들었던 사이트입니다. 기존에 만들었던 작업물에 부족함을 느껴 한 번 더 디자인과 코드를 수정하면서 부족했던 부분을 보완하고 새로 공부한 내용을 적용하여 작업했습니다.</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="pro-button">
-                                    <a href="./sub/morning/morningGuide.html"><span>디자인가이드 보기</span></a>
-                                    <a href=""><span>사이트 보기</span></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="Project-flex">
-                            <div class="mockup-img">
-                                <img src="./images/mockup-team.png" alt="팀 포트폴리오 목업">
-                            </div>
-                            <div class="project-txt">
-                                <div class="pro-title">
-                                    <ul>
-                                        <li>
-                                            <span>Group Page</span>
-                                            <h3>팀 리뉴얼 사이트</h3>
-                                        </li>
-                                        <li>
-                                            <h3>기여도</h3>
-                                            <p>디자인 90% + 퍼블리싱 80%</p>
-                                        </li>
-                                        <li>
-                                            <h3>사용프로그램</h3>
-                                            <p>Photoshop, Illustrator, VS Code</p>
-                                        </li>
-                                        <li>
-                                            <h3>프로젝트 소개</h3>
-                                            <p>웹 디자인 실무 교육과정을 통해 디자인과 코딩을 접하고 처음 만들었던 사이트입니다. 기존에 만들었던 작업물에 부족함을 느껴 한 번 더 디자인과 코드를 수정하면서 부족했던 부분을 보완하고 새로 공부한 내용을 적용하여 작업했습니다.</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="pro-button">
-                                    <a href="./sub/portfoliosite/portfoliositeGuide.html"><span>디자인가이드 보기</span></a>
-                                    <a href="https://github.com/KD6-3-7/portfolio-royalpalace.git"><span>사이트 보기</span></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="Project-flex">
-                            <div class="mockup-img">
-                                <img src="./images/mockup-team.png" alt="팀 포트폴리오 목업">
-                            </div>
-                            <div class="project-txt">
-                                <div class="pro-title">
-                                    <ul>
-                                        <li>
-                                            <span>Group Page</span>
-                                            <h3>팀 리뉴얼 사이트</h3>
-                                        </li>
-                                        <li>
-                                            <h3>기여도</h3>
-                                            <p>디자인 90% + 퍼블리싱 80%</p>
-                                        </li>
-                                        <li>
-                                            <h3>사용프로그램</h3>
-                                            <p>Photoshop, Illustrator, VS Code</p>
-                                        </li>
-                                        <li>
-                                            <h3>프로젝트 소개</h3>
-                                            <p>웹 디자인 실무 교육과정을 통해 디자인과 코딩을 접하고 처음 만들었던 사이트입니다. 기존에 만들었던 작업물에 부족함을 느껴 한 번 더 디자인과 코드를 수정하면서 부족했던 부분을 보완하고 새로 공부한 내용을 적용하여 작업했습니다.</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="pro-button">
-                                    <a href="./sub/team/teamGuide.html"><span>디자인가이드 보기</span></a>
-                                    <a><span>사이트 보기</span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- 자바스크립트 포폴 -->
-                <section id="projectScript">
-                    <div class="projectScript-area">
-                        <ul>
-                            <li>
-                                <div class="works-img">
-                                    <img src="./images/todolist.png" alt="to-do-list">
-                                </div>
-                                <div class="workInfo">
-                                    <h3>To Do List</h3>
-                                    <p>
-                                        react를 이용하여<br> local storage에 저장되는 <br> todo list를 만들었습니다.
-                                    </p>
-                                    <span>
-                                        React
-                                    </span>
-                                    <button><a>자세히 보기</a></button>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="works-img">
-                                    <img src="./images/calculator.png" alt="계산기">
-                                </div>
-                                <div class="workInfo">
-                                    <h3>행렬 계산기</h3>
-                                    <p>
-                                        Javascript 이용하여 <br> 행렬 계산기를 만들었습니다.
-                                    </p>
-                                    <span>
-                                        HTML5 / CSS3 / Javascript
-                                    </span>
-                                    <button><a>자세히 보기</a></button>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-                <section id="contactPage">
-                    <div class="e-mail">
-                        <a href="mailto:kej1480k@naver.com">
-                            <img src="./images/mail-icon.png" alt="mail-icon">
-                            <span>kej1480k@naver.com</span>
-                        </a>
-                    </div>
-                    <div class="kakao">
-                        <a href="https://open.kakao.com/o/sYhWbCYd">
-                            <img src="./images/kakao-icon.png" alt="kakaoTallk">
-                            <span>Open kakaotalk</span>
-                        </a>
-                    </div>
-                    <div class="end-logo">
-                        <a href="./portfolio.html">
-                            <img src="./images/logo.png" alt="logo">
-                        </a>
-                    </div>
-                </section>
-            </div>
-        </main>
-        <footer>
+                </div>
+            </section>
+            <section id="contactPage">
+                <div class="e-mail">
+                    <a href="mailto:kej1480k@naver.com">
+                        <img src="./images/mail-icon.png" alt="mail-icon">
+                        <span>kej1480k@naver.com</span>
+                    </a>
+                </div>
+                <div class="kakao">
+                    <a href="https://open.kakao.com/o/sYhWbCYd">
+                        <img src="./images/kakao-icon.png" alt="kakaoTallk">
+                        <span>Open kakaotalk</span>
+                    </a>
+                </div>
+                <div class="end-logo">
+                    <a href="./portfolio.html">
+                        <img src="./images/logo.png" alt="logo">
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
 
-        </footer>
-    </div>
+    <footer>
+
+    </footer>
 </body>
-
 </html>
