@@ -926,7 +926,7 @@ main .confix #skillsPage .wrapper .skill-flex {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 600px;
+  padding-bottom: 500px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1000,17 +1000,17 @@ main .confix #skillsPage .wrapper .skill-flex .skill-list li a:hover {
   background-color: #6f5252;
 }
 
-main .confix #skillsPage .wrapper .skill-flex .skill-list li .skill-graph-box {
+main .confix #skillsPage .wrapper .skill-flex .skill-graph-box {
   position: absolute;
-  left: 10%;
-  top: 40%;
+  left: 50%;
+  top: 50%;
   width: 250px;
   height: 200px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
 
-main .confix #skillsPage .wrapper .skill-flex .skill-list li .skill-graph-box .graph {
+main .confix #skillsPage .wrapper .skill-flex .skill-graph-box .graph {
   position: absolute;
   display: inline-block;
   width: 250px;
@@ -1022,7 +1022,7 @@ main .confix #skillsPage .wrapper .skill-flex .skill-list li .skill-graph-box .g
   z-index: 1;
 }
 
-main .confix #skillsPage .wrapper .skill-flex .skill-list li .skill-graph-box .graph .center {
+main .confix #skillsPage .wrapper .skill-flex .skill-graph-box .graph .center {
   background-color: #6f5252;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1047,18 +1047,18 @@ main .confix #skillsPage .wrapper .skill-flex .skill-list li .skill-graph-box .g
           transform: translate(-50%, -50%);
 }
 
-main .confix #skillsPage .wrapper .skill-flex .skill-list li .skill-graph-box .graph .center img {
+main .confix #skillsPage .wrapper .skill-flex .skill-graph-box .graph .center img {
   width: 90px;
   margin-top: 2.5em;
 }
 
-main .confix #skillsPage .wrapper .skill-flex .skill-list li .skill-graph-box .graph .center p {
+main .confix #skillsPage .wrapper .skill-flex .skill-graph-box .graph .center p {
   margin-top: -65px;
   font-size: 20px;
   color: #f7f0e0;
 }
 
-main .confix #skillsPage .wrapper .skill-flex .skill-list li .skill-graph-box .graph .graph-txt {
+main .confix #skillsPage .wrapper .skill-flex .skill-graph-box .graph .graph-txt {
   position: absolute;
   top: 100%;
   display: block;
@@ -1066,13 +1066,9 @@ main .confix #skillsPage .wrapper .skill-flex .skill-list li .skill-graph-box .g
   padding: 0 5%;
   padding-top: 2em;
   color: #f7f0e0;
-  color: black;
-  /**/
-  background-color: #f7f0e0;
-  /**/
 }
 
-main .confix #skillsPage .wrapper .skill-flex .skill-list li .skill-graph-box .graph-d .center img {
+main .confix #skillsPage .wrapper .skill-flex .skill-graph-box .graph-d .center img {
   width: 127px;
   margin-top: 3.5em;
 }

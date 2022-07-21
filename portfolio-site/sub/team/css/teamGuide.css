@@ -240,6 +240,11 @@ li {
   }
 }
 
+.wrapper main .confix .guide-txt .grid img {
+  width: 250px;
+  margin: 20px 0;
+}
+
 .wrapper main .confix .guide-txt .grid ul li {
   font-size: 3vw;
   color: #6f5252;
@@ -324,7 +329,7 @@ li {
   height: 7.5rem;
   margin-right: 2vw;
   border-radius: 50%;
-  background-color: white;
+  background-color: #f2ece4;
 }
 
 .wrapper main .confix .guide-txt .color ul li .yellow-circle {
@@ -332,7 +337,7 @@ li {
   height: 7.5rem;
   margin-right: 2vw;
   border-radius: 50%;
-  background-color: #f8f292;
+  background-color: #a7a7a7;
 }
 
 .wrapper main .confix .guide-txt .color ul li .gray-circle {
@@ -340,7 +345,7 @@ li {
   height: 7.5rem;
   margin-right: 2vw;
   border-radius: 50%;
-  background-color: #656161;
+  background-color: #2c2928;
 }
 
 .wrapper main .confix .guide-txt .color ul li p {
@@ -375,4 +380,4 @@ li {
   font-size: 0.8em;
   color: #f7f0e0;
 }
-/*# sourceMappingURL=morning.css.map */
+/*# sourceMappingURL=teamGuide.css.map */

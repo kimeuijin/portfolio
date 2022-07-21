@@ -4,9 +4,6 @@ $(function() {
     $(".hamburger").click(function() {
         $(".menu-box").slideToggle();
     });
-    // $(".gnb > li").click(function() {
-    //     $(".menu-box").hide();
-    // })
 
     //graph
     $(window).ready(function(){
@@ -39,14 +36,31 @@ $(function() {
     }
 
 
-    // $(".graph").hide();
-    $(".graph-h").show();
+    // skill view
+    var smenu = document.getElementsByClassName('skill-menu'); 
+    var graph = document.getElementsByClassName('graph');  
+    
+    graph[0].style.display = "block";  
+    
+    let smenulength = smenu.length; 
+    for (let i = 0; i < smenulength; i++) {
+        smenu[i].addEventListener("click", function() { 
+            skillView(i);
+        });
+    }
 
-    $(".skill-list > li > a").click(function(e) {
-        e.preventDefault();
-        $(this).next(show);
-        
-    });
+    // determine skil text display
+    function skillView(num) {
+        let graphlength = graph.length; 
+        for (let i = 0; i < graphlength; i++) {
+            let mygraph = graph[i]; 
+            if (i == num) {
+                mygraph.style.display = "block";
+            } else {
+                mygraph.style.display = "none";
+            }
+        }
+    }
 
 
     

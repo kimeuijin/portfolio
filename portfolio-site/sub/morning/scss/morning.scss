@@ -2,13 +2,10 @@
 @import "./../scss/common.scss";
 @import "./../scss/mixin.scss";
 
-body{
-    font-family: $font-ham;
-}
 
 .wrapper{
     position: relative;
-    width: 100vw;
+    width: 100%;
     margin: 0 auto;
     header{
         background-color: $main-color;
@@ -18,37 +15,43 @@ body{
             top: 0;
             justify-content: space-between;
             width: 100%;
-            height: 50px;
+            height: 70px;
             z-index: 5;
             background-color: $main-color;
             .logo{
-                width: 6vw;
-                padding-top: 10px;
-                margin-left: 5%;
+                width: 45px;
+                padding-top: 15px;
+                margin-left: 20px;
                 img{
                     width: 100%;
                 }
                 @include responsive(tablet-size) {
-                    width: 4vw;
-                
+                    width: 5vw;
+                    // padding-top: 10px;
+                }
+                @include responsive(pc-size) {
+                    width: 50px;
                 }
             }
             .home-button{
-                padding-top: 6px;
-                padding-right: 6px;
-                img{
-                    width: 100%;
-                }
-                @include responsive(tablet-size) {
-                    padding-right: 6px;
+                padding-top: 20px;
+                padding-right: 20px;
+                a{
+                    color: $second-color;
+                    // font-size: 4vw;
+                    @include responsive(tablet-size) {
+                        font-size: 22px;
+                    }
+                    &:hover{
+                        color: $modal-color;
+                    }
                 }
             }
         }
     }
 
     main{
-
-        width: 100vw;
+        width: 100%;
         background-color: $main-color;
         .confix{
             @include confix;
@@ -56,6 +59,11 @@ body{
          
             .mockup{
                 padding-top: 18vw;
+                @include responsive(tablet-size) {
+                    padding-top: 8vw;
+                    width: 80%;
+                    margin: 0 auto;
+                }
                 img{
                     width: 100%;
                 }
@@ -66,16 +74,17 @@ body{
                 padding: 10%;
                 border-radius: 22px;
                 background-color: $second-color;
-
+                
                 .description{
                     margin-bottom: 6em;
-
+                    
                     .title{
                         padding-top: 6vw;
                         padding-bottom: 16vw;
 
                         @include responsive(tablet-size) {
-                            padding-top: 15vw;
+                            padding-top: 2vw;
+                            padding-bottom: 12vw;
                         }
 
                         span{
@@ -83,60 +92,145 @@ body{
                             color: $main-color;
                             margin-left: 15px;
 
+                            @include responsive(tablet-size) {
+                                font-size: 7vw;
+                            }
+
+                            @include responsive(pc-size) {
+                                font-size: 5vw;
+                            }
+
                             &:last-child{
                                 display: block;
                                 text-align: center;
                             }
                         }
                     }
-                    h2{
+                    h2,h3{
+                        font-size: 5vw;
+                        margin-bottom: 8px;
                         color: $main-color;
+                        @include responsive(tablet-size) {
+                            font-size: 3vw;
+                        margin-bottom: 18px;
+
+                        }
+
+                        @include responsive(pc-size) {
+                            font-size: 2vw;
+                        }
                     }
                     p{
                         margin-bottom: 30px;
+                        font-size: 3vw;
+                        color: $kaky-color;
+                        @include responsive(tablet-size) {
+                            font-size: 2vw;
+                        }
+
+                        @include responsive(pc-size) {
+                            font-size: 1.5vw;
+                        }
                     }
                 }
                 .grid{
                     h2{
+                        font-size: 5vw;
                         color: $main-color;
-                    }
-                    margin-bottom: 6em;
-
-                }
-                .font{
-                    h2{
-                        color: $main-color;
-                    }
-                    margin-bottom: 6em;
-
-                }
-                .color{
-                    h2{
-                        color: $main-color;
+                        @include responsive(tablet-size) {
+                            font-size: 3vw;
+                        }
+                        @include responsive(pc-size) {
+                            font-size: 2vw;
+                        }
                     }
                     ul{
                         li{
-
+                            font-size: 3vw;
+                            color: $main-color;
+                            @include responsive(tablet-size) {
+                                font-size: 2vw;
+                            }
+    
+                            @include responsive(pc-size) {
+                                font-size: 1.5vw;
+                            }
+                        }
+                    }
+                    margin-bottom: 6em;
+                }
+                .font{
+                    h2{
+                        font-size: 5vw;
+                        color: $main-color;
+                        margin-bottom: 1em;
+                        @include responsive(tablet-size) {
+                            font-size: 3vw;
+                        }
+                        @include responsive(pc-size) {
+                            font-size: 2vw;
+                        }
+                    }
+                    img{
+                        width: 20em;
+                        @include responsive(tablet-size) {
+                            width: 25em;
+                        }
+                        @include responsive(pc-size) {
+                            width: 30em;
+                        }
+                    }
+                    
+                    margin-bottom: 5em;
+                }
+                .color{
+                    h2{
+                        font-size: 5vw;
+                        color: $main-color;
+                        @include responsive(tablet-size) {
+                            font-size: 3vw;
+                        }
+                        @include responsive(pc-size) {
+                            font-size: 2vw;
+                        }
+                    }
+                    ul{
+                        li{
+                            display: flex;
+                            margin: 3em 0;
                             .white-circle{
                                 width: 7.5rem;
                                 height: 7.5rem;
                                 margin-right: 2vw;
                                 border-radius: 50%;
-                                background-color: rgb(255, 255, 254);
+                                background-color: rgb(255, 255, 255);
                             }
                             .yellow-circle{
                                 width: 7.5rem;
                                 height: 7.5rem;
                                 margin-right: 2vw;
                                 border-radius: 50%;
-                                background-color: rgb(241, 238, 149);
+                                background-color: #f8f292;
                             }
                             .gray-circle{
                                 width: 7.5rem;
                                 height: 7.5rem;
                                 margin-right: 2vw;
                                 border-radius: 50%;
-                                background-color:rgb(100, 97, 93);
+                                background-color: #656161;
+                            }
+
+                            p{
+                                font-size: 3vw;
+                                margin: 10px 13px;
+                                color: $main-color;
+                                @include responsive(tablet-size) {
+                                    font-size: 2vw;
+                                }
+        
+                                @include responsive(pc-size) {
+                                    font-size: 1.5vw;
+                                }
                             }
                         }
                     }
