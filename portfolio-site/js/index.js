@@ -7,37 +7,51 @@ $(function() {
     // $(".gnb > li").click(function() {
     //     $(".menu-box").hide();
     // })
-});
 
-//graph
-$(window).ready(function(){
-    draw(95, '.graph-h', '#ff8363');
-    draw(95, '.graph-c', '#009de6');
-    draw(95, '.graph-s','#cf649a');
-    draw(80, '.graph-j','#ffca3e');
-    draw(80, '.graph-r','#61dafb');
-    draw(80, '.graph-jq','#535556');
-    draw(80, '.graph-d','#0a1f35');
+    //graph
+    $(window).ready(function(){
+        draw(95, '.graph-h', '#ff8363');
+        draw(95, '.graph-c', '#009de6');
+        draw(95, '.graph-s','#cf649a');
+        draw(80, '.graph-j','#ffca3e');
+        draw(80, '.graph-r','#61dafb');
+        draw(80, '.graph-jq','#535556');
+        draw(95, '.graph-d','#0a1f35');
+        
+    });
+    
+    function draw(max, classname, colorname){
+        var i = 1;
+        var func1 = setInterval(function(){
+            if(i<max){
+                color1(i,classname,colorname);
+                i++;
+            } else{
+                clearInterval(func1);
+            }
+        },10);
+    }
+    
+    function color1(i, classname,colorname){
+        $(classname).css({
+            "background":"conic-gradient("+colorname+" 0% "+i+"%, #f7f0e0 "+i+"% 100%)"
+        });
+    }
+
+
+    // $(".graph").hide();
+    $(".graph-h").show();
+
+    $(".skill-list > li > a").click(function(e) {
+        e.preventDefault();
+        $(this).next(show);
+        
+    });
+
+
     
 });
 
-function draw(max, classname, colorname){
-    var i = 1;
-    var func1 = setInterval(function(){
-        if(i<max){
-            color1(i,classname,colorname);
-            i++;
-        } else{
-            clearInterval(func1);
-        }
-    },10);
-}
-
-function color1(i, classname,colorname){
-    $(classname).css({
-        "background":"conic-gradient("+colorname+" 0% "+i+"%, #f7f0e0 "+i+"% 100%)"
-    });
-}
 
 
 

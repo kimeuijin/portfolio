@@ -21,33 +21,33 @@
 <body>
     <header>
         <h1>Web developer portfolio</h1>
-            <div class="header-box">
-                <div class="logo-menu">
-                    <div class="logo">
-                        <a href="./portfolio.html"><img src="./images/logo.png" alt="로고"></a>
-                    </div>
-
-                    <div class="hamburger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
+        <div class="header-box">
+            <div class="logo-menu">
+                <div class="logo">
+                    <a href="./portfolio.html"><img src="./images/logo.png" alt="로고"></a>
                 </div>
-    
-                <div class="menu-box">
-                    <ul class="gnb">
-                        <li><a href="#homePage">Home</a></li>
-                        <li><a href="#aboutmePage">About Me</a></li>
-                        <li><a href="#skillsPage">Skills</a></li>
-                        <li><a href="#projectsPage">Projects</a></li>
-                        <li><a href="#contactPage">Contact</a></li>
-                    </ul>
-    
-                    <div class="git-icon">
-                        <a href="https://github.com/kimeuijin" target="_blank"><img src="./images/github.png" alt="깃허브아이콘"></a>
-                    </div>
-                </div><!-- menu-box -->
-            </div><!-- header-box -->
+
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="menu-box">
+                <ul class="gnb">
+                    <li><a href="#homePage">Home</a></li>
+                    <li><a href="#aboutmePage">About Me</a></li>
+                    <li><a href="#skillsPage">Skills</a></li>
+                    <li><a href="#projectsPage">Projects</a></li>
+                    <li><a href="#contactPage">Contact</a></li>
+                </ul>
+
+                <div class="git-icon">
+                    <a href="https://github.com/kimeuijin" target="_blank"><img src="./images/github.png" alt="깃허브아이콘"></a>
+                </div>
+            </div><!-- menu-box -->
+        </div><!-- header-box -->
     </header>
     <main>
         <div class="confix">
@@ -132,83 +132,174 @@
                     <h2>SKILLS</h2>
                     <div class="skill-flex">
                         <ul class="skill-list">
-                            <li><a>HTML</a></li>
-                            <li><a>CSS3</a></li>
-                            <li><a>SASS</a></li>
-                            <li><a>JavaScript</a></li>
-                            <li><a>React</a></li>
-                            <li><a>jQuery</a></li>
-                            <li><a>DesignTool</a></li>
+                            <li class="html">
+                                <a href="#">HTML</a>
+                                <div class="skill-graph-box">
+                                    <div class="graph graph-h">
+                                        <span class="center">
+                                           <img src="./images/html-icon.png" alt="html아이콘">
+                                           <p>95%</p>
+                                        </span>
+                                        <span class="graph-txt">
+                                            html
+                                            웹표준을 준수하며,
+                                            접근성이 뛰어난 웹사이트를 제작 할 수 있습니다.
+                                            시멘틱 태그의 필요성을 알고 있으며 자유자재로 구조를 만들 수 있습니다.
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="css"><a href="#">CSS3</a>
+                                <div class="skill-graph-box">
+                                    <div class="graph graph-c">
+                                        <span class="center">
+                                            <img src="./images/css-icon.png" alt="css아이콘">
+                                           <p>95%</p>
+                                        </span>
+                                        <span class="graph-txt">
+                                            다양한 호버, 애니메이션 효과 적용할 수 있고, 미디어쿼리를 사용하여 반응형으로 구현 가능합니다
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a>SASS</a>
+                                <div class="skill-graph-box">
+                                    <div class="graph graph-s">
+                                        <span class="center">
+                                          <img src="./images/sass-icon.png" alt="sass아이콘">
+                                          <p>95%</p>
+                                        </span>
+                                        <span class="graph-txt">
+                                            중복을 최소화하여 변수로 만들거나 믹스인을 적절히 사용하여 코드를 간결하게 작성할 수 있습니다.
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a>JavaScript</a>
+                                <div class="skill-graph-box">
+                                    <div class="graph graph-j">
+                                        <span class="center">
+                                           <img src="./images/java-icon.png" alt="java아이콘">
+                                           <p>80%</p>
+                                        </span>
+                                        <span class="graph-txt">
+                                            자바스크립트 ES6문법을 이해하고 활용할 수 있으며,다양한 이벤트들을 제어할 수 있고 if, for, while문 등을 적절하게 사용하여 기능 구현이 가능합니다.
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a>React</a>
+                                <div class="skill-graph-box">
+                                    <div class="graph graph-r">
+                                        <span class="center">
+                                           <img src="./images/React-icon.png" alt="react아이콘">
+                                           <p>80%</p>
+                                        </span>
+                                        <span class="graph-txt">
+                                            자바스크립트 ES6문법을 이해하고 활용할 수 있으며,다양한 이벤트들을 제어할 수 있고 if, for, while문 등을 적절하게 사용하여 기능 구현이 가능합니다.
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a>jQuery</a>
+                                <div class="skill-graph-box">
+                                    <div class="graph graph-jq">
+                                        <span class="center">
+                                           <img src="./images/jQuery-icon.png" alt="jQuery아이콘">
+                                           <p>75%</p>
+                                        </span>
+                                        <span class="graph-txt">
+                                            다양한 이벤트들을 제어 할 수 있으며 노드를 찾아 스타일과 속성을 다룰 수 있습니다.
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a>DesignTool</a>
+                                <div class="skill-graph-box">
+                                    <div class="graph graph-d">
+                                        <span class="center">
+                                           <img src="./images/tools-icon.png" alt="디자인아이콘">
+                                           <p>95%</p>
+                                        </span>
+                                        <span class="graph-txt">
+                                            사진 보정 및 로고, 배너, 아이콘 등의 디자인 작업을능숙하게 할 수 있으며, 웹페이지 제작을 위한 시안작업이 가능합니다. 
+                                            XD를 활용하여 웹 사이트의 시안과 프로토타입 제작이 가능합니다. 
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
-                        <div class="graph graph-h">
-                            <span class="center">
-                               <img src="./images/html-icon.png" alt="html아이콘">
-                               <p>95%</p>
-                            </span>
-                            <span class="graph-txt">
-                                html
-                                웹표준을 준수하며,
-                                접근성이 뛰어난 웹사이트를 제작 할 수 있습니다.
-                                시멘틱 태그의 필요성을 알고 있으며 자유자재로 구조를 만들 수 있습니다.
-                            </span>
-                        </div>
-                        <div class="graph graph-c">
-                            <span class="center">
-                                <img src="./images/css-icon.png" alt="css아이콘">
-                               <p>95%</p>
-                            </span>
-                            <span class="graph-txt">
-                                다양한 호버, 애니메이션 효과 적용할 수 있고, 미디어쿼리를 사용하여 반응형으로 구현 가능합니다
-                            </span>
-                        </div>
-                        <div class="graph graph-s">
-                            <span class="center">
-                              <img src="./images/sass-icon.png" alt="sass아이콘">
-                              <p>95%</p>
-                            </span>
-                            <span class="graph-txt">
-                                중복을 최소화하여 변수로 만들거나 믹스인을 적절히 사용하여 코드를 간결하게 작성할 수 있습니다.
-                            </span>
-                        </div>
-                        <div class="graph graph-j">
-                            <span class="center">
-                               <img src="./images/java-icon.png" alt="java아이콘">
-                               <p>80%</p>
-                            </span>
-                            <span class="graph-txt">
-                                자바스크립트 ES6문법을 이해하고 활용할 수 있으며,다양한 이벤트들을 제어할 수 있고 if, for, while문 등을 적절하게 사용하여 기능 구현이 가능합니다.
-                            </span>
-                        </div>
-                        <div class="graph graph-r">
-                            <span class="center">
-                               <img src="./images/React-icon.png" alt="react아이콘">
-                               <p>80%</p>
-                            </span>
-                            <span class="graph-txt">
-                                자바스크립트 ES6문법을 이해하고 활용할 수 있으며,다양한 이벤트들을 제어할 수 있고 if, for, while문 등을 적절하게 사용하여 기능 구현이 가능합니다.
-                            </span>
-                        </div>
-                        <div class="graph graph-jq">
-                            <span class="center">
-                               <img src="./images/jQuery-icon.png" alt="jQuery아이콘">
-                               <p>75%</p>
-                            </span>
-                            <span class="graph-txt">
-                                다양한 이벤트들을 제어 할 수 있으며 노드를 찾아 스타일과 속성을 다룰 수 있습니다.
-                            </span>
-                        </div>
-                        <div class="graph graph-d">
-                            <span class="center">
-                               <img src="./images/tools-icon.png" alt="디자인아이콘">
-                               <p>95%</p>
-                            </span>
-                            <span class="graph-txt">
-                                사진 보정 및 로고, 배너, 아이콘 등의 디자인 작업을능숙하게 할 수 있으며, 웹페이지 제작을 위한 시안작업이 가능합니다. 
-                                XD를 활용하여 웹 사이트의 시안과 프로토타입 제작이 가능합니다. 
-                            </span>
-                        </div>
-                    </div>
-                </div>
+                        <!-- <div class="skill-graph-box"> -->
+                            <!-- <div class="graph graph-h">
+                                <span class="center">
+                                   <img src="./images/html-icon.png" alt="html아이콘">
+                                   <p>95%</p>
+                                </span>
+                                <span class="graph-txt">
+                                    html
+                                    웹표준을 준수하며,
+                                    접근성이 뛰어난 웹사이트를 제작 할 수 있습니다.
+                                    시멘틱 태그의 필요성을 알고 있으며 자유자재로 구조를 만들 수 있습니다.
+                                </span>
+                            </div> -->
+                            <!-- <div class="graph graph-c">
+                                <span class="center">
+                                    <img src="./images/css-icon.png" alt="css아이콘">
+                                   <p>95%</p>
+                                </span>
+                                <span class="graph-txt">
+                                    다양한 호버, 애니메이션 효과 적용할 수 있고, 미디어쿼리를 사용하여 반응형으로 구현 가능합니다
+                                </span>
+                            </div> -->
+                            <!-- <div class="graph graph-s">
+                                <span class="center">
+                                  <img src="./images/sass-icon.png" alt="sass아이콘">
+                                  <p>95%</p>
+                                </span>
+                                <span class="graph-txt">
+                                    중복을 최소화하여 변수로 만들거나 믹스인을 적절히 사용하여 코드를 간결하게 작성할 수 있습니다.
+                                </span>
+                            </div> -->
+                            <!-- <div class="graph graph-j">
+                                <span class="center">
+                                   <img src="./images/java-icon.png" alt="java아이콘">
+                                   <p>80%</p>
+                                </span>
+                                <span class="graph-txt">
+                                    자바스크립트 ES6문법을 이해하고 활용할 수 있으며,다양한 이벤트들을 제어할 수 있고 if, for, while문 등을 적절하게 사용하여 기능 구현이 가능합니다.
+                                </span>
+                            </div> -->
+                            <!-- <div class="graph graph-r">
+                                <span class="center">
+                                   <img src="./images/React-icon.png" alt="react아이콘">
+                                   <p>80%</p>
+                                </span>
+                                <span class="graph-txt">
+                                    자바스크립트 ES6문법을 이해하고 활용할 수 있으며,다양한 이벤트들을 제어할 수 있고 if, for, while문 등을 적절하게 사용하여 기능 구현이 가능합니다.
+                                </span>
+                            </div> -->
+                            <!-- <div class="graph graph-jq">
+                                <span class="center">
+                                   <img src="./images/jQuery-icon.png" alt="jQuery아이콘">
+                                   <p>75%</p>
+                                </span>
+                                <span class="graph-txt">
+                                    다양한 이벤트들을 제어 할 수 있으며 노드를 찾아 스타일과 속성을 다룰 수 있습니다.
+                                </span>
+                            </div> -->
+                            <!-- <div class="graph graph-d">
+                                <span class="center">
+                                   <img src="./images/tools-icon.png" alt="디자인아이콘">
+                                   <p>95%</p>
+                                </span>
+                                <span class="graph-txt">
+                                    사진 보정 및 로고, 배너, 아이콘 등의 디자인 작업을능숙하게 할 수 있으며, 웹페이지 제작을 위한 시안작업이 가능합니다. 
+                                    XD를 활용하여 웹 사이트의 시안과 프로토타입 제작이 가능합니다. 
+                                </span>
+                            </div> -->
+                        <!-- </div>skill-graph-box -->
+                    </div><!-- skill-flex -->
+                </div><!-- wrapper -->
             </section>
             <section id="projectsPage">
                 <div class="wrapper">

@@ -5,6 +5,7 @@
 
 body {
   font-family: "Hahmlet-Black";
+  background-color: #f7f0e0;
 }
 
 a {
@@ -43,23 +44,26 @@ li {
 }
 
 header {
-  position: relative;
+  position: fixed;
   width: 100%;
   z-index: 50;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 header .header-box {
-  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 header .header-box .logo-menu {
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 70px;
   overflow: hidden;
-  background-color: #6f5252;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -69,6 +73,7 @@ header .header-box .logo-menu {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #6f5252;
 }
 
 header .header-box .logo-menu .logo {
@@ -110,7 +115,6 @@ header .header-box .menu-box {
   display: none;
   position: absolute;
   top: 70px;
-  left: 0;
   width: 100vw;
   height: 100vh;
   z-index: 100;
@@ -120,14 +124,14 @@ header .header-box .menu-box {
 
 @media screen and (min-width: 768px) {
   header .header-box .menu-box {
-    margin-left: 31vw;
-    margin-top: 18px;
-    width: 73vw;
-    top: 0px;
-    height: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    right: 3%;
+    top: 0;
+    width: auto;
+    height: auto;
+    margin-top: 18px;
     font-size: 1.5vw;
     background-color: transparent;
   }
@@ -135,15 +139,13 @@ header .header-box .menu-box {
 
 @media screen and (min-width: 1080px) {
   header .header-box .menu-box {
-    width: 66vw;
-    margin-left: 53vw;
     margin-top: 18px;
     font-size: 1vw;
   }
 }
 
 header .header-box .menu-box .gnb {
-  padding: 20% 0;
+  padding: 10% 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -178,6 +180,12 @@ header .header-box .menu-box .gnb li a {
   }
 }
 
+@media screen and (min-width: 1080px) {
+  header .header-box .menu-box .gnb li a {
+    font-size: 24px;
+  }
+}
+
 header .header-box .menu-box .gnb li a:hover {
   color: #c6b793;
 }
@@ -196,7 +204,7 @@ header .header-box .menu-box .git-icon {
 
 @media screen and (min-width: 1080px) {
   header .header-box .menu-box .git-icon {
-    width: 2.6vw;
+    width: 31px;
   }
 }
 
@@ -233,7 +241,7 @@ main .confix #homePage .wrapper .ellipse img {
     width: 90%;
     height: 19vw;
     margin: 9vw 0 5vw 0;
-    padding: 0 5%;
+    padding: 0 5vw;
   }
 }
 
@@ -242,7 +250,7 @@ main .confix #homePage .wrapper .ellipse img {
     width: 80%;
     height: 15vw;
     margin: 5vw 0 1vw 0;
-    padding: 0 10%;
+    padding: 0 10vw;
   }
 }
 
@@ -918,6 +926,7 @@ main .confix #skillsPage .wrapper .skill-flex {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-bottom: 600px;
 }
 
 @media screen and (min-width: 768px) {
@@ -991,18 +1000,29 @@ main .confix #skillsPage .wrapper .skill-flex .skill-list li a:hover {
   background-color: #6f5252;
 }
 
-main .confix #skillsPage .wrapper .skill-flex .graph {
-  position: relative;
+main .confix #skillsPage .wrapper .skill-flex .skill-list li .skill-graph-box {
+  position: absolute;
+  left: 10%;
+  top: 40%;
+  width: 250px;
+  height: 200px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+main .confix #skillsPage .wrapper .skill-flex .skill-list li .skill-graph-box .graph {
+  position: absolute;
   display: inline-block;
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   margin-bottom: 200px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  z-index: 1;
 }
 
-main .confix #skillsPage .wrapper .skill-flex .graph .center {
+main .confix #skillsPage .wrapper .skill-flex .skill-list li .skill-graph-box .graph .center {
   background-color: #6f5252;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1027,18 +1047,18 @@ main .confix #skillsPage .wrapper .skill-flex .graph .center {
           transform: translate(-50%, -50%);
 }
 
-main .confix #skillsPage .wrapper .skill-flex .graph .center img {
+main .confix #skillsPage .wrapper .skill-flex .skill-list li .skill-graph-box .graph .center img {
   width: 90px;
   margin-top: 2.5em;
 }
 
-main .confix #skillsPage .wrapper .skill-flex .graph .center p {
+main .confix #skillsPage .wrapper .skill-flex .skill-list li .skill-graph-box .graph .center p {
   margin-top: -65px;
   font-size: 20px;
   color: #f7f0e0;
 }
 
-main .confix #skillsPage .wrapper .skill-flex .graph .graph-txt {
+main .confix #skillsPage .wrapper .skill-flex .skill-list li .skill-graph-box .graph .graph-txt {
   position: absolute;
   top: 100%;
   display: block;
@@ -1046,9 +1066,13 @@ main .confix #skillsPage .wrapper .skill-flex .graph .graph-txt {
   padding: 0 5%;
   padding-top: 2em;
   color: #f7f0e0;
+  color: black;
+  /**/
+  background-color: #f7f0e0;
+  /**/
 }
 
-main .confix #skillsPage .wrapper .skill-flex .graph-d .center img {
+main .confix #skillsPage .wrapper .skill-flex .skill-list li .skill-graph-box .graph-d .center img {
   width: 127px;
   margin-top: 3.5em;
 }
@@ -1060,7 +1084,7 @@ main .confix #projectsPage {
 main .confix #projectsPage .wrapper {
   max-width: 600px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 10px;
 }
 
 @media screen and (min-width: 1080px) {
