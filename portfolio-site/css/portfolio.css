@@ -935,8 +935,9 @@ main .confix #skillsPage .wrapper .skill-flex {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding-bottom: 10vw;
   }
 }
@@ -1010,6 +1011,13 @@ main .confix #skillsPage .wrapper .skill-flex .skill-graph-box {
           transform: translateX(-50%);
 }
 
+@media screen and (min-width: 768px) {
+  main .confix #skillsPage .wrapper .skill-flex .skill-graph-box {
+    left: 70%;
+    top: 25%;
+  }
+}
+
 main .confix #skillsPage .wrapper .skill-flex .skill-graph-box .graph {
   position: absolute;
   display: inline-block;
@@ -1020,6 +1028,13 @@ main .confix #skillsPage .wrapper .skill-flex .skill-graph-box .graph {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   z-index: 1;
+}
+
+@media screen and (min-width: 768px) {
+  main .confix #skillsPage .wrapper .skill-flex .skill-graph-box .graph {
+    width: 300px;
+    height: 300px;
+  }
 }
 
 main .confix #skillsPage .wrapper .skill-flex .skill-graph-box .graph .center {
@@ -1066,6 +1081,9 @@ main .confix #skillsPage .wrapper .skill-flex .skill-graph-box .graph .graph-txt
   padding: 0 5%;
   padding-top: 2em;
   color: #f7f0e0;
+  /**/
+  background-color: #6f5252;
+  /**/
 }
 
 main .confix #skillsPage .wrapper .skill-flex .skill-graph-box .graph-d .center img {
@@ -1116,6 +1134,12 @@ main .confix #projectsPage .wrapper .Project-flex {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 4em 0 10em 0;
+}
+
+@media screen and (min-width: 768px) {
+  main .confix #projectsPage .wrapper .Project-flex {
+    padding: 4em 0 20em 0;
+  }
 }
 
 @media screen and (min-width: 1080px) {
@@ -1284,6 +1308,18 @@ main .confix #projectScript .projectScript-area ul li {
   }
 }
 
+@media screen and (min-width: 768px) {
+  main .confix #projectScript .projectScript-area ul li {
+    width: 37vw;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  main .confix #projectScript .projectScript-area ul li {
+    width: 26vw;
+  }
+}
+
 main .confix #projectScript .projectScript-area ul li::before {
   position: absolute;
   top: 0;
@@ -1325,10 +1361,16 @@ main .confix #projectScript .projectScript-area ul li .works-img img {
 main .confix #projectScript .projectScript-area ul li .workInfo {
   display: none;
   position: absolute;
-  top: 10%;
+  top: 5%;
   width: 100%;
   text-align: center;
   z-index: 2;
+}
+
+@media screen and (min-width: 1080px) {
+  main .confix #projectScript .projectScript-area ul li .workInfo {
+    top: 2vw;
+  }
 }
 
 main .confix #projectScript .projectScript-area ul li .workInfo h3 {
@@ -1337,15 +1379,33 @@ main .confix #projectScript .projectScript-area ul li .workInfo h3 {
   color: #f7f0e0;
 }
 
+@media screen and (min-width: 1080px) {
+  main .confix #projectScript .projectScript-area ul li .workInfo h3 {
+    font-size: 1.5em;
+  }
+}
+
 main .confix #projectScript .projectScript-area ul li .workInfo p {
   padding: 0 10%;
   margin-bottom: 44px;
   color: #f7f0e0;
 }
 
+@media screen and (min-width: 1080px) {
+  main .confix #projectScript .projectScript-area ul li .workInfo p {
+    font-size: 1.1em;
+  }
+}
+
 main .confix #projectScript .projectScript-area ul li .workInfo span {
   display: block;
   color: #f6e994;
+}
+
+@media screen and (min-width: 1080px) {
+  main .confix #projectScript .projectScript-area ul li .workInfo span {
+    font-size: 1.2em;
+  }
 }
 
 main .confix #projectScript .projectScript-area ul li .workInfo button {

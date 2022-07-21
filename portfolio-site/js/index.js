@@ -12,7 +12,7 @@ $(function() {
         draw(95, '.graph-s','#cf649a');
         draw(80, '.graph-j','#ffca3e');
         draw(80, '.graph-r','#61dafb');
-        draw(80, '.graph-jq','#535556');
+        draw(75, '.graph-jq','#535556');
         draw(95, '.graph-d','#0a1f35');
         
     });
