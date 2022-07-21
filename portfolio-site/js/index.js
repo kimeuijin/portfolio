@@ -1,23 +1,45 @@
-
-// const hamburger = document.querySelector('.hamburger');
-// const menuBox = document.querySelector('.menu-box');
-
-
-// $(function() {
-//     $("hamburger").click(function() {
-//         $("menuBox").slideToggle();
-//     });
-// });
-
-window.onload = function() {
-    const hamburger = document.querySelector(".hamburger") ;
-    const menuBox = document.querySelector(".menu-box");
-
- 
-    toggleBtn.addEventListener("click", () => {
-     title.classList.toggle("title-none");
+//toggle button
+$(function() {
+    // $(".menu-box").hide();
+    $(".hamburger").click(function() {
+        $(".menu-box").slideToggle();
     });
-  }
+    // $(".gnb > li").click(function() {
+    //     $(".menu-box").hide();
+    // })
+});
+
+//graph
+$(window).ready(function(){
+    draw(95, '.graph-h', '#ff8363');
+    draw(95, '.graph-c', '#009de6');
+    draw(95, '.graph-s','#cf649a');
+    draw(80, '.graph-j','#ffca3e');
+    draw(80, '.graph-r','#61dafb');
+    draw(80, '.graph-jq','#535556');
+    draw(80, '.graph-d','#0a1f35');
+    
+});
+
+function draw(max, classname, colorname){
+    var i = 1;
+    var func1 = setInterval(function(){
+        if(i<max){
+            color1(i,classname,colorname);
+            i++;
+        } else{
+            clearInterval(func1);
+        }
+    },10);
+}
+
+function color1(i, classname,colorname){
+    $(classname).css({
+        "background":"conic-gradient("+colorname+" 0% "+i+"%, #f7f0e0 "+i+"% 100%)"
+    });
+}
+
+
 
 //modal 
 // const overlay = document.querySelector('#overlay');
@@ -31,10 +53,11 @@ window.onload = function() {
 //     photoCon.innerHTML = output;
 //     overlay.classList.add("show");
 
-//     document.body.classList.add("stop-scroll"); // body scroll 방지
+//     document.body.classList.add("stop-scroll"); 
 // }
 
 
 // colseButton.addEventListener('click', () => {
-//             overlay.classList.remove("show");
-//             document.body.classList.remove("stop-scroll"); // body scroll 방지
+//     overlay.classList.remove("show");
+//     document.body.classList.remove("stop-scroll");
+// })

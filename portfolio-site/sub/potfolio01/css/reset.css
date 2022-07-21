@@ -1,19 +1,20 @@
 @charset "UTF-8";
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html, body {
-    font: 16px '맑은 고딕';
+html,
+body {
+    font: 16px "Noto Sans KR";
 }
 
-ul,ol,li {
+ul,
+ol,
+li {
     list-style: none;
 }
-
 
 a {
     display: inline-block;
@@ -21,26 +22,40 @@ a {
     color: black;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: normal;
 }
 
 h1 {
-    font-size: 55px;
+    font-size: 26px;
 }
 
 h2 {
     font-weight: 600;
-    font-size: 55px;
+    font-size: 46px;
     text-align: center;
-    color: #000000;
 }
 
 h3 {
-    font-size:18px;
+    font-size: 18px;
 }
 
 p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.6em;
+}
+
+header,
+nav,
+main,
+aside,
+article,
+section,
+footer {
+    display: block;
 }

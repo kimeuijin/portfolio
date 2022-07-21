@@ -62,7 +62,7 @@ header {
         .menu-box {
             display: none;
             position: absolute;
-            top: 0;
+            top: 70px;
             left: 0;
             width: 100vw;
             height: 100vh;
@@ -72,8 +72,9 @@ header {
 
             @include responsive(tablet-size) {
                 margin-left: 31vw;
-                margin-top: 13px;
+                margin-top: 18px;
                 width: 73vw;
+                top: 0px;
                 height: auto;
                 display: flex;
                 font-size: 1.5vw;
@@ -83,6 +84,7 @@ header {
             @include responsive(pc-size) {
                 width: 66vw;
                 margin-left: 53vw;
+                margin-top: 18px;
                 font-size: 1vw;
             }
 
@@ -182,7 +184,7 @@ main {
                         }
                         @include responsive(pc-size) {
                             top: 7.2vw;
-                            left: 35%;
+                            left: 31%;
                         }
                         h2 {
                             color: $main-color;
@@ -574,8 +576,16 @@ main {
                             }
                             a {
                                 color: $main-color;
+                                margin: 0 20%;
                                 @include responsive(tablet-size) {
                                     font-size: 1.8vw;
+                                    margin: 0;
+
+                                }
+                                &:hover{
+                                    border-radius: 100px;
+                                    color: $second-color;
+                                    background-color: $main-color;
                                 }
                             }
                         }
@@ -586,12 +596,15 @@ main {
                         width: 300px;
                         height: 300px;
                         border-radius: 50%;
-                        margin-bottom: 70px;
+                        margin-bottom: 200px;
                         transition: 0.3s;
                         .center {
-                            background-color: opacify($second-color, .3);
-                            display: block;
+                            background-color: $main-color;
+                            display: flex;
+                            flex-direction: column;
                             position: absolute;
+                            text-align: center;
+                            align-items: center;
                             top: 50%;
                             left: 50%;
                             width: 200px;
@@ -599,14 +612,33 @@ main {
                             border-radius: 50%;
                             text-align: center;
                             line-height: 200px;
-                            font-size: 20px;
                             transform: translate(-50%, -50%);
+                            img{
+                                width: 90px;
+                                margin-top: 2.5em;
+                            }
+                            p{
+                                margin-top: -65px;
+                                font-size: 20px;
+                                color: $second-color;
+                            }
                         }
                         .graph-txt{
-                            display: block;
                             position: absolute;
                             top: 100%;
-                            left: 10%;
+                            display: block;
+                            text-align: start;
+                            padding: 0 5%;
+                            padding-top: 2em;
+                            color: $second-color;
+                        }
+                    }
+                    .graph-d{
+                        .center{
+                            img{
+                                width: 127px;
+                                margin-top: 3.5em;
+                            }
                         }
                     }
                 }

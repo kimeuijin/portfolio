@@ -98,7 +98,6 @@ body {
 }
 
 .wrapper main {
-  position: relative;
   width: 100vw;
   background-color: #6f5252;
 }
@@ -108,63 +107,47 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding-bottom: 6vw;
-  position: relative;
-}
-
-.wrapper main .confix .title {
-  padding-top: 20vw;
-  margin-bottom: 35px;
-}
-
-@media screen and (min-width: 768px) {
-  .wrapper main .confix .title {
-    padding-top: 15vw;
-  }
-}
-
-.wrapper main .confix .title span {
-  font-size: 9vw;
-  color: #f7f0e0;
-  margin-left: 50px;
-}
-
-.wrapper main .confix .title span:last-child {
-  display: block;
-  text-align: center;
 }
 
 .wrapper main .confix .mockup {
-  position: absolute;
-  width: 90%;
-  top: 51vw;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  padding-top: 18vw;
 }
 
 .wrapper main .confix .mockup img {
   width: 100%;
-  display: block;
-}
-
-@media screen and (min-width: 768px) {
-  .wrapper main .confix .mockup {
-    width: 70%;
-  }
 }
 
 .wrapper main .confix .guide-txt {
-  width: 90%;
+  width: 80%;
+  padding: 10%;
   border-radius: 22px;
-  width: 100%;
-  margin-top: 50vw;
-  padding: 0 1vw;
-  padding-top: 30vw;
   background-color: #f7f0e0;
 }
 
 .wrapper main .confix .guide-txt .description {
   margin-bottom: 6em;
+}
+
+.wrapper main .confix .guide-txt .description .title {
+  padding-top: 6vw;
+  padding-bottom: 16vw;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper main .confix .guide-txt .description .title {
+    padding-top: 15vw;
+  }
+}
+
+.wrapper main .confix .guide-txt .description .title span {
+  font-size: 9vw;
+  color: #6f5252;
+  margin-left: 15px;
+}
+
+.wrapper main .confix .guide-txt .description .title span:last-child {
+  display: block;
+  text-align: center;
 }
 
 .wrapper main .confix .guide-txt .description h2 {

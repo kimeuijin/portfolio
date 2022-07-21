@@ -109,7 +109,7 @@ header .header-box .logo-menu .hamburger span:nth-child(2) {
 header .header-box .menu-box {
   display: none;
   position: absolute;
-  top: 0;
+  top: 70px;
   left: 0;
   width: 100vw;
   height: 100vh;
@@ -121,8 +121,9 @@ header .header-box .menu-box {
 @media screen and (min-width: 768px) {
   header .header-box .menu-box {
     margin-left: 31vw;
-    margin-top: 13px;
+    margin-top: 18px;
     width: 73vw;
+    top: 0px;
     height: auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -136,6 +137,7 @@ header .header-box .menu-box {
   header .header-box .menu-box {
     width: 66vw;
     margin-left: 53vw;
+    margin-top: 18px;
     font-size: 1vw;
   }
 }
@@ -260,7 +262,7 @@ main .confix #homePage .wrapper .ellipse .mainTxt {
 @media screen and (min-width: 1080px) {
   main .confix #homePage .wrapper .ellipse .mainTxt {
     top: 7.2vw;
-    left: 35%;
+    left: 31%;
   }
 }
 
@@ -973,12 +975,20 @@ main .confix #skillsPage .wrapper .skill-flex .skill-list li {
 
 main .confix #skillsPage .wrapper .skill-flex .skill-list li a {
   color: #6f5252;
+  margin: 0 20%;
 }
 
 @media screen and (min-width: 768px) {
   main .confix #skillsPage .wrapper .skill-flex .skill-list li a {
     font-size: 1.8vw;
+    margin: 0;
   }
+}
+
+main .confix #skillsPage .wrapper .skill-flex .skill-list li a:hover {
+  border-radius: 100px;
+  color: #f7f0e0;
+  background-color: #6f5252;
 }
 
 main .confix #skillsPage .wrapper .skill-flex .graph {
@@ -987,15 +997,25 @@ main .confix #skillsPage .wrapper .skill-flex .graph {
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  margin-bottom: 70px;
+  margin-bottom: 200px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 main .confix #skillsPage .wrapper .skill-flex .graph .center {
-  background-color: #f7f0e0;
-  display: block;
+  background-color: #6f5252;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: absolute;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   top: 50%;
   left: 50%;
   width: 200px;
@@ -1003,16 +1023,34 @@ main .confix #skillsPage .wrapper .skill-flex .graph .center {
   border-radius: 50%;
   text-align: center;
   line-height: 200px;
-  font-size: 20px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
 
+main .confix #skillsPage .wrapper .skill-flex .graph .center img {
+  width: 90px;
+  margin-top: 2.5em;
+}
+
+main .confix #skillsPage .wrapper .skill-flex .graph .center p {
+  margin-top: -65px;
+  font-size: 20px;
+  color: #f7f0e0;
+}
+
 main .confix #skillsPage .wrapper .skill-flex .graph .graph-txt {
-  display: block;
   position: absolute;
   top: 100%;
-  left: 10%;
+  display: block;
+  text-align: start;
+  padding: 0 5%;
+  padding-top: 2em;
+  color: #f7f0e0;
+}
+
+main .confix #skillsPage .wrapper .skill-flex .graph-d .center img {
+  width: 127px;
+  margin-top: 3.5em;
 }
 
 main .confix #projectsPage {

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/morning-favicon.ico">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/morning.css">
     <title>morning</title>
@@ -13,151 +14,175 @@
 <body>
     <div class="wrapper">
         <header>
-            <h1 class="title">morning sandwich</h1>
-            <!--sand-photo-->
-            
-            <div class="menu-button">
-                <img src="./images/hamberger_button.png" alt="햄버거버튼">
-            </div>
-            <!--button-->
-            
-            <div class="slide">
-                <div class="slide-text">
-                    <span class="mornings">MORNING’S</span>
-                    <strong>HAM</strong>
-                    <strong>AVOKADO</strong>
-                    <span>햄 아보카도</span>
-                    <div class="more-button"> 
-                        <span class="plus">+</span> 
-                        <button>more</button>
+            <div class="confix2">
+                <div class="header-menu">
+                    <div class="logo">
+                        <img src="./images/morning logo.png" alt="모닝 로고">
                     </div>
-                </div> 
-                <div class="sand-photo">
-                    <img src="./images/main_sandwich.png" alt="메인 샌드위치">
+                    <div class="pc-menu">
+                        <ul class="gnb">
+                            <li><a href="">MENU</a></li>
+                            <li><a>STORE</a></li>
+                            <li><a>ORDER</a></li>
+                            <li><a>ABOUT</a></li>
+                            <li><a>EVENT</a></li>
+                        </ul>
+                    </div>
+                    <div class="log">
+                        <div class="search-flex">
+                            <span></span>
+                            <img src="./images/search.png" alt="돋보기">
+                        </div>
+                        <p>LOGIN</p>
+                        <div class="dot"></div>
+                        <p>회원가입</p>
+                    </div>
                 </div>
-            </div> <!--slide-->
+            </div>
         </header>
-
         <main>
+            <div class="slide-baner">
+                <img src="./images/banner.png" alt="샌드위치 배너">
+            </div>
+            <!--slide-->
             <section class="BAKERY">
                 <div class="confix">
                     <h2>BAKERY</h2>
-                    <div class="sandwich-main-img">
-                        <img src="./images/bakery_main.jpg" alt="베이커리 메인사진">
-                    </div><!--sandwich-main-img-->
-
-                    <div class="section-1">
+                    <div class="bakery-flex-box">
                         <div class="sandwich-img">
-                            <img src="./images/cranberry.png" alt="크랜베리">
-                            <img src="./images/egg_shrimp.png" alt="쉬림프에그">
-                            <img src="./images/rye.png" alt="통밀에그">
-                        </div><!--sandwich-img-->
-
-                        <div class="sandwich-text">
-                            <strong>쉬림프 에그 </strong>
-                            <strong>Shrimp Egg</strong>
-                            <span>매콤한 쉬림프와 에그마요의 고소함이 조화로운 샌드위치</span><br>
-                            <button class="sandwich-button">자세히보기 +</button>
-                        </div><!--sandwich-text-->
-                    </div>    
-                </div><!--confix-->
+                            <img src="./images/bakery_main.jpg" alt="베이커리 메인사진">
+                        </div>
+                        <!--sandwich-img-->
+                        <div class="wich-box">
+                            <div class="wich-img">
+                                <img src="./images/cranberry.png" alt="크랜베리">
+                                <img src="./images/rye.png" alt="통밀에그">
+                            </div>
+                            <img src="./images/egg_shrimp.png" alt="쉬림프에그" class="center-wich">
+                            <div class="sandwich-text">
+                                <strong id="srp">쉬림프 에그 </strong>
+                                <strong id="srp-egg">Shrimp Egg</strong><br>
+                                <span>매콤한 쉬림프와 에그마요의 고소함이 조화로운 샌드위치</span>
+                                <div class="button-flex">
+                                    <button class="sandwich-button">자세히보기 +</button>
+                                    <div class="slide-button">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
-
             <section class="SALAD">
                 <div class="confix">
                     <h2>SALAD</h2>
-                    <div class="salad-img">
-                        <img src="./images/chicken_salad.png" alt="치킨샐러드">
-                        <img src="./images/salmon_salad.png" alt="연어샐러드">
-                        <img src="./images/beef_salad.png" alt="비프샐러드">
-                    </div><!--salad-img-->
-
-                    <div class="salad-text">
-                        <h3>연어 Salmon</h3>
-                        <span>신선한 연어와 상큼한 소스의 환상의 조화를 이루는 샐러드</span>
-                        <button class="salad-button">자세히보기 +</button>
-                    </div><!--salad-text-->
-
-                    <div class="salad-main-img">
-                        <img src="./images/salad_main.jpeg" alt="샐러드 메인사진">
-                    </div><!--salad-main-img-->
-                </div><!--confix-->
+                    <div class="salad-flex-box">
+                        <div class="sal-box">
+                            <div class="sal-img">
+                                <img src="./images/chicken_salad.png" alt="치킨샐러드">
+                                <img src="./images/beef_salad.png" alt="비프샐러드">
+                            </div>
+                            <img src="./images/salmon_salad.png" alt="연어샐러드" class="center-salad">
+                            <div class="salad-text">
+                                <strong id="sal">연어</strong>
+                                <strong id="sal-mon">Salmon</strong><br>
+                                <span>신선한 연어와 상큼한 소스의 환상의 조화를 이루는 샐러드</span>
+                                <div class="button-flex">
+                                    <button class="salad-button">자세히보기 +</button>
+                                    <div class="slide-button">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="salad-img">
+                            <img src="./images/salad_main.jpeg" alt="샐러드 메인사진">
+                        </div>
+                    </div>
+                </div>
             </section>
- 
             <section class="DRINK">
                 <div class="confix">
-                    <div class="drink-area">
-                        <h2>DRINK</h2>
+                    <h2>DRINK</h2>
+                    <div class="drink-flex-box">
                         <div class="latte">
                             <img src="./images/latte.png" alt="라떼">
-                            <h3>아이스 라떼</h3>
-                            <p> 
-                                풍부하고 진한 농도의 에스프레소가<br> 
-                                우유와 얼음을 만나 고소함과<br>
-                                시원함을 즐길 수 있는 대표적인 커피 라떼
-                            </p>
+                            <div class="latte-txt">
+                                <span>아이스 라떼</span>
+                                <p>
+                                    풍부하고 진한 농도의 에스프레소가 <br> 우유와 얼음을 만나 고소함과 <br> 시원함을 즐길 수 있는 대표적인 커피 라떼
+                                </p>
+                            </div>
                         </div>
-                        
                         <div class="americano">
                             <img src="./images/Americano.png" alt="아메리카노">
-                            <h3>아이스아메리카노</h3>
-                            <p>
-                                진한 에스프레소에 시원한 정수물과 얼음을 더하여 <br>
-                                깔끔하고 강렬한 에스프레소를 가장 부드럽고 시원하게 즐길 수 있는 커피
-                            </p>
+                            <div class="americano-txt">
+                                <span>아이스아메리카노</span>
+                                <p>진한 에스프레소에 시원한 정수물과 얼음을 더하여 <br> 깔끔하고 강렬한 에스프레소를 가장 부드럽고 시원하게 즐길 수 있는 커피</p>
+                            </div>
                         </div>
-
                         <div class="Omiga">
-                            <h3>오미자 유스베리</h3>
-                            <p>
-                                임금님이 궁에서 즐겨 드시던<br>
-                                오미자차에 유스베리와 한라봉의<br>
-                                달콤함을 더한 칵테일 스타일의 티
-                            </p>
+                            <div class="omiga-txt">
+                                <span>오미자 유스베리</span>
+                                <p>
+                                    임금님이 궁에서 즐겨 드시던 <br> 오미자차에 유스베리와 한라봉의 <br> 달콤함을 더한 칵테일 스타일의 티
+                                </p>
+                            </div>
                             <img src="./images/Omiga.png" alt="오미자">
                         </div>
-                    </div>    
-                </div><!--confix-->
+                        <div class="arro">
+                            <img src="./images/slide_arrow_next.png" alt="다음 화살표">
+                        </div>
+                    </div>
+                </div>
+                <!--confix-->
             </section>
-
-            <section>
+            <section class="NEWS">
                 <div class="confix">
                     <h2>NEWS</h2>
-                    <div class="news01">
-                        <span>NEWS</span>
-                        <h4>모닝, 프리미엄 계란 공급 ‘상하농원’과 전략적 파트너십 체결</h4> 
-                        <p>
-                            상하농원과 파트너십 체결…가맹점에 1등급 무항생제 계란 공급<br> 신선하고 안전한 먹거리 제공하고 최상의
-                            맛과 품질 유지 위한 전략올<br> 하반기 상하농원과 ‘1+등급란’ 콜라보 제품도 선보일 예정
-                        </p>
-                        <button> READ MORE </button>
-                    </div><!--news01-->
-
-                    <div class="news02">
-                        <span>NEWS</span>
-                        <h4>모닝, MZ세대 취향 저격 메뉴로 소비자 사로잡다</h4> 
-                        <p>
-                         실제 작년 4월부터 올해 3월까지의 판매 데이터를 보면, 가장 많이 팔린 메뉴는 총 판매 매출의 약 22%를 <br>
-                         차지한 ‘쉬림프 에그 샌드위치’다. 매콤한 쉬림프와 에그마요속 고소하고 부드러운 에그스크램블, <br>
-                         짭조름한 베이컨과 치즈가 어우러져 소비자들을 사로잡았다.
-                        </p>
-                        <button> READ MORE </button>
-                    </div><!--news02-->
-                    <span>view more</span>
-                </div><!--confix-->
+                    <hr>
+                    <div class="news01" id="egg-news">
+                        <img src="./images/news-egg.png" alt="뉴스 이미지">
+                        <div class="txt-box">
+                            <span>NEWS</span>
+                            <h4>모닝, 프리미엄 계란 공급 ‘상하농원’과 전략적 파트너십 체결</h4>
+                            <p>
+                                상하농원과 파트너십 체결…가맹점에 1등급 무항생제 계란 공급<br> 신선하고 안전한 먹거리 제공하고 최상의 맛과 품질 유지 위한 전략올<br> 하반기 상하농원과 ‘1+등급란’ 콜라보 제품도 선보일 예정
+                            </p>
+                            <button> READ MORE </button>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="news01" id="sandwich-news">
+                        <img src="./images/news-sandwich.png" alt="뉴스 이미지">
+                        <div class="txt-box">
+                            <span>NEWS</span>
+                            <h4>모닝, MZ세대 취향 저격 메뉴로 소비자 사로잡다</h4>
+                            <p>
+                                실제 작년 4월부터 올해 3월까지의 판매 데이터를 보면, 가장 많이 팔린 메뉴는 총 판매 매출의 약 22%를 <br> 차지한 ‘쉬림프 에그 샌드위치’다. 매콤한 쉬림프와 에그마요속 고소하고 부드러운 에그스크램블, <br> 짭조름한 베이컨과 치즈가 어우러져 소비자들을 사로잡았다.
+                            </p>
+                            <button> READ MORE </button>
+                        </div>
+                    </div>
+                    <hr>
+                    <p class="view"><a> view more </a></p>
+                </div>
             </section>
-            </div>
         </main>
-
-
-        <footer>
-            <div class="confix">
+    </div>
+    <footer>
+        <div class="confix">
+            <div class="footer-flex-box">
                 <div class="morning-logo">
                     <img src="./images/morning logo.png" alt="모닝로고">
-                </div><!--morning-logo-->
-
+                </div>
                 <div class="morning-address">
-                    <ul>
+                    <ul class="ad">
                         <li><a href="#">이용약관</a></li>
                         <li><a href="#">개인정보취급방침</a></li>
                         <li><a href="#">가맹개설정보</a></li>
@@ -168,40 +193,40 @@
                         TEL : 0670-0000 <br> 
                         주소 : 서울특별시 용산구 123 <br> 
                         이메일 : 1234@naver.com <br> 
-                        copyright 주식회사 morning. all rights. reserved
+                        <p>copyright 주식회사 morning. all rights. reserved</p>
                     </address>
-                </div><!--morning-address-->
-
-                <div class="language">
-                    <ul>
-                        <li>
-                            <form action="#" name="language-form" method="post">
-                                <select name="language" id="language">
-                                <option value="">ko </option>
-                                <option value="japanese">japanese</option>
-                                <option value="chinese">chinese</option>
-                            </select>
-                            </form>
-                        </li>
-                    </ul>
-                </div><!--language-->
-
-                <div class="sns-img">
-                    <ul>
-                        <li>
-                            <a href="#"><img src="./images/sns_01_insta.png" alt="인스타"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="./images/sns_02_facebook.png" alt="페이스북"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="./images/sns_03_kakao.png" alt="카카오플러스"></a>
-                        </li>
-                    </ul>
-                </div><!--sns-img-->
-            </div><!--confix-->
-        </footer>
-    </div><!--wrapper-->
+                </div>
+                <div class="SNS">
+                    <div class="language">
+                        <ul>
+                            <li>
+                                <form action="#" name="language-form" method="post">
+                                    <select name="language" id="language">
+                                        <option value="">ko </option>
+                                        <option value="japanese">japanese</option>
+                                        <option value="chinese">chinese</option>
+                                    </select>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sns-img">
+                        <ul>
+                            <li>
+                                <a href="#"><img src="./images/sns_01_insta.png" alt="인스타"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./images/sns_02_facebook.png" alt="페이스북"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./images/sns_03_kakao.png" alt="카카오플러스"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
