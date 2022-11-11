@@ -1,9 +1,6 @@
 @import "style.scss";
 @import "common.scss";
 @import "mixin.scss";
-
-
-
 //==================header====================
 header {
     position: fixed;
@@ -24,7 +21,6 @@ header {
             justify-content: space-between;
             align-items: center;
             background-color: $main-color;
-
             .logo {
                 width: 50px;
                 margin-left: 5%;
@@ -33,31 +29,26 @@ header {
                     width: 100%;
                 }
             }
-
             .hamburger {
                 width: 24px;
                 height: 24px;
                 z-index: 100;
                 margin-right: 5%;
                 cursor: pointer;
-
                 @include responsive(tablet-size) {
                     display: none;
                 }
-
                 span {
                     display: block;
                     width: 100%;
                     border: 2px solid $second-color;
                     border-radius: 100px;
-
                     &:nth-child(2) {
                         margin: 6px 0;
                     }
                 }
-            }       
+            }
         }
-        
         .menu-box {
             display: none;
             position: absolute;
@@ -67,7 +58,6 @@ header {
             z-index: 100;
             overflow: hidden;
             background-color: $ham-button-color;
-
             @include responsive(tablet-size) {
                 display: flex;
                 right: 3%;
@@ -78,62 +68,48 @@ header {
                 font-size: 1.5vw;
                 background-color: transparent;
             }
-
             @include responsive(pc-size) {
                 margin-top: 18px;
                 font-size: 1vw;
             }
-
             .gnb {
                 padding: 10% 0;
-
                 @include responsive(tablet-size) {
                     display: flex;
                     padding: 0;
-                }    
-
+                }
                 li {
                     margin: 10% 0;
-
                     @include responsive(tablet-size) {
                         margin: 0;
                         margin-right: 29px;
-                    }    
-
+                    }
                     a {
-                        font-size: 2em; 
+                        font-size: 2em;
                         text-align: center;
                         color: $second-color;
-                        
                         @include responsive(tablet-size) {
-                            font-size: 1.5em; 
+                            font-size: 1.5em;
                         }
                         @include responsive(pc-size) {
-                            font-size: 24px; 
+                            font-size: 24px;
                         }
                         &:hover {
                             color: $modal-color;
                         }
-
-
-                        
                     }
                 }
             }
-
             .git-icon {
                 width: 40px;
                 margin: 0 auto;
-                
                 @include responsive(tablet-size) {
                     width: 4vw;
                     margin: 0;
-                }  
-
+                }
                 @include responsive(pc-size) {
                     width: 31px;
                 }
-                
                 img {
                     width: 100%;
                 }
@@ -141,7 +117,6 @@ header {
         }
     }
 }
-
 
 //==================main-home====================
 main {
@@ -577,9 +552,8 @@ main {
                                 @include responsive(tablet-size) {
                                     font-size: 1.8vw;
                                     margin: 0;
-
                                 }
-                                &:hover{
+                                &:hover {
                                     border-radius: 100px;
                                     color: $second-color;
                                     background-color: $main-color;
@@ -591,15 +565,13 @@ main {
                         position: absolute;
                         left: 50%;
                         top: 50%;
-                        width: 250px; 
+                        width: 250px;
                         height: 200px;
                         transform: translateX(-50%);
-
                         @include responsive(tablet-size) {
                             left: 70%;
                             top: 25%;
                         }
-
                         .graph {
                             position: absolute;
                             display: inline-block;
@@ -609,12 +581,10 @@ main {
                             margin-bottom: 200px;
                             transition: 0.3s;
                             z-index: 1;
-
                             @include responsive(tablet-size) {
                                 width: 300px;
                                 height: 300px;
                             }
-
                             .center {
                                 background-color: $main-color;
                                 display: flex;
@@ -630,30 +600,32 @@ main {
                                 text-align: center;
                                 line-height: 200px;
                                 transform: translate(-50%, -50%);
-                                img{
+                                img {
                                     width: 90px;
                                     margin-top: 2.5em;
                                 }
-                                p{
+                                p {
                                     margin-top: -65px;
                                     font-size: 20px;
                                     color: $second-color;
                                 }
                             }
-                            .graph-txt{
+                            .graph-txt {
                                 position: absolute;
                                 top: 100%;
                                 display: block;
                                 text-align: start;
                                 padding: 0 5%;
                                 padding-top: 2em;
-                                color: $second-color;/**/
-                                background-color: $main-color; /**/
+                                color: $second-color;
+                                /**/
+                                background-color: $main-color;
+                                /**/
                             }
                         }
-                        .graph-d{
-                            .center{
-                                img{
+                        .graph-d {
+                            .center {
+                                img {
                                     width: 127px;
                                     margin-top: 3.5em;
                                 }
@@ -663,7 +635,6 @@ main {
                 } // skill-flex
             }
         }
-
         //==================main-PORTFOLIO====================
         #projectsPage {
             background-color: $second-color;
