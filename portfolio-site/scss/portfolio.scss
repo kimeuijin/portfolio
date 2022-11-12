@@ -158,6 +158,26 @@ main {
                             top: 7.2vw;
                             left: 31%;
                         }
+                        .move-name {
+                            span {
+                                position: relative;
+                                color: $main-color;
+                                font-size: 5.5vw;
+                                display: inline-block;
+                                animation: move-name 1.9s infinite;
+                                animation-delay: calc(.1s * var(--i));
+                            }
+                        }
+                        @keyframes move-name {
+                            0%,
+                            40%,
+                            100% {
+                                transform: translateY(0);
+                            }
+                            20% {
+                                transform: translateY(-20px);
+                            }
+                        }
                         h2 {
                             color: $main-color;
                             font-size: 5.5vw;

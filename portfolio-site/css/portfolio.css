@@ -229,6 +229,32 @@ main .confix #homePage .wrapper .ellipse .mainTxt {
     left: 31%;
   }
 }
+main .confix #homePage .wrapper .ellipse .mainTxt .move-name span {
+  position: relative;
+  color: #6f5252;
+  font-size: 5.5vw;
+  display: inline-block;
+  -webkit-animation: move-name 1.9s infinite;
+          animation: move-name 1.9s infinite;
+  -webkit-animation-delay: calc(0.1s * var(--i));
+          animation-delay: calc(0.1s * var(--i));
+}
+@-webkit-keyframes move-name {
+  0%, 40%, 100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-20px);
+  }
+}
+@keyframes move-name {
+  0%, 40%, 100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-20px);
+  }
+}
 main .confix #homePage .wrapper .ellipse .mainTxt h2 {
   color: #6f5252;
   font-size: 5.5vw;
