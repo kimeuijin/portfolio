@@ -29,24 +29,37 @@ header {
                     width: 100%;
                 }
             }
-            .hamburger {
-                width: 24px;
-                height: 24px;
-                z-index: 100;
-                margin-right: 5%;
-                cursor: pointer;
-                @include responsive(tablet-size) {
-                    display: none;
-                }
-                span {
+            .wrap {
+                .toggle-button {
                     display: block;
-                    width: 100%;
-                    border: 2px solid $second-color;
-                    border-radius: 100px;
-                    &:nth-child(2) {
-                        margin: 6px 0;
+                    position: absolute;
+                    width: 30px;
+                    top: 25%;
+                    left: 85%;
+                    transform: translate(-20%, -50%);
+                    z-index: 100;
+                    cursor: pointer;
+                    .menu-bar {
+                        position: absolute;
+                        width: 100%;
+                        height: 4px;
+                        background-color: $second-color;
+                        border-radius: 2px;
+                        transition: .5s;
+                    }
+                    .line1 {
+                        top: 0;
+                    }
+                    .line2 {
+                        top: 11px;
+                    }
+                    .line3 {
+                        top: 22px;
                     }
                 }
+            }
+            @include responsive(tablet-size) {
+                display: none;
             }
         }
         .menu-box {
