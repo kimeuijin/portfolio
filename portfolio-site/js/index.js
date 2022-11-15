@@ -1,10 +1,6 @@
 $(function() { //toggle button
-    $(".wrap").click(function() {
+    $(".hamburger").click(function() {
         $(".menu-box").slideToggle();
-    });
-
-    $(".wrap").click(function() {
-        $(".toggle-button").toggleClass(".button-open");
     });
 
 
