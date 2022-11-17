@@ -272,6 +272,7 @@ main .confix #homePage .wrapper .ellipse .mainTxt h2 {
   }
 }
 main .confix #homePage .wrapper .keywordTxt {
+  position: relative;
   text-align: center;
   color: #f7f0e0;
   overflow: hidden;
@@ -417,18 +418,31 @@ main .confix #homePage .wrapper .keywordTxt .topLine .topTxt:nth-child(2) > p, m
     font-size: 42px;
   }
 }
-main .confix #homePage .wrapper .keywordTxt .respons p :hover {
-  opacity: 0;
-}
 main .confix #homePage .wrapper .keywordTxt .modalTxt {
-  display: none;
-  width: 37px;
-  height: 30px;
-  padding: 10px;
+  position: absolute;
+  opacity: 1;
+  height: 8vw;
+  padding: 2vw;
+  margin: 0 5vw;
   border-radius: 10px;
   line-height: 1.7;
   background-color: #c6b793;
   font-size: 4vw;
+}
+main .confix #homePage .wrapper .keywordTxt .respon-modal {
+  top: 0vw;
+}
+main .confix #homePage .wrapper .keywordTxt .patience-modal {
+  top: 19vw;
+}
+main .confix #homePage .wrapper .keywordTxt .detailed-modal {
+  top: 39vw;
+}
+main .confix #homePage .wrapper .keywordTxt .develop-modal {
+  top: 58vw;
+}
+main .confix #homePage .wrapper .keywordTxt .teamwork-modal {
+  top: 77vw;
 }
 main .confix #homePage .wrapper .scroll {
   position: absolute;

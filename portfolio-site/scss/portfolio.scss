@@ -193,6 +193,7 @@ main {
                     }
                 }
                 .keywordTxt {
+                    position: relative;
                     text-align: center;
                     color: $second-color;
                     overflow: hidden;
@@ -282,18 +283,31 @@ main {
                             }
                         }
                     }
-                    .respons p :hover {
-                        opacity: 0;
-                    }
                     .modalTxt {
-                        display: none;
-                        width: 37px;
-                        height: 30px;
-                        padding: 10px;
+                        position: absolute;
+                        opacity: 1;
+                        height: 8vw;
+                        padding: 2vw;
+                        margin: 0 5vw;
                         border-radius: 10px;
                         line-height: 1.7;
                         background-color: $modal-color;
                         font-size: 4vw;
+                    }
+                    .respon-modal {
+                        top: 0vw;
+                    }
+                    .patience-modal {
+                        top: 19vw;
+                    }
+                    .detailed-modal {
+                        top: 39vw;
+                    }
+                    .develop-modal {
+                        top: 58vw;
+                    }
+                    .teamwork-modal {
+                        top: 77vw;
                     }
                 }
                 .scroll {
