@@ -211,6 +211,9 @@ main {
                             padding-bottom: 12vw;
                             &:last-child {
                                 padding-bottom: 170px;
+                                &:hover .teamwork-modal {
+                                    opacity: 1;
+                                }
                             }
                             &:first-child>p,
                             &:nth-child(3)>p,
@@ -285,7 +288,7 @@ main {
                     }
                     .modalTxt {
                         position: absolute;
-                        opacity: 1;
+                        opacity: 0;
                         height: 8vw;
                         padding: 2vw;
                         margin: 0 5vw;

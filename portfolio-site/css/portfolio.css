@@ -296,6 +296,9 @@ main .confix #homePage .wrapper .keywordTxt .topLine .topTxt {
 main .confix #homePage .wrapper .keywordTxt .topLine .topTxt:last-child {
   padding-bottom: 170px;
 }
+main .confix #homePage .wrapper .keywordTxt .topLine .topTxt:last-child:hover .teamwork-modal {
+  opacity: 1;
+}
 main .confix #homePage .wrapper .keywordTxt .topLine .topTxt:first-child > p, main .confix #homePage .wrapper .keywordTxt .topLine .topTxt:nth-child(3) > p, main .confix #homePage .wrapper .keywordTxt .topLine .topTxt:nth-child(5) > p {
   font-size: 5vw;
   -webkit-animation: mobiletxt-right 1.5s ease;
@@ -420,7 +423,7 @@ main .confix #homePage .wrapper .keywordTxt .topLine .topTxt:nth-child(2) > p, m
 }
 main .confix #homePage .wrapper .keywordTxt .modalTxt {
   position: absolute;
-  opacity: 1;
+  opacity: 0;
   height: 8vw;
   padding: 2vw;
   margin: 0 5vw;
