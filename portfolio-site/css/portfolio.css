@@ -299,6 +299,18 @@ main .confix #homePage .wrapper .keywordTxt .topLine .topTxt:last-child {
 main .confix #homePage .wrapper .keywordTxt .topLine .topTxt:last-child:hover .teamwork-modal {
   opacity: 1;
 }
+main .confix #homePage .wrapper .keywordTxt .topLine .topTxt:first-child:hover .respon-modal {
+  opacity: 1;
+}
+main .confix #homePage .wrapper .keywordTxt .topLine .topTxt:nth-child(2):hover .patience-modal {
+  opacity: 1;
+}
+main .confix #homePage .wrapper .keywordTxt .topLine .topTxt:nth-child(3):hover .detailed-modal {
+  opacity: 1;
+}
+main .confix #homePage .wrapper .keywordTxt .topLine .topTxt:nth-child(4):hover .develop-modal {
+  opacity: 1;
+}
 main .confix #homePage .wrapper .keywordTxt .topLine .topTxt:first-child > p, main .confix #homePage .wrapper .keywordTxt .topLine .topTxt:nth-child(3) > p, main .confix #homePage .wrapper .keywordTxt .topLine .topTxt:nth-child(5) > p {
   font-size: 5vw;
   -webkit-animation: mobiletxt-right 1.5s ease;
@@ -432,20 +444,53 @@ main .confix #homePage .wrapper .keywordTxt .modalTxt {
   background-color: #c6b793;
   font-size: 4vw;
 }
+@media screen and (min-width: 768px) {
+  main .confix #homePage .wrapper .keywordTxt .modalTxt {
+    height: 12vw;
+    width: 16vw;
+    font-size: 2vw;
+    margin: 0;
+  }
+}
 main .confix #homePage .wrapper .keywordTxt .respon-modal {
   top: 0vw;
+}
+@media screen and (min-width: 768px) {
+  main .confix #homePage .wrapper .keywordTxt .respon-modal {
+    top: 2vw;
+  }
 }
 main .confix #homePage .wrapper .keywordTxt .patience-modal {
   top: 19vw;
 }
+@media screen and (min-width: 768px) {
+  main .confix #homePage .wrapper .keywordTxt .patience-modal {
+    top: 2vw;
+  }
+}
 main .confix #homePage .wrapper .keywordTxt .detailed-modal {
   top: 39vw;
+}
+@media screen and (min-width: 768px) {
+  main .confix #homePage .wrapper .keywordTxt .detailed-modal {
+    top: 2vw;
+  }
 }
 main .confix #homePage .wrapper .keywordTxt .develop-modal {
   top: 58vw;
 }
+@media screen and (min-width: 768px) {
+  main .confix #homePage .wrapper .keywordTxt .develop-modal {
+    top: 2vw;
+  }
+}
 main .confix #homePage .wrapper .keywordTxt .teamwork-modal {
   top: 77vw;
+}
+@media screen and (min-width: 768px) {
+  main .confix #homePage .wrapper .keywordTxt .teamwork-modal {
+    top: 2vw;
+  }
 }
 main .confix #homePage .wrapper .scroll {
   position: absolute;
@@ -803,6 +848,7 @@ main .confix #skillsPage .wrapper .skill-flex .skill-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  cursor: pointer;
 }
 @media screen and (min-width: 768px) {
   main .confix #skillsPage .wrapper .skill-flex .skill-list {

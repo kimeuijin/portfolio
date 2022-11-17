@@ -215,6 +215,26 @@ main {
                                     opacity: 1;
                                 }
                             }
+                            &:first-child {
+                                &:hover .respon-modal {
+                                    opacity: 1;
+                                }
+                            }
+                            &:nth-child(2) {
+                                &:hover .patience-modal {
+                                    opacity: 1;
+                                }
+                            }
+                            &:nth-child(3) {
+                                &:hover .detailed-modal {
+                                    opacity: 1;
+                                }
+                            }
+                            &:nth-child(4) {
+                                &:hover .develop-modal {
+                                    opacity: 1;
+                                }
+                            }
                             &:first-child>p,
                             &:nth-child(3)>p,
                             &:nth-child(5)>p {
@@ -296,21 +316,42 @@ main {
                         line-height: 1.7;
                         background-color: $modal-color;
                         font-size: 4vw;
+                        @include responsive(tablet-size) {
+                            height: 12vw;
+                            width: 16vw;
+                            font-size: 2vw;
+                            margin: 0;
+                        }
                     }
                     .respon-modal {
                         top: 0vw;
+                        @include responsive(tablet-size) {
+                            top: 2vw;
+                        }
                     }
                     .patience-modal {
                         top: 19vw;
+                        @include responsive(tablet-size) {
+                            top: 2vw;
+                        }
                     }
                     .detailed-modal {
                         top: 39vw;
+                        @include responsive(tablet-size) {
+                            top: 2vw;
+                        }
                     }
                     .develop-modal {
                         top: 58vw;
+                        @include responsive(tablet-size) {
+                            top: 2vw;
+                        }
                     }
                     .teamwork-modal {
                         top: 77vw;
+                        @include responsive(tablet-size) {
+                            top: 2vw;
+                        }
                     }
                 }
                 .scroll {
@@ -573,6 +614,7 @@ main {
                         display: flex;
                         flex-direction: row;
                         flex-wrap: wrap;
+                        cursor: pointer;
                         @include responsive(tablet-size) {
                             width: 30%;
                             height: 100%;
