@@ -16,6 +16,30 @@ $(function() { //toggle button
 
     });
 
+    //click skill move graph
+    $(".hDough").click(function() {
+        draw(95, '.graph-h', '#ff8363');
+    });
+    $(".cDough").click(function() {
+        draw(95, '.graph-c', '#009de6');
+    });
+    $(".sDough").click(function() {
+        draw(95, '.graph-s', '#cf649a');
+    });
+    $(".jDough").click(function() {
+        draw(80, '.graph-j', '#ffca3e');
+    });
+    $(".rDough").click(function() {
+        draw(80, '.graph-r', '#61dafb');
+    });
+    $(".jqDough").click(function() {
+        draw(75, '.graph-jq', '#535556');
+    });
+    $(".dDough").click(function() {
+        draw(95, '.graph-d', '#0a1f35');
+    });
+
+
     function draw(max, classname, colorname) {
         var i = 1;
         var func1 = setInterval(function() {
@@ -48,9 +72,6 @@ $(function() { //toggle button
         });
     }
 
-    const hDough = () => {
-        makeChart(95, '.graph-h', '#ff8363');
-    }
 
     // determine skil text display
     function skillView(num) {
@@ -65,12 +86,15 @@ $(function() { //toggle button
         }
     }
 
-
-
 });
 
 
-
+// AOS.init({
+//     offset: 200,
+//     duration: 600,
+//     easing: 'ease-in',
+//     delay: 100,
+// });
 
 //modal 
 // const overlay = document.querySelector('#overlay');
