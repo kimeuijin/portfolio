@@ -17,25 +17,25 @@ $(function() { //toggle button
     });
 
     //click skill move graph
-    $(".hDough").click(function() {
+    $(".hDough").mouseover(function() {
         draw(95, '.graph-h', '#ff8363');
     });
-    $(".cDough").click(function() {
+    $(".cDough").mouseover(function() {
         draw(95, '.graph-c', '#009de6');
     });
-    $(".sDough").click(function() {
+    $(".sDough").mouseover(function() {
         draw(95, '.graph-s', '#cf649a');
     });
-    $(".jDough").click(function() {
+    $(".jDough").mouseover(function() {
         draw(80, '.graph-j', '#ffca3e');
     });
-    $(".rDough").click(function() {
+    $(".rDough").mouseover(function() {
         draw(80, '.graph-r', '#61dafb');
     });
-    $(".jqDough").click(function() {
+    $(".jqDough").mouseover(function() {
         draw(75, '.graph-jq', '#535556');
     });
-    $(".dDough").click(function() {
+    $(".dDough").mouseover(function() {
         draw(95, '.graph-d', '#0a1f35');
     });
 
@@ -67,7 +67,7 @@ $(function() { //toggle button
 
     let smenulength = smenu.length;
     for (let i = 0; i < smenulength; i++) {
-        smenu[i].addEventListener("click", function() {
+        smenu[i].addEventListener("mouseover", function() {
             skillView(i);
         });
     }
@@ -89,12 +89,6 @@ $(function() { //toggle button
 });
 
 
-// AOS.init({
-//     offset: 200,
-//     duration: 600,
-//     easing: 'ease-in',
-//     delay: 100,
-// });
 
 //modal 
 // const overlay = document.querySelector('#overlay');
