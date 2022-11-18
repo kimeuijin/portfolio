@@ -25,7 +25,7 @@ $(function() { //toggle button
             } else {
                 clearInterval(func1);
             }
-        }, 10);
+        }, 11);
     }
 
     function color1(i, classname, colorname) {
@@ -46,6 +46,10 @@ $(function() { //toggle button
         smenu[i].addEventListener("click", function() {
             skillView(i);
         });
+    }
+
+    const hDough = () => {
+        makeChart(95, '.graph-h', '#ff8363');
     }
 
     // determine skil text display

@@ -279,14 +279,14 @@ main .confix #homePage .wrapper .keywordTxt {
 }
 @media screen and (min-width: 768px) {
   main .confix #homePage .wrapper .keywordTxt .topLine {
-    padding-top: 8vw;
+    padding-top: 17vw;
     display: flex;
     justify-content: space-between;
   }
 }
 @media screen and (min-width: 1080px) {
   main .confix #homePage .wrapper .keywordTxt .topLine {
-    padding-top: 5vw;
+    padding-top: 11vw;
   }
 }
 main .confix #homePage .wrapper .keywordTxt .topLine .topTxt {
@@ -446,8 +446,8 @@ main .confix #homePage .wrapper .keywordTxt .modalTxt {
 }
 @media screen and (min-width: 768px) {
   main .confix #homePage .wrapper .keywordTxt .modalTxt {
-    height: 12vw;
-    width: 16vw;
+    height: 3vw;
+    width: 47vw;
     font-size: 2vw;
     margin: 0;
   }
@@ -457,7 +457,13 @@ main .confix #homePage .wrapper .keywordTxt .respon-modal {
 }
 @media screen and (min-width: 768px) {
   main .confix #homePage .wrapper .keywordTxt .respon-modal {
-    top: 2vw;
+    top: 4vw;
+    left: 18vw;
+  }
+}
+@media screen and (min-width: 1080px) {
+  main .confix #homePage .wrapper .keywordTxt .respon-modal {
+    top: 0;
   }
 }
 main .confix #homePage .wrapper .keywordTxt .patience-modal {
@@ -465,7 +471,13 @@ main .confix #homePage .wrapper .keywordTxt .patience-modal {
 }
 @media screen and (min-width: 768px) {
   main .confix #homePage .wrapper .keywordTxt .patience-modal {
-    top: 2vw;
+    top: 4vw;
+    left: 18vw;
+  }
+}
+@media screen and (min-width: 1080px) {
+  main .confix #homePage .wrapper .keywordTxt .patience-modal {
+    top: 0;
   }
 }
 main .confix #homePage .wrapper .keywordTxt .detailed-modal {
@@ -473,7 +485,13 @@ main .confix #homePage .wrapper .keywordTxt .detailed-modal {
 }
 @media screen and (min-width: 768px) {
   main .confix #homePage .wrapper .keywordTxt .detailed-modal {
-    top: 2vw;
+    top: 4vw;
+    left: 18vw;
+  }
+}
+@media screen and (min-width: 1080px) {
+  main .confix #homePage .wrapper .keywordTxt .detailed-modal {
+    top: 0;
   }
 }
 main .confix #homePage .wrapper .keywordTxt .develop-modal {
@@ -481,7 +499,13 @@ main .confix #homePage .wrapper .keywordTxt .develop-modal {
 }
 @media screen and (min-width: 768px) {
   main .confix #homePage .wrapper .keywordTxt .develop-modal {
-    top: 2vw;
+    top: 4vw;
+    left: 18vw;
+  }
+}
+@media screen and (min-width: 1080px) {
+  main .confix #homePage .wrapper .keywordTxt .develop-modal {
+    top: 0;
   }
 }
 main .confix #homePage .wrapper .keywordTxt .teamwork-modal {
@@ -489,7 +513,13 @@ main .confix #homePage .wrapper .keywordTxt .teamwork-modal {
 }
 @media screen and (min-width: 768px) {
   main .confix #homePage .wrapper .keywordTxt .teamwork-modal {
-    top: 2vw;
+    top: 4vw;
+    left: 18vw;
+  }
+}
+@media screen and (min-width: 1080px) {
+  main .confix #homePage .wrapper .keywordTxt .teamwork-modal {
+    top: 0;
   }
 }
 main .confix #homePage .wrapper .scroll {
@@ -871,7 +901,7 @@ main .confix #skillsPage .wrapper .skill-flex .skill-list li {
 }
 main .confix #skillsPage .wrapper .skill-flex .skill-list li a {
   color: #6f5252;
-  margin: 0 20%;
+  margin: 0 10%;
 }
 @media screen and (min-width: 768px) {
   main .confix #skillsPage .wrapper .skill-flex .skill-list li a {
@@ -947,9 +977,7 @@ main .confix #skillsPage .wrapper .skill-flex .skill-graph-box .graph .graph-txt
   padding: 0 5%;
   padding-top: 2em;
   color: #f7f0e0;
-  /**/
   background-color: #6f5252;
-  /**/
 }
 main .confix #skillsPage .wrapper .skill-flex .skill-graph-box .graph-d .center img {
   width: 127px;

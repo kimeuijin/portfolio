@@ -199,12 +199,12 @@ main {
                     overflow: hidden;
                     .topLine {
                         @include responsive(tablet-size) {
-                            padding-top: 8vw;
+                            padding-top: 17vw;
                             display: flex;
                             justify-content: space-between;
                         }
                         @include responsive(pc-size) {
-                            padding-top: 5vw;
+                            padding-top: 11vw;
                         }
                         .topTxt {
                             cursor: pointer;
@@ -317,8 +317,8 @@ main {
                         background-color: $modal-color;
                         font-size: 4vw;
                         @include responsive(tablet-size) {
-                            height: 12vw;
-                            width: 16vw;
+                            height: 3vw;
+                            width: 47vw;
                             font-size: 2vw;
                             margin: 0;
                         }
@@ -326,31 +326,51 @@ main {
                     .respon-modal {
                         top: 0vw;
                         @include responsive(tablet-size) {
-                            top: 2vw;
+                            top: 4vw;
+                            left: 18vw;
+                        }
+                        @include responsive(pc-size) {
+                            top: 0;
                         }
                     }
                     .patience-modal {
                         top: 19vw;
                         @include responsive(tablet-size) {
-                            top: 2vw;
+                            top: 4vw;
+                            left: 18vw;
+                        }
+                        @include responsive(pc-size) {
+                            top: 0;
                         }
                     }
                     .detailed-modal {
                         top: 39vw;
                         @include responsive(tablet-size) {
-                            top: 2vw;
+                            top: 4vw;
+                            left: 18vw;
+                        }
+                        @include responsive(pc-size) {
+                            top: 0;
                         }
                     }
                     .develop-modal {
                         top: 58vw;
                         @include responsive(tablet-size) {
-                            top: 2vw;
+                            top: 4vw;
+                            left: 18vw;
+                        }
+                        @include responsive(pc-size) {
+                            top: 0;
                         }
                     }
                     .teamwork-modal {
                         top: 77vw;
                         @include responsive(tablet-size) {
-                            top: 2vw;
+                            top: 4vw;
+                            left: 18vw;
+                        }
+                        @include responsive(pc-size) {
+                            top: 0;
                         }
                     }
                 }
@@ -631,7 +651,7 @@ main {
                             }
                             a {
                                 color: $main-color;
-                                margin: 0 20%;
+                                margin: 0 10%;
                                 @include responsive(tablet-size) {
                                     font-size: 1.8vw;
                                     margin: 0;
@@ -701,9 +721,7 @@ main {
                                 padding: 0 5%;
                                 padding-top: 2em;
                                 color: $second-color;
-                                /**/
                                 background-color: $main-color;
-                                /**/
                             }
                         }
                         .graph-d {
