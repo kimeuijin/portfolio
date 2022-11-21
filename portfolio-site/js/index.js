@@ -1,8 +1,16 @@
 $(function() { //toggle button
-    $(".hamburger").click(function() {
-        $(".menu-box").slideToggle();
-    });
+    const hamburger = document.querySelector('.hamburger');
+    const logoMenu = document.querySelector('.logo-menu');
+    const menu = document.querySelector('.gnb');
 
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        logoMenu.classList.toggle('active');
+        menu.classList.toggle('active');
+    });
+    // $(".hamburger").click(function() {
+    //     $(".menu-box").slideToggle();
+    // });
 
     //graph
     $(window).ready(function() {

@@ -10,7 +10,6 @@ header {
     left: 0;
     right: 0;
     .header-box {
-        display: flex;
         .logo-menu {
             top: 0;
             left: 0;
@@ -21,6 +20,10 @@ header {
             justify-content: space-between;
             align-items: center;
             background-color: $main-color;
+            transition: .3s;
+            &.active {
+                background-color: $ham-button-color;
+            }
             .logo {
                 width: 50px;
                 margin-left: 5%;
@@ -30,20 +33,22 @@ header {
                 }
             }
             .hamburger {
-                width: 30px;
-                height: 30px;
+                position: absolute;
+                top: 0;
+                right: 6%;
+                padding-top: 19px;
                 z-index: 100;
-                margin-right: 5%;
                 cursor: pointer;
                 @include responsive(tablet-size) {
                     display: none;
                 }
                 span {
                     display: block;
-                    width: 26px;
-                    height: 4px;
+                    width: 30px;
+                    height: 5px;
                     border-radius: 10px;
                     background-color: $second-color;
+                    transition: .5s;
                     &:nth-child(2) {
                         margin: 6px 0;
                     }
@@ -51,71 +56,84 @@ header {
                 @include responsive(tablet-size) {
                     display: none;
                 }
+                &.active span:first-child {
+                    transform: translateY(14px) rotate(45deg);
+                    transition: .5s;
+                }
+                &.active span:nth-child(2) {
+                    opacity: 0;
+                }
+                &.active span:last-child {
+                    transform: translateY(-7px) rotate(-45deg);
+                    transition: .5s;
+                }
             }
-        }
-        .menu-box {
-            display: none;
-            position: absolute;
-            top: 70px;
-            width: 100vw;
-            height: 100vh;
-            z-index: 100;
-            overflow: hidden;
-            background-color: $ham-button-color;
-            @include responsive(tablet-size) {
-                display: flex;
-                right: 3%;
-                top: 0;
-                width: auto;
-                height: auto;
-                margin-top: 18px;
-                font-size: 1.5vw;
-                background-color: transparent;
-            }
-            @include responsive(pc-size) {
-                margin-top: 18px;
-                font-size: 1vw;
-            }
-            .gnb {
-                padding: 10% 0;
+            .menu-box {
                 @include responsive(tablet-size) {
                     display: flex;
-                    padding: 0;
-                }
-                li {
-                    margin: 10% 0;
-                    @include responsive(tablet-size) {
-                        margin: 0;
-                        margin-right: 29px;
-                    }
-                    a {
-                        font-size: 2em;
-                        text-align: center;
-                        color: $second-color;
-                        @include responsive(tablet-size) {
-                            font-size: 1.5em;
-                        }
-                        @include responsive(pc-size) {
-                            font-size: 24px;
-                        }
-                        &:hover {
-                            color: $modal-color;
-                        }
-                    }
-                }
-            }
-            .git-icon {
-                width: 40px;
-                margin: 0 auto;
-                @include responsive(tablet-size) {
-                    width: 4vw;
-                    margin: 0;
+                    right: 3%;
+                    top: 0;
+                    width: auto;
+                    height: auto;
+                    margin-top: 18px;
+                    font-size: 1.5vw;
+                    background-color: transparent;
                 }
                 @include responsive(pc-size) {
-                    width: 31px;
+                    margin-top: 18px;
+                    font-size: 1vw;
                 }
-                img {
-                    width: 100%;
+                .gnb {
+                    display: none;
+                    position: absolute;
+                    top: 70px;
+                    width: 100vw;
+                    height: 90vh;
+                    z-index: 100;
+                    overflow: hidden;
+                    background-color: $ham-button-color;
+                    &.active {
+                        transition: 1s;
+                    }
+                    @include responsive(tablet-size) {
+                        display: flex;
+                        padding: 0;
+                    }
+                    li {
+                        margin: 10% 0;
+                        @include responsive(tablet-size) {
+                            margin: 0;
+                            margin-right: 29px;
+                        }
+                        a {
+                            font-size: 2em;
+                            text-align: center;
+                            color: $second-color;
+                            @include responsive(tablet-size) {
+                                font-size: 1.5em;
+                            }
+                            @include responsive(pc-size) {
+                                font-size: 24px;
+                            }
+                            &:hover {
+                                color: $modal-color;
+                            }
+                        }
+                    }
+                }
+                .git-icon {
+                    width: 40px;
+                    margin: 0 auto;
+                    @include responsive(tablet-size) {
+                        width: 4vw;
+                        margin: 0;
+                    }
+                    @include responsive(pc-size) {
+                        width: 31px;
+                    }
+                    img {
+                        width: 100%;
+                    }
                 }
             }
         }
