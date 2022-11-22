@@ -50,6 +50,9 @@ header {
   left: 0;
   right: 0;
 }
+header .header-box {
+  display: flex;
+}
 header .header-box .logo-menu {
   top: 0;
   left: 0;
@@ -60,7 +63,7 @@ header .header-box .logo-menu {
   justify-content: space-between;
   align-items: center;
   background-color: #6f5252;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 header .header-box .logo-menu.active {
   background-color: #9f9887;
@@ -74,6 +77,8 @@ header .header-box .logo-menu .logo img {
   width: 100%;
 }
 header .header-box .logo-menu .hamburger {
+  width: 30px;
+  height: 30px;
   position: absolute;
   top: 0;
   right: 6%;
@@ -113,6 +118,19 @@ header .header-box .logo-menu .hamburger.active span:last-child {
   transform: translateY(-7px) rotate(-45deg);
   transition: 0.5s;
 }
+header .header-box .logo-menu .menu-box {
+  display: none;
+  position: absolute;
+  top: 70px;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  overflow: hidden;
+  background-color: #9f9887;
+}
+header .header-box .logo-menu .menu-box.active {
+  display: block;
+}
 @media screen and (min-width: 768px) {
   header .header-box .logo-menu .menu-box {
     display: flex;
@@ -130,19 +148,6 @@ header .header-box .logo-menu .hamburger.active span:last-child {
     margin-top: 18px;
     font-size: 1vw;
   }
-}
-header .header-box .logo-menu .menu-box .gnb {
-  display: none;
-  position: absolute;
-  top: 70px;
-  width: 100vw;
-  height: 90vh;
-  z-index: 100;
-  overflow: hidden;
-  background-color: #9f9887;
-}
-header .header-box .logo-menu .menu-box .gnb.active {
-  transition: 1s;
 }
 @media screen and (min-width: 768px) {
   header .header-box .logo-menu .menu-box .gnb {

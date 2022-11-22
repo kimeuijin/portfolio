@@ -10,6 +10,7 @@ header {
     left: 0;
     right: 0;
     .header-box {
+        display: flex;
         .logo-menu {
             top: 0;
             left: 0;
@@ -20,7 +21,7 @@ header {
             justify-content: space-between;
             align-items: center;
             background-color: $main-color;
-            transition: .3s;
+            transition: .5s;
             &.active {
                 background-color: $ham-button-color;
             }
@@ -33,6 +34,8 @@ header {
                 }
             }
             .hamburger {
+                width: 30px;
+                height: 30px;
                 position: absolute;
                 top: 0;
                 right: 6%;
@@ -69,6 +72,17 @@ header {
                 }
             }
             .menu-box {
+                display: none;
+                position: absolute;
+                top: 70px;
+                width: 100vw;
+                height: 100vh;
+                z-index: 100;
+                overflow: hidden;
+                background-color: $ham-button-color;
+                &.active {
+                    display: block;
+                }
                 @include responsive(tablet-size) {
                     display: flex;
                     right: 3%;
@@ -84,17 +98,6 @@ header {
                     font-size: 1vw;
                 }
                 .gnb {
-                    display: none;
-                    position: absolute;
-                    top: 70px;
-                    width: 100vw;
-                    height: 90vh;
-                    z-index: 100;
-                    overflow: hidden;
-                    background-color: $ham-button-color;
-                    &.active {
-                        transition: 1s;
-                    }
                     @include responsive(tablet-size) {
                         display: flex;
                         padding: 0;

@@ -1,16 +1,23 @@
 $(function() { //toggle button
     const hamburger = document.querySelector('.hamburger');
     const logoMenu = document.querySelector('.logo-menu');
-    const menu = document.querySelector('.gnb');
+    const menu = document.querySelector('.menu-box');
 
     hamburger.addEventListener('click', () => {
         hamburger.classList.toggle('active');
         logoMenu.classList.toggle('active');
         menu.classList.toggle('active');
     });
-    // $(".hamburger").click(function() {
-    //     $(".menu-box").slideToggle();
-    // });
+
+    menu.addEventListener('click', removeToggleMenu);
+    window.addEventListener('resize', removeToggleMenu);
+
+    function removeToggleMenu() {
+        hamburger.classList.remove('active');
+        logoMenu.classList.remove('active');
+        menu.classList.remove('active');
+    }
+
 
     //graph
     $(window).ready(function() {
