@@ -869,164 +869,46 @@ main {
                 }
             }
         }
-        #projectScript {
-            position: relative;
-            width: 100%;
-            padding-bottom: 5em;
-            background-color: $second-color;
-            @include responsive(tablet-size) {
-                padding-bottom: 12em;
-            }
-            .projectScript-area {
-                ul {
-                    display: flex;
-                    flex-direction: column;
-                    width: 100%;
-                    margin: 0 auto;
-                    min-width: 300px;
-                    @include responsive(script-size) {
-                        flex-direction: row;
-                    }
-                    li {
-                        position: relative;
-                        width: 70vw;
-                        margin: 0 auto;
-                        margin-bottom: 3vw;
-                        overflow: hidden;
-                        @include responsive(script-size) {
-                            width: 41.5vw;
-                        }
-                        @include responsive(tablet-size) {
-                            width: 37vw;
-                        }
-                        @include responsive(pc-size) {
-                            width: 26vw;
-                        }
-                        &::before {
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                            width: 100%;
-                            height: 100%;
-                            content: '';
-                            background-color: $main-color;
-                            opacity: 0;
-                            transition: all .2s;
-                            z-index: 1;
-                        }
-                        &:hover {
-                            border: 1px solid $yellow-color;
-                            box-shadow: 0 0 5px $yellow-color;
-                            transition: .6s;
-                            &::before {
-                                opacity: .95;
-                            }
-                        }
-                        &:hover .workInfo {
-                            display: block;
-                        }
-                        .works-img {
-                            width: 100%;
-                            img {
-                                width: 100%;
-                            }
-                        }
-                        .workInfo {
-                            display: none;
-                            position: absolute;
-                            top: 5%;
-                            width: 100%;
-                            text-align: center;
-                            z-index: 2;
-                            @include responsive(pc-size) {
-                                top: 2vw;
-                            }
-                            h3 {
-                                margin-bottom: 28px;
-                                padding-top: 20px;
-                                color: $second-color;
-                                @include responsive(pc-size) {
-                                    font-size: 1.5em;
-                                }
-                            }
-                            p {
-                                padding: 0 10%;
-                                margin-bottom: 44px;
-                                color: $second-color;
-                                @include responsive(pc-size) {
-                                    font-size: 1.1em;
-                                }
-                            }
-                            span {
-                                display: block;
-                                color: $yellow-color;
-                                @include responsive(pc-size) {
-                                    font-size: 1.2em;
-                                }
-                            }
-                            button {
-                                margin-top: 2em;
-                                border: none;
-                                border-radius: 52px;
-                                padding: 2% 5%;
-                                background-color: $second-color;
-                                &:hover {
-                                    background-color: $ham-button-color;
-                                    transition: .6s;
-                                }
-                                a {
-                                    z-index: 2;
-                                    padding: 1px;
-                                    font-size: 1rem;
-                                    color: $main-color;
-                                    z-index: 2;
-                                    &:hover {
-                                        color: $second-color;
-                                    }
-                                }
-                            }
-                        }
-                    }
+    }
+}
+
+footer {
+    #contactPage {
+        padding-top: 2em;
+        background-color: $main-color;
+        .e-mail {
+            @include contact;
+            margin-bottom: 2em;
+            padding-left: 2em;
+            justify-content: space-between;
+            a {
+                display: flex;
+                align-items: center;
+                img {
+                    width: 48px;
+                    margin-right: 1em;
                 }
             }
         }
-        #contactPage {
-            padding-top: 2em;
-            background-color: $main-color;
-            .e-mail {
-                @include contact;
-                margin-bottom: 2em;
-                padding-left: 2em;
-                justify-content: space-between;
-                a {
-                    display: flex;
-                    align-items: center;
-                    img {
-                        width: 48px;
-                        margin-right: 1em;
-                    }
-                }
-            }
-            .kakao {
-                @include contact;
-                margin-bottom: 3em;
-                padding-left: 2em;
-                justify-content: space-between;
-                a {
-                    display: flex;
-                    align-items: center;
-                    img {
-                        width: 48px;
-                        margin-right: 1em;
-                    }
-                }
-            }
-            .end-logo {
-                text-align: center;
+        .kakao {
+            @include contact;
+            margin-bottom: 3em;
+            padding-left: 2em;
+            justify-content: space-between;
+            a {
+                display: flex;
+                align-items: center;
                 img {
-                    width: 32px;
-                    padding-bottom: 0.7em;
+                    width: 48px;
+                    margin-right: 1em;
                 }
+            }
+        }
+        .end-logo {
+            text-align: center;
+            img {
+                width: 32px;
+                padding-bottom: 0.7em;
             }
         }
     }
