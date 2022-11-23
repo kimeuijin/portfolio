@@ -709,6 +709,10 @@ main {
                                 width: 300px;
                                 height: 300px;
                             }
+                            @include responsive(pc-size) {
+                                width: 400px;
+                                height: 365px;
+                            }
                             .center {
                                 background-color: $main-color;
                                 display: flex;
@@ -743,6 +747,12 @@ main {
                                 padding-top: 2em;
                                 color: $second-color;
                                 background-color: $main-color;
+                                @include responsive(tablet-size) {
+                                    padding-top: 4em;
+                                }
+                                @include responsive(pc-size) {
+                                    padding-top: 6em;
+                                }
                             }
                         }
                         .graph-d {
@@ -860,6 +870,12 @@ main {
                                 background-color: $main-color;
                                 color: $second-color;
                                 cursor: pointer;
+                                &:hover {
+                                    transition: all 0.7s ease-out;
+                                    background: linear-gradient(270deg, rgba(223, 190, 106, 0.8), rgba(146, 111, 52, 0.8), rgba(34, 34, 34, 0), rgba(34, 34, 34, 0));
+                                    background-position: 30% 50%;
+                                    background-size: 300% 300%;
+                                }
                             }
                         }
                     }
@@ -955,6 +971,10 @@ main {
                             width: 250px;
                             height: 100%;
                             margin-bottom: 2vw;
+                            &:hover {
+                                transition: all 0.7s ease;
+                                transform: scale(1.1);
+                            }
                         }
                         p {
                             color: $main-color;
@@ -979,6 +999,10 @@ footer {
             margin-bottom: 2em;
             padding-left: 2em;
             justify-content: space-between;
+            &:hover {
+                transition: all 0.7s ease;
+                transform: scale(1.1);
+            }
             a {
                 display: flex;
                 align-items: center;
@@ -993,6 +1017,10 @@ footer {
             margin-bottom: 3em;
             padding-left: 2em;
             justify-content: space-between;
+            &:hover {
+                transition: all 0.7s ease;
+                transform: scale(1.1);
+            }
             a {
                 display: flex;
                 align-items: center;

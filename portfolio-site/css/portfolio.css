@@ -42,6 +42,12 @@ li {
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "Hahmlet-SemiBold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/Hahmlet-SemiBold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
 header {
   position: fixed;
   width: 100%;
@@ -963,6 +969,12 @@ main .confix #skillsPage .wrapper .skill-flex .skill-graph-box .graph {
     height: 300px;
   }
 }
+@media screen and (min-width: 1080px) {
+  main .confix #skillsPage .wrapper .skill-flex .skill-graph-box .graph {
+    width: 400px;
+    height: 365px;
+  }
+}
 main .confix #skillsPage .wrapper .skill-flex .skill-graph-box .graph .center {
   background-color: #6f5252;
   display: flex;
@@ -997,6 +1009,16 @@ main .confix #skillsPage .wrapper .skill-flex .skill-graph-box .graph .graph-txt
   padding-top: 2em;
   color: #f7f0e0;
   background-color: #6f5252;
+}
+@media screen and (min-width: 768px) {
+  main .confix #skillsPage .wrapper .skill-flex .skill-graph-box .graph .graph-txt {
+    padding-top: 4em;
+  }
+}
+@media screen and (min-width: 1080px) {
+  main .confix #skillsPage .wrapper .skill-flex .skill-graph-box .graph .graph-txt {
+    padding-top: 6em;
+  }
 }
 main .confix #skillsPage .wrapper .skill-flex .skill-graph-box .graph-d .center img {
   width: 127px;
@@ -1125,6 +1147,12 @@ main .confix #projectsPage .wrapper .Project-flex .project-txt .pro-button a {
   color: #f7f0e0;
   cursor: pointer;
 }
+main .confix #projectsPage .wrapper .Project-flex .project-txt .pro-button a:hover {
+  transition: all 0.7s ease-out;
+  background: linear-gradient(270deg, rgba(223, 190, 106, 0.8), rgba(146, 111, 52, 0.8), rgba(34, 34, 34, 0), rgba(34, 34, 34, 0));
+  background-position: 30% 50%;
+  background-size: 300% 300%;
+}
 main .confix #designPage .wrapper {
   margin: 0 auto;
   padding: 10px;
@@ -1235,6 +1263,10 @@ main .confix #designPage .wrapper .container .thumbnail img {
   height: 100%;
   margin-bottom: 2vw;
 }
+main .confix #designPage .wrapper .container .thumbnail img:hover {
+  transition: all 0.7s ease;
+  transform: scale(1.1);
+}
 main .confix #designPage .wrapper .container .thumbnail p {
   color: #6f5252;
   text-align: center;
@@ -1254,6 +1286,10 @@ footer #contactPage .e-mail {
   padding-left: 2em;
   justify-content: space-between;
 }
+footer #contactPage .e-mail:hover {
+  transition: all 0.7s ease;
+  transform: scale(1.1);
+}
 footer #contactPage .e-mail a {
   display: flex;
   align-items: center;
@@ -1268,6 +1304,10 @@ footer #contactPage .kakao {
   margin-bottom: 3em;
   padding-left: 2em;
   justify-content: space-between;
+}
+footer #contactPage .kakao:hover {
+  transition: all 0.7s ease;
+  transform: scale(1.1);
 }
 footer #contactPage .kakao a {
   display: flex;
