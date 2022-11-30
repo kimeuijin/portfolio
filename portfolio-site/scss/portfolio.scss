@@ -710,7 +710,7 @@ main {
                                 height: 300px;
                             }
                             @include responsive(pc-size) {
-                                width: 400px;
+                                width: 370px;
                                 height: 365px;
                             }
                             .center {
@@ -815,7 +815,6 @@ main {
                         }
                         .pro-title {
                             padding: 5% 5%;
-                            // padding-bottom: 1%;
                             width: 90%;
                             color: $main-color;
                             margin-bottom: 19px;
@@ -839,7 +838,7 @@ main {
                                     }
                                     p {
                                         font-size: 2.5vw;
-                                        line-height: 1.5rem;
+                                        line-height: 2;
                                         margin-top: 1.2vw;
                                         @include responsive(pc-size) {
                                             margin-top: 0.5rem;
@@ -953,12 +952,12 @@ main {
                     padding: 4em 0 10em 0;
                     cursor: pointer;
                     @include responsive(tablet-size) {
-                        width: 90%;
+                        width: 70%;
                         max-width: 1230px;
                         margin: 0 auto;
                     }
                     @include responsive(pc-size) {
-                        width: 80%;
+                        flex-wrap: nowrap;
                     }
                     .thumbnail {
                         margin-bottom: 20vw;

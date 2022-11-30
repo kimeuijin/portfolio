@@ -971,7 +971,7 @@ main .confix #skillsPage .wrapper .skill-flex .skill-graph-box .graph {
 }
 @media screen and (min-width: 1080px) {
   main .confix #skillsPage .wrapper .skill-flex .skill-graph-box .graph {
-    width: 400px;
+    width: 370px;
     height: 365px;
   }
 }
@@ -1117,7 +1117,7 @@ main .confix #projectsPage .wrapper .Project-flex .project-txt .pro-title ul li 
 }
 main .confix #projectsPage .wrapper .Project-flex .project-txt .pro-title ul li p {
   font-size: 2.5vw;
-  line-height: 1.5rem;
+  line-height: 2;
   margin-top: 1.2vw;
 }
 @media screen and (min-width: 1080px) {
@@ -1238,14 +1238,14 @@ main .confix #designPage .wrapper .container {
 }
 @media screen and (min-width: 768px) {
   main .confix #designPage .wrapper .container {
-    width: 90%;
+    width: 70%;
     max-width: 1230px;
     margin: 0 auto;
   }
 }
 @media screen and (min-width: 1080px) {
   main .confix #designPage .wrapper .container {
-    width: 80%;
+    flex-wrap: nowrap;
   }
 }
 main .confix #designPage .wrapper .container .thumbnail {
