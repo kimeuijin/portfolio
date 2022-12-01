@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: "Hahmlet-Black";
+  font-family: "MICEGothic Bold";
 }
 
 a {
@@ -35,276 +35,295 @@ li {
 }
 
 @font-face {
-  font-family: "Hahmlet-Black";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/Hahmlet-Black.woff2") format("woff2");
-  font-weight: normal;
+  font-family: "MICEGothic Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic Bold.woff2") format("woff2");
+  font-weight: 700;
   font-style: normal;
 }
-.wrapper {
-  position: relative;
-  width: 100%;
-  margin: 0 auto;
-}
-.wrapper header {
-  background-color: #6f5252;
-}
-.wrapper header .fix-menu {
+header .fix-menu {
   position: fixed;
   display: flex;
   top: 0;
   justify-content: space-between;
   width: 100%;
-  height: 70px;
+  height: 15vw;
   z-index: 5;
   background-color: #6f5252;
 }
-.wrapper header .fix-menu .logo {
-  width: 45px;
-  padding-top: 15px;
-  margin-left: 20px;
+header .fix-menu .logo {
+  width: 10vw;
+  padding-top: 3vw;
+  margin-left: 3vw;
 }
-.wrapper header .fix-menu .logo img {
+header .fix-menu .logo img {
   width: 100%;
 }
 @media screen and (min-width: 768px) {
-  .wrapper header .fix-menu .logo {
+  header .fix-menu .logo {
     width: 5vw;
   }
 }
 @media screen and (min-width: 1080px) {
-  .wrapper header .fix-menu .logo {
+  header .fix-menu .logo {
     width: 50px;
   }
 }
-.wrapper header .fix-menu .home-button {
-  padding-top: 20px;
-  padding-right: 20px;
+header .fix-menu .home-button {
+  padding-top: 5vw;
+  padding-right: 2vw;
 }
-.wrapper header .fix-menu .home-button a {
+header .fix-menu .home-button a {
   color: #f7f0e0;
+  font-size: 4.8vw;
 }
 @media screen and (min-width: 768px) {
-  .wrapper header .fix-menu .home-button a {
+  header .fix-menu .home-button a {
     font-size: 22px;
   }
 }
-.wrapper header .fix-menu .home-button a:hover {
+header .fix-menu .home-button a:hover {
   color: #c6b793;
 }
-.wrapper main {
+
+main {
   width: 100%;
-  background-color: #6f5252;
+  padding-bottom: 6vw;
+  background-color: #f7f0e0;
 }
-.wrapper main .confix {
+main .mockup .confix {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 10px;
-  padding-bottom: 6vw;
-}
-.wrapper main .confix .mockup {
-  padding-top: 18vw;
+  padding: 20vw 0 20vw 0;
 }
 @media screen and (min-width: 768px) {
-  .wrapper main .confix .mockup {
+  main .mockup .confix {
     padding-top: 8vw;
     width: 80%;
     margin: 0 auto;
   }
 }
-.wrapper main .confix .mockup img {
+main .mockup .confix img {
   width: 100%;
 }
-.wrapper main .confix .guide-txt {
-  width: 80%;
-  padding: 10%;
-  border-radius: 22px;
-  background-color: #f7f0e0;
+main .guide-txt .description {
+  margin-bottom: 4em;
+  padding: 5vw 0;
+  background-color: #faf6bf;
 }
-.wrapper main .confix .guide-txt .description {
-  margin-bottom: 6em;
+main .guide-txt .description .confix {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
-.wrapper main .confix .guide-txt .description .title {
-  padding-top: 6vw;
-  padding-bottom: 16vw;
-}
-@media screen and (min-width: 768px) {
-  .wrapper main .confix .guide-txt .description .title {
-    padding-top: 2vw;
-    padding-bottom: 12vw;
-  }
-}
-.wrapper main .confix .guide-txt .description .title span {
-  font-size: 9vw;
-  color: #6f5252;
-  margin-left: 15px;
-}
-@media screen and (min-width: 768px) {
-  .wrapper main .confix .guide-txt .description .title span {
-    font-size: 7vw;
-  }
-}
-@media screen and (min-width: 1080px) {
-  .wrapper main .confix .guide-txt .description .title span {
-    font-size: 5vw;
-  }
-}
-.wrapper main .confix .guide-txt .description .title span:last-child {
-  display: block;
-  text-align: center;
-}
-.wrapper main .confix .guide-txt .description h2, .wrapper main .confix .guide-txt .description h3 {
+main .guide-txt .description .confix h2,
+main .guide-txt .description .confix h3 {
   font-size: 5vw;
-  margin-bottom: 8px;
-  color: #6f5252;
+  margin-bottom: 20px;
 }
 @media screen and (min-width: 768px) {
-  .wrapper main .confix .guide-txt .description h2, .wrapper main .confix .guide-txt .description h3 {
+  main .guide-txt .description .confix h2,
+main .guide-txt .description .confix h3 {
     font-size: 3vw;
     margin-bottom: 18px;
   }
 }
 @media screen and (min-width: 1080px) {
-  .wrapper main .confix .guide-txt .description h2, .wrapper main .confix .guide-txt .description h3 {
+  main .guide-txt .description .confix h2,
+main .guide-txt .description .confix h3 {
     font-size: 2vw;
   }
 }
-.wrapper main .confix .guide-txt .description p {
-  margin-bottom: 30px;
+main .guide-txt .description .confix p {
+  margin-bottom: 10px;
+  line-height: 1.8;
   font-size: 3vw;
-  color: #80744a;
 }
 @media screen and (min-width: 768px) {
-  .wrapper main .confix .guide-txt .description p {
+  main .guide-txt .description .confix p {
     font-size: 2vw;
   }
 }
 @media screen and (min-width: 1080px) {
-  .wrapper main .confix .guide-txt .description p {
+  main .guide-txt .description .confix p {
     font-size: 1.5vw;
   }
 }
-.wrapper main .confix .guide-txt .grid {
+main .guide-txt .grid {
   margin-bottom: 6em;
 }
-.wrapper main .confix .guide-txt .grid h2 {
+main .guide-txt .grid .confix {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+main .guide-txt .grid .confix h2 {
   font-size: 5vw;
-  color: #6f5252;
+  margin-bottom: 80px;
 }
 @media screen and (min-width: 768px) {
-  .wrapper main .confix .guide-txt .grid h2 {
+  main .guide-txt .grid .confix h2 {
     font-size: 3vw;
   }
 }
 @media screen and (min-width: 1080px) {
-  .wrapper main .confix .guide-txt .grid h2 {
+  main .guide-txt .grid .confix h2 {
     font-size: 2vw;
   }
 }
-.wrapper main .confix .guide-txt .grid ul li {
+main .guide-txt .grid .confix .grid-flex {
+  display: flex;
+}
+main .guide-txt .grid .confix .grid-flex ul {
+  margin-bottom: 10px;
+}
+main .guide-txt .grid .confix .grid-flex ul li {
+  line-height: 1.8;
   font-size: 3vw;
-  color: #6f5252;
 }
 @media screen and (min-width: 768px) {
-  .wrapper main .confix .guide-txt .grid ul li {
+  main .guide-txt .grid .confix .grid-flex ul li {
     font-size: 2vw;
   }
 }
 @media screen and (min-width: 1080px) {
-  .wrapper main .confix .guide-txt .grid ul li {
+  main .guide-txt .grid .confix .grid-flex ul li {
     font-size: 1.5vw;
   }
 }
-.wrapper main .confix .guide-txt .font {
+main .guide-txt .font {
+  padding: 5vw 0;
   margin-bottom: 5em;
+  background-color: #faf6bf;
 }
-.wrapper main .confix .guide-txt .font h2 {
+main .guide-txt .font .confix {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+main .guide-txt .font .confix h2 {
   font-size: 5vw;
-  color: #6f5252;
   margin-bottom: 1em;
 }
 @media screen and (min-width: 768px) {
-  .wrapper main .confix .guide-txt .font h2 {
+  main .guide-txt .font .confix h2 {
     font-size: 3vw;
   }
 }
 @media screen and (min-width: 1080px) {
-  .wrapper main .confix .guide-txt .font h2 {
+  main .guide-txt .font .confix h2 {
     font-size: 2vw;
   }
 }
-.wrapper main .confix .guide-txt .font img {
-  width: 20em;
+main .guide-txt .font .confix img {
+  width: 15em;
 }
 @media screen and (min-width: 768px) {
-  .wrapper main .confix .guide-txt .font img {
+  main .guide-txt .font .confix img {
     width: 25em;
   }
 }
 @media screen and (min-width: 1080px) {
-  .wrapper main .confix .guide-txt .font img {
+  main .guide-txt .font .confix img {
     width: 30em;
   }
 }
-.wrapper main .confix .guide-txt .color h2 {
+main .guide-txt .color {
+  padding: 5vw 0;
+  margin-bottom: 5em;
+}
+main .guide-txt .color .confix {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+main .guide-txt .color .confix h2 {
   font-size: 5vw;
-  color: #6f5252;
+  margin-bottom: 10vw;
 }
 @media screen and (min-width: 768px) {
-  .wrapper main .confix .guide-txt .color h2 {
+  main .guide-txt .color .confix h2 {
     font-size: 3vw;
   }
 }
 @media screen and (min-width: 1080px) {
-  .wrapper main .confix .guide-txt .color h2 {
+  main .guide-txt .color .confix h2 {
     font-size: 2vw;
   }
 }
-.wrapper main .confix .guide-txt .color ul li {
+main .guide-txt .color .confix p {
+  font-size: 3vw;
+  line-height: 1.8;
+}
+main .guide-txt .color .confix ul {
   display: flex;
+  justify-content: space-between;
+}
+main .guide-txt .color .confix ul li {
   margin: 3em 0;
 }
-.wrapper main .confix .guide-txt .color ul li .white-circle {
-  width: 7.5rem;
-  height: 7.5rem;
+main .guide-txt .color .confix ul li .white-circle,
+main .guide-txt .color .confix ul li .yellow-circle,
+main .guide-txt .color .confix ul li .gray-circle {
+  width: 20vw;
+  height: 20vw;
   margin-right: 2vw;
   border-radius: 50%;
+}
+main .guide-txt .color .confix ul li .white-circle {
   background-color: rgb(255, 255, 255);
 }
-.wrapper main .confix .guide-txt .color ul li .yellow-circle {
-  width: 7.5rem;
-  height: 7.5rem;
-  margin-right: 2vw;
-  border-radius: 50%;
+main .guide-txt .color .confix ul li .yellow-circle {
   background-color: #f8f292;
 }
-.wrapper main .confix .guide-txt .color ul li .gray-circle {
-  width: 7.5rem;
-  height: 7.5rem;
-  margin-right: 2vw;
-  border-radius: 50%;
+main .guide-txt .color .confix ul li .gray-circle {
   background-color: #656161;
 }
-.wrapper main .confix .guide-txt .color ul li p {
+main .guide-txt .color .confix ul li p {
   font-size: 3vw;
   margin: 10px 13px;
-  color: #6f5252;
 }
 @media screen and (min-width: 768px) {
-  .wrapper main .confix .guide-txt .color ul li p {
+  main .guide-txt .color .confix ul li p {
     font-size: 2vw;
   }
 }
 @media screen and (min-width: 1080px) {
-  .wrapper main .confix .guide-txt .color ul li p {
+  main .guide-txt .color .confix ul li p {
     font-size: 1.5vw;
   }
 }
-.wrapper footer {
-  background-color: #6f5252;
-  padding-bottom: 6vw;
+main .guide-txt .screen .confix {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
-.wrapper footer p {
+main .guide-txt .screen .confix h2 {
+  font-size: 5vw;
+  margin-bottom: 1em;
+}
+@media screen and (min-width: 768px) {
+  main .guide-txt .screen .confix h2 {
+    font-size: 3vw;
+  }
+}
+@media screen and (min-width: 1080px) {
+  main .guide-txt .screen .confix h2 {
+    font-size: 2vw;
+  }
+}
+
+footer {
+  background-color: #6f5252;
+  padding: 3vw 0 4vw 0;
+}
+footer p {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
