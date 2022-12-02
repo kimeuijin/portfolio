@@ -43,52 +43,28 @@ li {
 header .fix-menu {
   position: fixed;
   display: flex;
-  top: 0;
-  justify-content: space-between;
-  width: 100%;
-  height: 15vw;
+  top: 10px;
+  right: 8px;
   z-index: 5;
+  transition: all 0.5s;
   background-color: #6f5252;
+  border: 1px solid #6f5252;
+  border-radius: 7px;
 }
-header .fix-menu .logo {
-  width: 10vw;
-  padding-top: 3vw;
-  margin-left: 3vw;
+header .fix-menu:hover {
+  background-color: #f7f0e0;
 }
-header .fix-menu .logo img {
-  width: 100%;
-}
-@media screen and (min-width: 768px) {
-  header .fix-menu .logo {
-    width: 5vw;
-  }
-}
-@media screen and (min-width: 1080px) {
-  header .fix-menu .logo {
-    width: 50px;
-  }
-}
-header .fix-menu .home-button {
-  padding-top: 5vw;
-  padding-right: 2vw;
-}
-header .fix-menu .home-button a {
+header .fix-menu a {
+  padding: 5px;
   color: #f7f0e0;
-  font-size: 4.8vw;
 }
-@media screen and (min-width: 768px) {
-  header .fix-menu .home-button a {
-    font-size: 22px;
-  }
-}
-header .fix-menu .home-button a:hover {
-  color: #c6b793;
+header .fix-menu a:hover {
+  color: #6f5252;
 }
 
 main {
   width: 100%;
   padding-bottom: 6vw;
-  background-color: #f7f0e0;
 }
 main .mockup .confix {
   width: 90%;
@@ -207,7 +183,7 @@ main .guide-txt .font .confix {
 }
 main .guide-txt .font .confix h2 {
   font-size: 5vw;
-  margin-bottom: 1em;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   main .guide-txt .font .confix h2 {
@@ -244,7 +220,7 @@ main .guide-txt .color .confix {
 }
 main .guide-txt .color .confix h2 {
   font-size: 5vw;
-  margin-bottom: 10vw;
+  margin-bottom: 20px;
 }
 @media screen and (min-width: 768px) {
   main .guide-txt .color .confix h2 {
@@ -259,6 +235,11 @@ main .guide-txt .color .confix h2 {
 main .guide-txt .color .confix p {
   font-size: 3vw;
   line-height: 1.8;
+}
+@media screen and (min-width: 768px) {
+  main .guide-txt .color .confix p {
+    font-size: 2vw;
+  }
 }
 main .guide-txt .color .confix ul {
   display: flex;
@@ -320,8 +301,8 @@ main .guide-txt .screen .confix h2 {
 }
 
 footer {
-  background-color: #6f5252;
-  padding: 3vw 0 4vw 0;
+  background-color: #faf6bf;
+  padding: 15px 0;
 }
 footer p {
   width: 90%;
@@ -330,5 +311,4 @@ footer p {
   padding: 0 10px;
   text-align: center;
   font-size: 0.8em;
-  color: #f7f0e0;
 }

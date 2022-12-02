@@ -1,174 +1,188 @@
 @import "./../scss/style.scss";
 @import "./../scss/common.scss";
 @import "./../scss/mixin.scss";
-
-
-.wrapper{
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
-    header{
-        background-color: $main-color;
-        .fix-menu{
-            position: fixed;
-            display: flex;
-            top: 0;
-            justify-content: space-between;
-            width: 100%;
-            height: 70px;
-            z-index: 5;
-            background-color: $main-color;
-            .logo{
-                width: 45px;
-                padding-top: 15px;
-                margin-left: 20px;
-                img{
-                    width: 100%;
-                }
-                @include responsive(tablet-size) {
-                    width: 5vw;
-                    // padding-top: 10px;
-                }
-                @include responsive(pc-size) {
-                    width: 50px;
-                }
-            }
-            .home-button{
-                padding-top: 20px;
-                padding-right: 20px;
-                a{
-                    color: $second-color;
-                    // font-size: 4vw;
-                    @include responsive(tablet-size) {
-                        font-size: 22px;
-                    }
-                    &:hover{
-                        color: $modal-color;
-                    }
-                }
-            }
-        }
-    }
-
-    main{
+header {
+    .fix-menu {
+        position: fixed;
+        display: flex;
+        top: 0;
+        justify-content: space-between;
         width: 100%;
+        height: 70px;
+        z-index: 5;
         background-color: $main-color;
-        .confix{
-            @include confix;
-            padding-bottom: 6vw;
-         
-            .mockup{
-                padding-top: 18vw;
-                img{
-                    width: 100%;
-                }
+        .logo {
+            width: 45px;
+            padding-top: 15px;
+            margin-left: 20px;
+            img {
+                width: 100%;
             }
-            
-            .guide-txt{
-                width: 80%;
-                padding: 10%;
-                border-radius: 22px;
-                background-color: $second-color;
-
-                .description{
-                    margin-bottom: 6em;
-
-                    .title{
-                        padding-top: 6vw;
-                        padding-bottom: 16vw;
-
-                        @include responsive(tablet-size) {
-                            padding-top: 15vw;
-                        }
-
-                        span{
-                            font-size: 9vw;
-                            color: $main-color;
-                            margin-left: 15px;
-
-                            &:last-child{
-                                display: block;
-                                text-align: center;
-                            }
-                        }
-                    }
-                    h2,h3{
-                        color: $main-color;
-                    }
-                    p{
-                        margin-bottom: 30px;
-                        color: $kaky-color;
-                    }
-                }
-                .grid{
-                    h2{
-                        color: $main-color;
-                    }
-                    ul{
-                        li{
-                            color: $main-color;
-                        }
-                    }
-                    margin-bottom: 6em;
-                }
-                .font{
-                    h2{
-                        color: $main-color;
-                    }
-                    margin-bottom: 6em;
-
-                }
-                .color{
-                    h2{
-                        color: $main-color;
-                    }
-                    ul{
-                        li{
-                            display: flex;
-                            margin: 3em 0;
-                            .white-circle{
-                                width: 7.5rem;
-                                height: 7.5rem;
-                                margin-right: 2vw;
-                                border-radius: 50%;
-                                background-color: rgb(255, 255, 255);
-                            }
-                            .yellow-circle{
-                                width: 7.5rem;
-                                height: 7.5rem;
-                                margin-right: 2vw;
-                                border-radius: 50%;
-                                background-color: #f8f292;
-                            }
-                            .gray-circle{
-                                width: 7.5rem;
-                                height: 7.5rem;
-                                margin-right: 2vw;
-                                border-radius: 50%;
-                                background-color: #656161;
-                            }
-
-                            p{
-                                margin: 10px 13px;
-                                line-height: 25px;
-                                color: $main-color;
-                            }
-                        }
-                    }
-                }
+            @include responsive(tablet-size) {
+                width: 5vw;
             }
-        } 
-        
-    }
-
-    footer{
-        background-color: $main-color;
-        padding-bottom: 6vw;
-        p{
-            @include confix;
-            text-align: center;
-            font-size: 0.8em;
-            color: $second-color;
+            @include responsive(pc-size) {
+                width: 50px;
+            }
         }
+        .home-button {
+            padding-top: 20px;
+            padding-right: 20px;
+            a {
+                color: $second-color;
+                // font-size: 4vw;
+                @include responsive(tablet-size) {
+                    font-size: 22px;
+                }
+                &:hover {
+                    color: $modal-color;
+                }
+            }
+        }
+    }
+}
+
+main {
+    width: 100%;
+    padding-bottom: 6vw;
+    background-color: $second-color;
+    .mockup {
+        .confix {
+            @include confix;
+            padding: 20vw 0 20vw 0;
+            @include responsive(tablet-size) {
+                padding-top: 8vw;
+                width: 80%;
+                margin: 0 auto;
+            }
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .guide-txt {
+        .description {
+            margin-bottom: 6em;
+            background-color: $main-color;
+            .confix {
+                @include confix;
+                h2 {
+                    margin-bottom: 30px;
+                }
+                p {
+                    margin-bottom: 30px;
+                    line-height: 1.8;
+                }
+            }
+        }
+        .grid {
+            margin-bottom: 6em;
+            .confix {
+                @include confix;
+                h2 {
+                    margin-bottom: 30px;
+                }
+                .grid-flex {
+                    display: flex;
+                    ul {
+                        margin-bottom: 10px;
+                        li {
+                            line-height: 1.8;
+                        }
+                    }
+                }
+            }
+        }
+        .font {
+            padding: 5vw 0;
+            margin-bottom: 5em;
+            background-color: $main-color;
+            .confix {
+                @include confix;
+                h2 {
+                    color: $main-color;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+        .color {
+            padding: 5vw 0;
+            margin-bottom: 5em;
+            .confix {
+                @include confix;
+                h2 {
+                    color: $main-color;
+                    margin-bottom: 20px;
+                }
+                p {
+                    font-size: 3vw;
+                    line-height: 1.8;
+                    @include responsive(tablet-size) {
+                        font-size: 2vw;
+                    }
+                }
+                ul {
+                    display: flex;
+                    justify-content: space-between;
+                    li {
+                        margin: 3em 0;
+                        .ivory-circle,
+                        .brown-circle,
+                        .kaki-circle {
+                            width: 20vw;
+                            height: 20vw;
+                            margin-right: 2vw;
+                            border-radius: 50%;
+                        }
+                        .ivory-circle {
+                            border: 1px solid black;
+                            background-color: $second-color;
+                        }
+                        .brown-circle {
+                            background-color: $main-color;
+                        }
+                        .kaki-circle {
+                            background-color: $kaky-color;
+                        }
+                        p {
+                            font-size: 3vw;
+                            margin: 10px 13px;
+                            @include responsive(tablet-size) {
+                                font-size: 2vw;
+                            }
+                            @include responsive(pc-size) {
+                                font-size: 1.5vw;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .screen {
+            .confix {
+                @include confix;
+                h2 {
+                    font-size: 5vw;
+                    margin-bottom: 1em;
+                    @include responsive(tablet-size) {
+                        font-size: 3vw;
+                    }
+                    @include responsive(pc-size) {
+                        font-size: 2vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    background-color: $main-color;
+    padding: 15px 0;
+    p {
+        @include confix;
+        text-align: center;
+        font-size: 0.8em;
+        color: $second-color;
     }
 }
