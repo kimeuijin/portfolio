@@ -138,16 +138,11 @@ main .guide-txt .grid .confix {
 }
 main .guide-txt .grid .confix h2 {
   font-size: 5vw;
-  margin-bottom: 80px;
+  margin-bottom: 100px;
 }
 @media screen and (min-width: 768px) {
   main .guide-txt .grid .confix h2 {
     font-size: 3vw;
-  }
-}
-@media screen and (min-width: 1080px) {
-  main .guide-txt .grid .confix h2 {
-    font-size: 2vw;
   }
 }
 main .guide-txt .grid .confix .grid-flex {

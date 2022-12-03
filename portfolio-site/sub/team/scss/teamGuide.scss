@@ -1,257 +1,229 @@
 @import "./../scss/style.scss";
 @import "./../scss/common.scss";
 @import "./../scss/mixin.scss";
-
-
-.wrapper{
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
-    header{
+header {
+    .fix-menu {
+        position: fixed;
+        display: flex;
+        top: 10px;
+        right: 8px;
+        z-index: 5;
+        transition: all 0.5s;
         background-color: $main-color;
-        .fix-menu{
-            position: fixed;
-            display: flex;
-            top: 0;
-            justify-content: space-between;
-            width: 100%;
-            height: 70px;
-            z-index: 5;
-            background-color: $main-color;
-            .logo{
-                width: 45px;
-                padding-top: 15px;
-                margin-left: 20px;
-                img{
-                    width: 100%;
-                }
-                @include responsive(tablet-size) {
-                    width: 5vw;
-                    // padding-top: 10px;
-                }
-                @include responsive(pc-size) {
-                    width: 50px;
-                }
+        border: 1px solid $main-color;
+        border-radius: 7px;
+        &:hover {
+            background-color: $second-color;
+        }
+        a {
+            padding: 5px;
+            color: $second-color;
+            &:hover {
+                color: $main-color;
             }
-            .home-button{
-                padding-top: 20px;
-                padding-right: 20px;
-                a{
-                    color: $second-color;
-                    // font-size: 4vw;
+        }
+    }
+}
+
+main {
+    width: 100%;
+    padding-bottom: 6vw;
+    color: #2c2928;
+    background-color: #f2ece4;
+    .mockup {
+        .confix {
+            @include confix;
+            padding: 20vw 0 20vw 0;
+            @include responsive(tablet-size) {
+                padding-top: 8vw;
+                width: 80%;
+                margin: 0 auto;
+            }
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .guide-txt {
+        .description {
+            margin-bottom: 4em;
+            padding: 5vw 0;
+            background-color: #a7a7a7;
+            .confix {
+                @include confix;
+                h2,
+                h3 {
+                    font-size: 5vw;
+                    margin-bottom: 20px;
                     @include responsive(tablet-size) {
-                        font-size: 22px;
+                        font-size: 3vw;
+                        margin-bottom: 18px;
                     }
-                    &:hover{
-                        color: $modal-color;
+                    @include responsive(pc-size) {
+                        font-size: 2vw;
+                    }
+                }
+                p {
+                    margin-bottom: 10px;
+                    line-height: 1.8;
+                    font-size: 3vw;
+                    @include responsive(tablet-size) {
+                        font-size: 2vw;
+                    }
+                    @include responsive(pc-size) {
+                        font-size: 1.5vw;
                     }
                 }
             }
         }
-    }
-
-    main{
-        width: 100%;
-        background-color: $main-color;
-        .confix{
-            @include confix;
-            padding-bottom: 6vw;
-         
-            .mockup{
-                padding-top: 18vw;
-                @include responsive(tablet-size) {
-                    padding-top: 8vw;
-                    width: 80%;
-                    margin: 0 auto;
-                }
-                img{
-                    width: 100%;
-                }
-            }
-            
-            .guide-txt{
-                width: 80%;
-                padding: 10%;
-                border-radius: 22px;
-                background-color: $second-color;
-                
-                .description{
-                    margin-bottom: 6em;
-                    
-                    .title{
-                        padding-top: 6vw;
-                        padding-bottom: 16vw;
-
-                        @include responsive(tablet-size) {
-                            padding-top: 2vw;
-                            padding-bottom: 12vw;
-                        }
-
-                        span{
-                            font-size: 9vw;
-                            color: $main-color;
-                            margin-left: 15px;
-
-                            @include responsive(tablet-size) {
-                                font-size: 7vw;
-                            }
-
-                            @include responsive(pc-size) {
-                                font-size: 5vw;
-                            }
-
-                            &:last-child{
-                                display: block;
-                                text-align: center;
-                            }
-                        }
-                    }
-                    h2,h3{
-                        font-size: 5vw;
-                        margin-bottom: 8px;
-                        color: $main-color;
-                        @include responsive(tablet-size) {
-                            font-size: 3vw;
-                        margin-bottom: 18px;
-
-                        }
-
-                        @include responsive(pc-size) {
-                            font-size: 2vw;
-                        }
-                    }
-                    p{
-                        margin-bottom: 30px;
+        .grid {
+            margin-bottom: 6em;
+            .confix {
+                @include confix;
+                h2 {
+                    font-size: 5vw;
+                    margin-bottom: 100px;
+                    @include responsive(tablet-size) {
                         font-size: 3vw;
-                        color: $kaky-color;
-                        @include responsive(tablet-size) {
-                            font-size: 2vw;
-                        }
-
-                        @include responsive(pc-size) {
-                            font-size: 1.5vw;
-                        }
                     }
                 }
-                .grid{
-                    h2{
-                        font-size: 5vw;
-                        color: $main-color;
-                        @include responsive(tablet-size) {
+                .grid-flex {
+                    display: flex;
+                    ul {
+                        margin-bottom: 10px;
+                        li {
+                            line-height: 1.8;
                             font-size: 3vw;
-                        }
-                        @include responsive(pc-size) {
-                            font-size: 2vw;
-                        }
-                    }
-                    img{
-                        width: 250px;
-                        margin: 20px 0;
-                    }
-                    ul{
-                        li{
-                            font-size: 3vw;
-                            color: $main-color;
                             @include responsive(tablet-size) {
                                 font-size: 2vw;
                             }
-    
                             @include responsive(pc-size) {
                                 font-size: 1.5vw;
                             }
                         }
                     }
-                    margin-bottom: 6em;
                 }
-                .font{
-                    h2{
-                        font-size: 5vw;
-                        color: $main-color;
-                        margin-bottom: 1em;
-                        @include responsive(tablet-size) {
-                            font-size: 3vw;
-                        }
-                        @include responsive(pc-size) {
-                            font-size: 2vw;
-                        }
+            }
+        }
+        .font {
+            padding: 5vw 0;
+            margin-bottom: 5em;
+            background-color: #a7a7a7;
+            .confix {
+                @include confix;
+                h2 {
+                    font-size: 5vw;
+                    margin-bottom: 30px;
+                    @include responsive(tablet-size) {
+                        font-size: 3vw;
                     }
-                    img{
-                        width: 20em;
-                        @include responsive(tablet-size) {
-                            width: 25em;
-                        }
-                        @include responsive(pc-size) {
-                            width: 30em;
-                        }
+                    @include responsive(pc-size) {
+                        font-size: 2vw;
                     }
-                    
-                    margin-bottom: 5em;
                 }
-                .color{
-                    h2{
-                        font-size: 5vw;
-                        color: $main-color;
-                        @include responsive(tablet-size) {
-                            font-size: 3vw;
+                ul {
+                    display: flex;
+                    li {
+                        p {
+                            margin-bottom: 20px;
                         }
-                        @include responsive(pc-size) {
-                            font-size: 2vw;
-                        }
-                    }
-                    ul{
-                        li{
-                            display: flex;
-                            margin: 3em 0;
-                            .white-circle{
-                                width: 7.5rem;
-                                height: 7.5rem;
-                                margin-right: 2vw;
-                                border-radius: 50%;
-                                background-color: #f2ece4;
+                        img {
+                            width: 15em;
+                            @include responsive(tablet-size) {
+                                width: 25em;
                             }
-                            .yellow-circle{
-                                width: 7.5rem;
-                                height: 7.5rem;
-                                margin-right: 2vw;
-                                border-radius: 50%;
-                                background-color: #a7a7a7;
-                            }
-                            .gray-circle{
-                                width: 7.5rem;
-                                height: 7.5rem;
-                                margin-right: 2vw;
-                                border-radius: 50%;
-                                background-color: #2c2928;
-                            }
-
-                            p{
-                                font-size: 3vw;
-                                margin: 10px 13px;
-                                color: $main-color;
-                                @include responsive(tablet-size) {
-                                    font-size: 2vw;
-                                }
-        
-                                @include responsive(pc-size) {
-                                    font-size: 1.5vw;
-                                }
+                            @include responsive(pc-size) {
+                                width: 30em;
                             }
                         }
                     }
                 }
             }
-        } 
-        
-    }
-
-    footer{
-        background-color: $main-color;
-        padding-bottom: 6vw;
-        p{
-            @include confix;
-            text-align: center;
-            font-size: 0.8em;
-            color: $second-color;
         }
+        .color {
+            padding: 5vw 0;
+            margin-bottom: 5em;
+            .confix {
+                @include confix;
+                h2 {
+                    font-size: 5vw;
+                    margin-bottom: 20px;
+                    @include responsive(tablet-size) {
+                        font-size: 3vw;
+                    }
+                    @include responsive(pc-size) {
+                        font-size: 2vw;
+                    }
+                }
+                p {
+                    font-size: 3vw;
+                    line-height: 1.8;
+                    @include responsive(tablet-size) {
+                        font-size: 2vw;
+                    }
+                }
+                ul {
+                    display: flex;
+                    justify-content: space-between;
+                    li {
+                        margin: 3em 0;
+                        .ivory-circle,
+                        .black-circle,
+                        .grey-circle {
+                            width: 20vw;
+                            height: 20vw;
+                            margin-right: 2vw;
+                            border-radius: 50%;
+                        }
+                        .ivory-circle {
+                            border: 1px solid #2c2928;
+                            background-color: #f2ece4
+                        }
+                        .black-circle {
+                            background-color: #2c2928;
+                        }
+                        .grey-circle {
+                            background-color: #a7a7a7;
+                        }
+                        p {
+                            font-size: 3vw;
+                            text-align: center;
+                            margin: 10px 13px;
+                            @include responsive(tablet-size) {
+                                font-size: 2vw;
+                            }
+                            @include responsive(pc-size) {
+                                font-size: 1.5vw;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .screen {
+            .confix {
+                @include confix;
+                h2 {
+                    font-size: 5vw;
+                    margin-bottom: 1em;
+                    @include responsive(tablet-size) {
+                        font-size: 3vw;
+                    }
+                    @include responsive(pc-size) {
+                        font-size: 2vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    background-color: #a7a7a7;
+    padding: 15px 0;
+    p {
+        @include confix;
+        text-align: center;
+        font-size: 0.8em;
     }
 }

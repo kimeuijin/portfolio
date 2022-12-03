@@ -81,12 +81,9 @@ main {
                 @include confix;
                 h2 {
                     font-size: 5vw;
-                    margin-bottom: 80px;
+                    margin-bottom: 100px;
                     @include responsive(tablet-size) {
                         font-size: 3vw;
-                    }
-                    @include responsive(pc-size) {
-                        font-size: 2vw;
                     }
                 }
                 .grid-flex {
