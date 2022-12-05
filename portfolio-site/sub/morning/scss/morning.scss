@@ -30,17 +30,14 @@ main {
     padding-bottom: 6vw;
     // background-color: #656161;
     .mockup {
-        .confix {
-            @include confix;
-            padding: 20vw 0 20vw 0;
-            @include responsive(tablet-size) {
-                padding-top: 8vw;
-                width: 80%;
-                margin: 0 auto;
-            }
-            img {
-                width: 100%;
-            }
+        // padding: 20vw 0 20vw 0;
+        // @include responsive(tablet-size) {
+        //     padding-top: 8vw;
+        //     width: 80%;
+        //     margin: 0 auto;
+        // }
+        img {
+            width: 100%;
         }
     }
     .guide-txt {
@@ -201,6 +198,9 @@ main {
                     @include responsive(pc-size) {
                         font-size: 2vw;
                     }
+                }
+                img {
+                    width: 100%;
                 }
             }
         }
