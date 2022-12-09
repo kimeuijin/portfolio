@@ -67,20 +67,7 @@ main {
   padding-bottom: 6vw;
   background-color: #f7f0e0;
 }
-main .mockup .confix {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20vw 0 20vw 0;
-}
-@media screen and (min-width: 768px) {
-  main .mockup .confix {
-    padding-top: 8vw;
-    width: 80%;
-    margin: 0 auto;
-  }
-}
-main .mockup .confix img {
+main .mockup img {
   width: 100%;
 }
 main .guide-txt .description {
@@ -211,6 +198,9 @@ main .guide-txt .screen .confix h2 {
   main .guide-txt .screen .confix h2 {
     font-size: 2vw;
   }
+}
+main .guide-txt .screen .confix img {
+  width: 100%;
 }
 
 footer {

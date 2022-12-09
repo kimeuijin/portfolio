@@ -31,17 +31,8 @@ main {
     color: #2c2928;
     background-color: #f2ece4;
     .mockup {
-        .confix {
-            @include confix;
-            padding: 20vw 0 20vw 0;
-            @include responsive(tablet-size) {
-                padding-top: 8vw;
-                width: 80%;
-                margin: 0 auto;
-            }
-            img {
-                width: 100%;
-            }
+        img {
+            width: 100%;
         }
     }
     .guide-txt {
@@ -212,6 +203,9 @@ main {
                     @include responsive(pc-size) {
                         font-size: 2vw;
                     }
+                }
+                img {
+                    width: 100%;
                 }
             }
         }
