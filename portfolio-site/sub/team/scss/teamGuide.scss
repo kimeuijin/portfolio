@@ -80,11 +80,12 @@ main {
                 }
                 .grid-flex {
                     display: flex;
+                    justify-content: space-between;
+                    align-items: center;
                     ul {
-                        margin-bottom: 10px;
                         li {
                             line-height: 1.8;
-                            font-size: 3vw;
+                            font-size: 2vw;
                             @include responsive(tablet-size) {
                                 font-size: 2vw;
                             }
@@ -92,6 +93,9 @@ main {
                                 font-size: 1.5vw;
                             }
                         }
+                    }
+                    img {
+                        width: 60%;
                     }
                 }
             }

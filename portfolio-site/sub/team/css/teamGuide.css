@@ -135,13 +135,12 @@ main .guide-txt .grid .confix h2 {
 }
 main .guide-txt .grid .confix .grid-flex {
   display: flex;
-}
-main .guide-txt .grid .confix .grid-flex ul {
-  margin-bottom: 10px;
+  justify-content: space-between;
+  align-items: center;
 }
 main .guide-txt .grid .confix .grid-flex ul li {
   line-height: 1.8;
-  font-size: 3vw;
+  font-size: 2vw;
 }
 @media screen and (min-width: 768px) {
   main .guide-txt .grid .confix .grid-flex ul li {
@@ -152,6 +151,9 @@ main .guide-txt .grid .confix .grid-flex ul li {
   main .guide-txt .grid .confix .grid-flex ul li {
     font-size: 1.5vw;
   }
+}
+main .guide-txt .grid .confix .grid-flex img {
+  width: 60%;
 }
 main .guide-txt .font {
   padding: 5vw 0;
