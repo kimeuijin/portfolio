@@ -28,14 +28,7 @@ header {
 main {
     width: 100%;
     padding-bottom: 6vw;
-    // background-color: #656161;
     .mockup {
-        // padding: 20vw 0 20vw 0;
-        // @include responsive(tablet-size) {
-        //     padding-top: 8vw;
-        //     width: 80%;
-        //     margin: 0 auto;
-        // }
         img {
             width: 100%;
         }
@@ -117,14 +110,11 @@ main {
                         font-size: 2vw;
                     }
                 }
-                img {
-                    width: 15em;
-                    @include responsive(tablet-size) {
-                        width: 25em;
-                    }
-                    @include responsive(pc-size) {
-                        width: 30em;
-                    }
+                .notosans-title {
+                    width: 100px;
+                }
+                .notosans-main {
+                    width: 230px;
                 }
             }
         }
@@ -165,6 +155,7 @@ main {
                         }
                         .white-circle {
                             background-color: rgb(255, 255, 255);
+                            border: 1px solid black;
                         }
                         .yellow-circle {
                             background-color: #f8f292;
@@ -173,6 +164,7 @@ main {
                             background-color: #656161;
                         }
                         p {
+                            text-align: center;
                             font-size: 3vw;
                             margin: 10px 13px;
                             @include responsive(tablet-size) {
@@ -186,22 +178,27 @@ main {
                 }
             }
         }
-        .screen {
-            .confix {
-                @include confix;
-                h2 {
-                    font-size: 5vw;
-                    margin-bottom: 1em;
-                    @include responsive(tablet-size) {
-                        font-size: 3vw;
-                    }
-                    @include responsive(pc-size) {
-                        font-size: 2vw;
+        .design {
+            .screen {
+                background-color: #f8f292;
+                .confix {
+                    @include confix;
+                    h2 {
+                        font-size: 5vw;
+                        margin-bottom: 1em;
+                        padding: 20px 0;
+                        @include responsive(tablet-size) {
+                            font-size: 3vw;
+                        }
+                        @include responsive(pc-size) {
+                            font-size: 2vw;
+                        }
                     }
                 }
-                img {
-                    width: 100%;
-                }
+            }
+            img {
+                width: 99%;
+                border: 1px solid black;
             }
         }
     }
@@ -214,6 +211,5 @@ footer {
         @include confix;
         text-align: center;
         font-size: 0.8em;
-        // color: $second-color;
     }
 }

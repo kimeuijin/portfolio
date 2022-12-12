@@ -176,18 +176,11 @@ main .guide-txt .font .confix h2 {
     font-size: 2vw;
   }
 }
-main .guide-txt .font .confix img {
-  width: 15em;
+main .guide-txt .font .confix .notosans-title {
+  width: 100px;
 }
-@media screen and (min-width: 768px) {
-  main .guide-txt .font .confix img {
-    width: 25em;
-  }
-}
-@media screen and (min-width: 1080px) {
-  main .guide-txt .font .confix img {
-    width: 30em;
-  }
+main .guide-txt .font .confix .notosans-main {
+  width: 230px;
 }
 main .guide-txt .color {
   padding: 5vw 0;
@@ -239,6 +232,7 @@ main .guide-txt .color .confix ul li .gray-circle {
 }
 main .guide-txt .color .confix ul li .white-circle {
   background-color: rgb(255, 255, 255);
+  border: 1px solid black;
 }
 main .guide-txt .color .confix ul li .yellow-circle {
   background-color: #f8f292;
@@ -247,6 +241,7 @@ main .guide-txt .color .confix ul li .gray-circle {
   background-color: #656161;
 }
 main .guide-txt .color .confix ul li p {
+  text-align: center;
   font-size: 3vw;
   margin: 10px 13px;
 }
@@ -260,28 +255,33 @@ main .guide-txt .color .confix ul li p {
     font-size: 1.5vw;
   }
 }
-main .guide-txt .screen .confix {
+main .guide-txt .design .screen {
+  background-color: #f8f292;
+}
+main .guide-txt .design .screen .confix {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 10px;
 }
-main .guide-txt .screen .confix h2 {
+main .guide-txt .design .screen .confix h2 {
   font-size: 5vw;
   margin-bottom: 1em;
+  padding: 20px 0;
 }
 @media screen and (min-width: 768px) {
-  main .guide-txt .screen .confix h2 {
+  main .guide-txt .design .screen .confix h2 {
     font-size: 3vw;
   }
 }
 @media screen and (min-width: 1080px) {
-  main .guide-txt .screen .confix h2 {
+  main .guide-txt .design .screen .confix h2 {
     font-size: 2vw;
   }
 }
-main .guide-txt .screen .confix img {
-  width: 100%;
+main .guide-txt .design img {
+  width: 99%;
+  border: 1px solid black;
 }
 
 footer {
